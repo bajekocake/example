@@ -21,8 +21,8 @@
     .modal-content input { width: 100%; padding: 8px; margin: 10px 0; }
     @keyframes slide {
       0% { transform: translateX(0); }
-      33% { transform: translateX(-100%); }
-      66% { transform: translateX(-200%); }
+      33% { transform: translateX(-50%); }
+      66% { transform: translateX(-80%); }
       100% { transform: translateX(0); }
     }
     
