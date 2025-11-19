@@ -57,6 +57,7 @@
     <a href="#contact">Contact</a>
     <a href="#cart">Cart 🛒</a>
     <a href="#wishlist">Wishlist ❤️</a>
+    <a href="carrer">Carrer</a>
   </nav>
 
   <div class="hero" id="home">Premium Cakes for Every Occasion</div>
@@ -86,7 +87,7 @@
 
       <!-- Eggless Cake -->
       <div class="product-card" data-category="eggless">
-        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.giftmandu.com%2Fred-velvet-cake-half-kg-from-radisson-hotel-ktm-only-%3Fsrsltid%3DAfmBOoqdUWAkAmzqvSvrk-AA99Zo9J7vo5pnr9jW8x-o2ZRJHFVY5Jqf&psig=AOvVaw0H0ZnfplE7_JduheMAYKv4&ust=1763621653578000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCIDcxZXR_ZADFQAAAAAdAAAAABAE?      auto=format&fit=crop&w=800&q=80" />
+        <img src="https://images.unsplash.com/photo-1599785209707-28c1657b8f89?auto=format&fit=crop&w=800&q=80" />
         <h3>Eggless Red Velvet</h3>
         <p>Soft, smooth & completely egg-free.</p>
         <div class="btn-row">
@@ -127,7 +128,48 @@
   </section>
 
   <footer>
-    <p>&copy; 2020  Bajeko Cake. Crafted with Love.</p>
+    <head>
+<meta charset="UTF-8">
+<title>Social Media Buttons</title>
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+    .social-buttons {
+        display: flex;
+        gap: 15px;
+    }
+
+    .social-buttons a {
+        text-decoration: none;
+        font-size: 28px;
+        color: white;
+        padding: 12px;
+        border-radius: 50%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .facebook { background: #1877f2; }
+    .instagram { background: #e1306c; }
+    .twitter { background: #1da1f2; }
+    .youtube { background: #ff0000; }
+</style>
+</head>
+
+<body>
+
+<div class="social-buttons">
+    <a href="https://facebook.com/BAJEKOCAKE" class="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/baje_ko_cake?igsh=MWJqMmVkdnI5dzl1dQ==" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+
+</body>
+</html>
+
+    <p>&copy; 2025 Bajeko cake. Crafted with Love.</p>
   </footer>
 
   <script>
