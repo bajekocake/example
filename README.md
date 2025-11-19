@@ -87,7 +87,7 @@
 
       <!-- Eggless Cake -->
       <div class="product-card" data-category="eggless">
-        ![image alt](https://github.com/bajekocake/example/blob/ed7c8462a1a4ccfcacc8d792d8ef9da06be59b11/Red-Velvet-Birthday-Cake-scaled.jpeg)
+        <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/Red-Velvet-Birthday-Cake-scaled.jpeg"
         <h3>Eggless Red Velvet</h3>
         <p>Soft, smooth & completely egg-free.</p>
         <div class="btn-row">
