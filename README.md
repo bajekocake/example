@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bajeko Bakery</title>
+  <title>Bajeko Cake</title>
   <style>
     body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #fff8f0; }
     header { background: #f4c27a; padding: 20px; text-align: center; }
@@ -20,7 +20,7 @@
 </head>
 <body>
   <header>
-    <h1>Bajeko Bakery</h1>
+    <h1>Bajeko Cake</h1>
     <p>Fresh. Delicious. Homemade.</p>
   </header>
 
@@ -55,12 +55,12 @@
 
   <section class="section" id="contact">
     <h2>Contact Us</h2>
-    <p>Email: info@bajekobakery.com</p>
-    <p>Phone: +977-123456789</p>
+    <p>Email: bajekocake@gmail.com</p>
+    <p>Phone: +977-9867221301</p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Bajeko Bakery. All Rights Reserved.</p>
+    <p>&copy; 2025 Bajeko Cake. All Rights Reserved.</p>
   </footer>
 </body>
 </html>
