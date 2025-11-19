@@ -13,12 +13,11 @@
 
     .slider { position: relative; width: 100%; max-height: 400px; overflow: hidden; }
     .slides { display: flex; width: 300%; animation: slide 8s infinite; }
-    .slides img { width: 100%; height: 400px; object-fit: cover }; }
+    .slides img { width: 400px; height: 400px; object-fit: cover }; }
     .auth { display: flex; justify-content: center; gap: 20px; padding: 20px; }
     .auth button { padding: 10px 20px; background: #ff7eb9; border: none; color: white; cursor: pointer; border-radius: 5px; }
     .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); justify-content: center; align-items: center; }
-    .modal-content { background: white; padding: 20px; border-radius: 8px; width: 300px; }
-    .modal-content input { width: 100%; padding: 8px; margin: 10px 0; }
+    
     @keyframes slide {
       0% { transform: translateX(0); }
       33% { transform: translateX(-50%); }
@@ -158,25 +157,7 @@
 
     </div>
   </section>
-   <!-- Login Modal -->
-  <div id="loginModal" class="modal">
-    <div class="modal-content">
-      <h3>Login</h3>
-      <input type="text" placeholder="Email" />
-      <input type="password" placeholder="Password" />
-      <button onclick="closeModal('loginModal')">Login</button>
-    </div>
-  </div>
-
-  <!-- Signup Modal -->
-  <div id="signupModal" class="modal">
-    <div class="modal-content">
-      <h3>Sign Up</h3>
-      <input type="text" placeholder="Full Name" />
-      <input type="email" placeholder="Email" />
-      <input type="password" placeholder="Password" />
-      <button onclick="closeModal('signupModal')">Sign Up</button>
-    </div>
+   
   </div>
 
   <script>
