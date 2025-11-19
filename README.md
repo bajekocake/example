@@ -11,7 +11,7 @@
     nav { background: #f2dcc0; padding: 15px; text-align: center; position: sticky; top: 0; }
     nav a { margin: 0 18px; text-decoration: none; color: #5a3e1b; font-weight: bold; }
 
-    .hero { background: url('https://uploads.onecompiler.io/4454cur5q/4454cuf35/IMG_20250526_101643373.jpg?auto=format&fit=crop&w=1500&q=80') center/cover; height: 350px; display: flex; align-items: center; justify-content: center; color: white; font-size: 2.4rem; text-shadow: 2px 2px 8px #000; }
+    .hero { background: url('https://uploads.onecompiler.io/4454cur5q/4454cuf35/IMG_20250726_114354841.jpg?auto=format&fit=crop&w=1500&q=80') center/cover; height: 350px; display: flex; align-items: center; justify-content: center; color: white; font-size: 2.4rem; text-shadow: 2px 2px 8px #000; }
 
     .section { padding: 50px; text-align: center; }
     h2 { font-size: 2.2rem; margin-bottom: 20px; }
@@ -29,7 +29,7 @@
 
     .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; margin-top: 20px; }
     .product-card { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
-    .product-card img { width: 100%; border-radius: 12px; height: 200px; object-fit: cover; }
+    .product-card img { width: 100%; border-radius: 30px; height: 400px; object-fit: cover; }
     .product-card h3 { margin: 15px 0 5px; }
     .btn-row { display: flex; justify-content: space-between; margin-top: 10px; }
     .btn {
@@ -76,7 +76,7 @@
 
       <!-- Quick Cake -->
       <div class="product-card" data-category="quick">
-        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80" />
+        <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/95a33ceb554a695b8f016d2a73526fc3.jpg"auto=format&fit=crop&w=800&q=80?auto=format&fit=crop&w=800&q=80" />
         <h3>Quick Chocolate Cake</h3>
         <p>Fast-picked, rich & moist.</p>
         <div class="btn-row">
