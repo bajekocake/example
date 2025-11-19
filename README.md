@@ -86,7 +86,7 @@
 
       <!-- Eggless Cake -->
       <div class="product-card" data-category="eggless">
-        <img src="https://images.unsplash.com/photo-1599785209707-28c1657b8f89?auto=format&fit=crop&w=800&q=80" />
+        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.giftmandu.com%2Fred-velvet-cake-half-kg-from-radisson-hotel-ktm-only-%3Fsrsltid%3DAfmBOoqdUWAkAmzqvSvrk-AA99Zo9J7vo5pnr9jW8x-o2ZRJHFVY5Jqf&psig=AOvVaw0H0ZnfplE7_JduheMAYKv4&ust=1763621653578000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCIDcxZXR_ZADFQAAAAAdAAAAABAE?      auto=format&fit=crop&w=800&q=80" />
         <h3>Eggless Red Velvet</h3>
         <p>Soft, smooth & completely egg-free.</p>
         <div class="btn-row">
