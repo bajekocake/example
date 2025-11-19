@@ -12,8 +12,8 @@
     nav a { margin: 0 18px; text-decoration: none; color: #5a3e1b; font-weight: bold; }
 
     .slider { position: relative; width: 100%; max-height: 400px; overflow: hidden; }
-    .slides { display: flex; width: 300%; animation: slide 12s infinite; }
-    .slides img { width: 100%; height: 400px; object-fit: cover; }
+    .slides { display: flex; width: 300%; animation: slide 8s infinite; }
+    .slides img { width: 100%; height: 400px; object-fit: contain /* or object-fit: cover; */ }; }
     .auth { display: flex; justify-content: center; gap: 20px; padding: 20px; }
     .auth button { padding: 10px 20px; background: #ff7eb9; border: none; color: white; cursor: pointer; border-radius: 5px; }
     .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); justify-content: center; align-items: center; }
@@ -32,10 +32,9 @@
     h2 { font-size: 2.2rem; margin-bottom: 20px; }
     <div class="slider">
     <div class="slides">
-      <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/IMG_20250526_101643373.jpg" alt="Cake 1">
-      <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/IMG_20250726_114354841.jpg" alt="Cake 2">
-      <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/images%20(7).jpg" 
-      alt="Cake 3">
+      <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/images%20(7).jpg" >
+      <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/IMG_20250726_114354841.jpg" >
+      <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/IMG_20250526_101643373.jpg">
     </div>
   </div>
   .auth { display: flex; justify-content: center; gap: 20px; padding: 20px; }
