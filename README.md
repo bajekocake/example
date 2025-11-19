@@ -11,25 +11,44 @@
     nav { background: #f2dcc0; padding: 15px; text-align: center; position: sticky; top: 0; }
     nav a { margin: 0 18px; text-decoration: none; color: #5a3e1b; font-weight: bold; }
 
-    .hero { background: url('https://uploads.onecompiler.io/4454cur5q/4454cuf35/IMG_20250726_114354841.jpg?auto=format&fit=crop&w=1500&q=80') center/cover; height: 350px; display: flex; align-items: center; justify-content: center; color: white; font-size: 2.4rem; text-shadow: 2px 2px 8px #000; }
+    .slider { position: relative; width: 100%; max-height: 400px; overflow: hidden; }
+    .slides { display: flex; width: 300%; animation: slide 12s infinite; }
+    .slides img { width: 100%; height: 400px; object-fit: cover; }
+    @keyframes slide {
+      0% { transform: translateX(0); }
+      33% { transform: translateX(-100%); }
+      66% { transform: translateX(-200%); }
+      100% { transform: translateX(0); }
+    }
+    
 
-    .section { padding: 50px; text-align: center; }
+    .section { padding: 5px; text-align: center; }
     h2 { font-size: 2.2rem; margin-bottom: 20px; }
+    <div class="slider">
+    <div class="slides">
+      <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/IMG_20250526_101643373.jpg" alt="Cake 1">
+      <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/IMG_20250726_114354841.jpg" alt="Cake 2">
+      <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/images%20(7).jpg" 
+      alt="Cake 3">
+    </div>
+  </div>
+    
 
-    .category-buttons { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-bottom: 30px; }
+    
+    .category-buttons { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-bottom: 50px; }
     .category-buttons button {
-      padding: 12px 25px;
+      padding: 15px 15px;
       border: none;
       background: #e98e3a;
       color: white;
-      font-size: 1rem;
-      border-radius: 8px;
+      font-size: 10pxpx;
+      border-radius: 35px;
       cursor: pointer;
     }
 
     .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; margin-top: 20px; }
     .product-card { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
-    .product-card img { width: 100%; border-radius: 30px; height: 400px; object-fit: cover; }
+    .product-card img { width: 60%; border-radius: 0px; height: 300px; object-fit: cover; }
     .product-card h3 { margin: 15px 0 5px; }
     .btn-row { display: flex; justify-content: space-between; margin-top: 10px; }
     .btn {
@@ -48,15 +67,27 @@
 <body>
   <header>
     <h1>Bajeko Cake</h1>
-    <p>Luxury Cakes • Pure Ingredients • Handcrafted Fresh Daily</p>
+    <div class="slider">
+    <div class="slides">
+      <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/IMG_20250526_101643373.jpg" alt="Cake 1">
+      <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/IMG_20250726_114354841.jpg" alt="Cake 2">
+      <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/images%20(7).jpg" alt="Cake 3">
+    </div>
+  </div>
+  <div class="auth">
+    <button onclick="openModal('loginModal')">Login</button>
+    <button onclick="openModal('signupModal')">Sign Up</button>
+  </div>
+    
   </header>
 
   <nav>
-    <a href="#home">Home</a>
-    <a href="#products">Products</a>
-    <a href="#contact">Contact</a>
-    <a href="#cart">Cart 🛒</a>
-    <a href="#wishlist">Wishlist ❤️</a>
+    <a href="#home"> Home</a>
+    <a href="#products"> Products</a>
+    <a href="#contact"> Contact</a>
+    <a href="#cart"> Cart 🛒</a>
+    <a href="#wishlist"> Wishlist ❤️</a>
+    <a href="carrer"> Carrer</a>
   </nav>
 
   <div class="hero" id="home">Premium Cakes for Every Occasion</div>
@@ -75,7 +106,7 @@
 
       <!-- Quick Cake -->
       <div class="product-card" data-category="quick">
-        <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/95a33ceb554a695b8f016d2a73526fc3.jpg"auto=format&fit=crop&w=800&q=80?auto=format&fit=crop&w=800&q=80" />
+        <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/95a33ceb554a695b8f016d2a73526fc3.jpg?auto=format&fit=crop&w=800&q=80" />
         <h3>Quick Chocolate Cake</h3>
         <p>Fast-picked, rich & moist.</p>
         <div class="btn-row">
@@ -86,7 +117,7 @@
 
       <!-- Eggless Cake -->
       <div class="product-card" data-category="eggless">
-        <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/Red-Velvet-Birthday-Cake-scaled.jpeg"
+        <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/Red-Velvet-Birthday-Cake-scaled.jpeg?auto=format&fit=crop&w=800&q=80" />"
         <h3>Eggless Red Velvet</h3>
         <p>Soft, smooth & completely egg-free.</p>
         <div class="btn-row">
@@ -97,7 +128,7 @@
 
       <!-- Wedding Cake -->
       <div class="product-card" data-category="wedding">
-        <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/royal%20cake.jpg"
+        <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/royal%20cake.jpg?auto=format&fit=crop&w=800&q=80" />
         <h3>Royal Wedding Cake</h3>
         <p>Elegant multi-tier handcrafted design.</p>
         <div class="btn-row">
@@ -108,7 +139,7 @@
 
       <!-- Cheese Cake -->
       <div class="product-card" data-category="cheese">
-        <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/1200x1200px_Blueberry_Cheesecake.png"
+        <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/1200x1200px_Blueberry_Cheesecake.png?auto=format&fit=crop&w=800&q=80" />
         <h3>Classic Cheesecake</h3>
         <p>Creamy, smooth & premium cheese blend.</p>
         <div class="btn-row">
@@ -181,3 +212,10 @@
   </script>
 </body>
 </html>
+
+
+
+
+
+
+
