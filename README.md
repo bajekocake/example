@@ -87,7 +87,7 @@
 
       <!-- Eggless Cake -->
       <div class="product-card" data-category="eggless">
-        <img src="https://images.unsplash.com/photo-1599785209707-28c1657b8f89?auto=format&fit=crop&w=800&q=80" />
+        ![image alt](https://github.com/bajekocake/example/blob/ed7c8462a1a4ccfcacc8d792d8ef9da06be59b11/Red-Velvet-Birthday-Cake-scaled.jpeg)
         <h3>Eggless Red Velvet</h3>
         <p>Soft, smooth & completely egg-free.</p>
         <div class="btn-row">
@@ -98,7 +98,7 @@
 
       <!-- Wedding Cake -->
       <div class="product-card" data-category="wedding">
-        <img src="https://images.unsplash.com/photo-1586985289688-2c992b458b01?auto=format&fit=crop&w=800&q=80" />
+        <imge  src="https://images.unsplash.com/photo-1586985289688-2c992b458b01?auto=format&fit=crop&w=800&q=80" />
         <h3>Royal Wedding Cake</h3>
         <p>Elegant multi-tier handcrafted design.</p>
         <div class="btn-row">
@@ -169,7 +169,7 @@
 </body>
 </html>
 
-    <p>&copy; 2025 Bajeko cake. Crafted with Love.</p>
+    <p>&copy; 2021 Bajeko cake. Crafted with Love.</p>
   </footer>
 
   <script>
