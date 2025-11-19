@@ -14,12 +14,18 @@
     .slider { position: relative; width: 100%; max-height: 400px; overflow: hidden; }
     .slides { display: flex; width: 300%; animation: slide 12s infinite; }
     .slides img { width: 100%; height: 400px; object-fit: cover; }
+    .auth { display: flex; justify-content: center; gap: 20px; padding: 20px; }
+    .auth button { padding: 10px 20px; background: #ff7eb9; border: none; color: white; cursor: pointer; border-radius: 5px; }
+    .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); justify-content: center; align-items: center; }
+    .modal-content { background: white; padding: 20px; border-radius: 8px; width: 300px; }
+    .modal-content input { width: 100%; padding: 8px; margin: 10px 0; }
     @keyframes slide {
       0% { transform: translateX(0); }
       33% { transform: translateX(-100%); }
       66% { transform: translateX(-200%); }
       100% { transform: translateX(0); }
     }
+    
     
 
     .section { padding: 5px; text-align: center; }
@@ -32,12 +38,15 @@
       alt="Cake 3">
     </div>
   </div>
-    
-
+  .auth { display: flex; justify-content: center; gap: 20px; padding: 20px; }
+    .auth button { padding: 10px 20px; background: #ff7eb9; border: none; color: white; cursor: pointer; border-radius: 5px; }
+    .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #e98e3a; justify-content: center; align-items: center; }
+    .modal-content { background: white; padding: 20px; border-radius: 8px; width: 300px; }
+    .modal-content input { width: 100%; padding: 8px; margin: 10px 0; }
     
     .category-buttons { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-bottom: 50px; }
     .category-buttons button {
-      padding: 15px 15px;
+      padding: 19px 16px;
       border: none;
       background: #e98e3a;
       color: white;
@@ -48,7 +57,7 @@
 
     .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; margin-top: 20px; }
     .product-card { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
-    .product-card img { width: 60%; border-radius: 0px; height: 300px; object-fit: cover; }
+    .product-card img { width: 80%; border-radius: 0px; height: 400px; object-fit: cover; }
     .product-card h3 { margin: 15px 0 5px; }
     .btn-row { display: flex; justify-content: space-between; margin-top: 10px; }
     .btn {
@@ -150,6 +159,35 @@
 
     </div>
   </section>
+   <!-- Login Modal -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <h3>Login</h3>
+      <input type="text" placeholder="Email" />
+      <input type="password" placeholder="Password" />
+      <button onclick="closeModal('loginModal')">Login</button>
+    </div>
+  </div>
+
+  <!-- Signup Modal -->
+  <div id="signupModal" class="modal">
+    <div class="modal-content">
+      <h3>Sign Up</h3>
+      <input type="text" placeholder="Full Name" />
+      <input type="email" placeholder="Email" />
+      <input type="password" placeholder="Password" />
+      <button onclick="closeModal('signupModal')">Sign Up</button>
+    </div>
+  </div>
+
+  <script>
+    function openModal(id) {
+      document.getElementById(id).style.display = 'flex';
+    }
+    function closeModal(id) {
+      document.getElementById(id).style.display = 'none';
+    }
+    </script>
 
   <section class="section" id="contact">
     <h2>Contact Us</h2>
@@ -209,6 +247,7 @@
         card.style.display = card.getAttribute('data-category') === category ? 'block' : 'none';
       });
     }
+   
   </script>
 </body>
 </html>
