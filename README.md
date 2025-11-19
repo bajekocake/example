@@ -10,7 +10,7 @@
     header h1 { margin: 0; font-size: 2.5rem; }
     nav { background: #f7d9a6; padding: 10px; text-align: center; }
     nav a { margin: 0 15px; text-decoration: none; color: #5a3e1b; font-weight: bold; }
-    .hero { background: url('(https://lh3.googleusercontent.com/a-/ALV-UjVuCJz0DA18xMWEdWwypD2S8gV9R8qObHeQe6hm7Kd2ovyiXv0_=s265-w265-h265)auto=format&fit=crop&w=1500&q=80') center/cover; height: 300px; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem; text-shadow: 2px 2px 5px #000; }
+    .hero { background: url('(https://lh3.googleusercontent.com/a-/ALV-UjVuCJz0DA18xMWEdWwypD2S8gV9R8qObHeQe6hm7Kd2ovyiXv0_=s265-w265-h265)'auto=format&fit=crop&w=1500&q=80') center/cover; height: 300px; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem; text-shadow: 2px 2px 5px #000; }
     .section { padding: 40px; text-align: center; }
     .products { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
     .product-card { background: white; padding: 20px; border-radius: 10px; width: 250px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
