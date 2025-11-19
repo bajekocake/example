@@ -11,7 +11,7 @@
     nav { background: #f2dcc0; padding: 15px; text-align: center; position: sticky; top: 0; }
     nav a { margin: 0 18px; text-decoration: none; color: #5a3e1b; font-weight: bold; }
 
-    .hero { background: url('https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1500&q=80') center/cover; height: 350px; display: flex; align-items: center; justify-content: center; color: white; font-size: 2.4rem; text-shadow: 2px 2px 8px #000; }
+    .hero { background: url('https://uploads.onecompiler.io/4454cur5q/4454cuf35/IMG_20250526_101643373.jpg?auto=format&fit=crop&w=1500&q=80') center/cover; height: 350px; display: flex; align-items: center; justify-content: center; color: white; font-size: 2.4rem; text-shadow: 2px 2px 8px #000; }
 
     .section { padding: 50px; text-align: center; }
     h2 { font-size: 2.2rem; margin-bottom: 20px; }
@@ -98,7 +98,7 @@
 
       <!-- Wedding Cake -->
       <div class="product-card" data-category="wedding">
-        <imge  src="https://images.unsplash.com/photo-1586985289688-2c992b458b01?auto=format&fit=crop&w=800&q=80" />
+        <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/royal%20cake.jpg"
         <h3>Royal Wedding Cake</h3>
         <p>Elegant multi-tier handcrafted design.</p>
         <div class="btn-row">
@@ -109,7 +109,7 @@
 
       <!-- Cheese Cake -->
       <div class="product-card" data-category="cheese">
-        <img src="https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?auto=format&fit=crop&w=800&q=80" />
+        <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/1200x1200px_Blueberry_Cheesecake.png"
         <h3>Classic Cheesecake</h3>
         <p>Creamy, smooth & premium cheese blend.</p>
         <div class="btn-row">
