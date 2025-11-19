@@ -57,7 +57,7 @@
 
     .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; margin-top: 20px; }
     .product-card { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
-    .product-card img { width: 80%; border-radius: 0px; height: 400px; object-fit: cover; }
+    .product-card img { width: 80%; border-radius: 0px; height: 400px; object-fit: contain; }
     .product-card h3 { margin: 15px 0 5px; }
     .btn-row { display: flex; justify-content: space-between; margin-top: 10px; }
     .btn {
