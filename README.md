@@ -12,7 +12,7 @@
     nav a { margin: 0 18px; text-decoration: none; color: #5a3e1b; font-weight: bold; }
 
     .slider { position: relative; width: 100%; max-height: 400px; overflow: hidden; }
-    .slides { display: flex; width: 300%; animation: slide 8s infinite; }
+    .slides { display: flex; width: 300%; animation: slide 13s infinite; }
     .slides img { width: 400px; height: 400px; object-fit: cover }; }
     .auth { display: flex; justify-content: center; gap: 20px; padding: 20px; }
     .auth button { padding: 10px 20px; background: #ff7eb9; border: none; color: white; cursor: pointer; border-radius: 5px; }
@@ -20,8 +20,8 @@
     
     @keyframes slide {
       0% { transform: translateX(0); }
-      33% { transform: translateX(-50%); }
-      66% { transform: translateX(-80%); }
+      33% { transform: translateX(-40%); }
+      66% { transform: translateX(-60%); }
       100% { transform: translateX(0); }
     }
     
