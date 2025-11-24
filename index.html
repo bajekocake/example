@@ -14,8 +14,7 @@
     .slider { position: relative; width: 100%; max-height: 400px; overflow: hidden; }
     .slides { display: flex; width: 300%; animation: slide 13s infinite; }
     .slides img { width: 400px; height: 400px; object-fit: cover }; }
-    .auth { display: flex; justify-content: center; gap: 20px; padding: 20px; }
-    .auth button { padding: 10px 20px; background: #ff7eb9; border: none; color: white; cursor: pointer; border-radius: 5px; }
+    .
     .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); justify-content: center; align-items: center; }
     
     @keyframes slide {
@@ -36,9 +35,7 @@
       <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/IMG_20250526_101643373.jpg">
     </div>
   </div>
-  .auth { display: flex; justify-content: center; gap: 20px; padding: 20px; }
-    .auth button { padding: 10px 20px; background: #ff7eb9; border: none; color: white; cursor: pointer; border-radius: 5px; }
-    .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #e98e3a; justify-content: center; align-items: center; }
+  .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #e98e3a; justify-content: center; align-items: center; }
     .modal-content { background: white; padding: 20px; border-radius: 8px; width: 300px; }
     .modal-content input { width: 100%; padding: 8px; margin: 10px 0; }
     
@@ -81,10 +78,7 @@
       <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/images%20(7).jpg" alt="Cake 3">
     </div>
   </div>
-  <div class="auth">
-    <button onclick="openModal('loginModal')">Login</button>
-    <button onclick="openModal('signupModal')">Sign Up</button>
-  </div>
+  
     
   </header>
 
