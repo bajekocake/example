@@ -88,7 +88,7 @@
     <a href="#contact"> Contact</a>
     <a href="#cart"> Cart 🛒</a>
     <a href="#wishlist"> Wishlist ❤️</a>
-    <a href="carrer"> Carrer</a>
+  
   </nav>
 
   <div class="hero" id="home">Premium Cakes for Every Occasion</div>
