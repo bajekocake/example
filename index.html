@@ -62,8 +62,7 @@
       cursor: pointer;
       font-weight: bold;
     }
-    .cart-btn { background: #f4a259; color: white; }
-    .wish-btn { background: #ffe3c2; color: #5a3e1b; }
+    
 
     footer { background: #5a3e1b; color: white; text-align: center; padding: 25px; margin-top: 50px; }
   </style>
@@ -86,8 +85,7 @@
     <a href="#home"> Home</a>
     <a href="#products"> Products</a>
     <a href="#contact"> Contact</a>
-    <a href="#cart"> Cart 🛒</a>
-    <a href="#wishlist"> Wishlist ❤️</a>
+    
   
   </nav>
 
@@ -101,8 +99,8 @@
       <button onclick="filterCategory('eggless')">Eggless Cake</button>
       <button onclick="filterCategory('wedding')">Wedding Cake</button>
       <button onclick="filterCategory('cheese')">Cheese Cake</button>
-      <button onclick="filterCategory('Baby Shower')">Baby Shower Cake</button>
-      <button onclick="filterCategory('Baby Girl')">Baby Girl Cake</button>
+      <button onclick="filterCategory('shower')">Baby Shower Cake</button>
+      <button onclick="filterCategory('baby Girl')">Baby Girl Cake</button>
       
     </div>
 
@@ -113,10 +111,7 @@
         <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/95a33ceb554a695b8f016d2a73526fc3.jpg?auto=format&fit=crop&w=800&q=80" />
         <h3>Quick Chocolate Cake</h3>
         <p>Fast-picked, rich & moist.</p>
-        <div class="btn-row">
-          <button class="btn cart-btn">Add to Cart</button>
-          <button class="btn wish-btn">Wishlist</button>
-        </div>
+        
       </div>
 
       <!-- Eggless Cake -->
@@ -124,10 +119,7 @@
         <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/Red-Velvet-Birthday-Cake-scaled.jpeg?auto=format&fit=crop&w=800&q=80" />"
         <h3>Eggless Red Velvet</h3>
         <p>Soft, smooth & completely egg-free.</p>
-        <div class="btn-row">
-          <button class="btn cart-btn">Add to Cart</button>
-          <button class="btn wish-btn">Wishlist</button>
-        </div>
+        
       </div>
 
       <!-- Wedding Cake -->
@@ -135,10 +127,7 @@
         <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/royal%20cake.jpg?auto=format&fit=crop&w=800&q=80" />
         <h3>Royal Wedding Cake</h3>
         <p>Elegant multi-tier handcrafted design.</p>
-        <div class="btn-row">
-          <button class="btn cart-btn">Add to Cart</button>
-          <button class="btn wish-btn">Wishlist</button>
-        </div>
+        
       </div>
 
       <!-- Cheese Cake -->
@@ -146,32 +135,23 @@
         <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/1200x1200px_Blueberry_Cheesecake.png?auto=format&fit=crop&w=800&q=80" />
         <h3>Classic Cheesecake</h3>
         <p>Creamy, smooth & premium cheese blend.</p>
-        <div class="btn-row">
-          <button class="btn cart-btn">Add to Cart</button>
-          <button class="btn wish-btn">Wishlist</button>
-        </div>
+        
       </div>
       
       <!-- Baby Shower Cake -->
-      <div class="product-card" data-category="Baby Shower ">
+      <div class="product-card" data-category="shower ">
         <img src="https://uploads.onecompiler.io/4454cur5q/446cymb45/PXL_20251018_072808573.PORTRAIT.jpg?auto=format&fit=crop&w=800&q=80" />
         <h3>Baby Shower Cake</h3>
         <p>Highly designed decker elegant .</p>
-        <div class="btn-row">
-          <button class="btn cart-btn">Add to Cart</button>
-          <button class="btn wish-btn">Wishlist</button>
-        </div>
+        
         </div>
         
         <!-- Baby Girl Cake -->
-      <div class="product-card" data-category="Baby Girl ">
+      <div class="product-card" data-category="baby Girl ">
         <img src="https://uploads.onecompiler.io/4454cur5q/446cymb45/PXL_20250119_074100280.PORTRAIT~2.jpg?auto=format&fit=crop&w=800&q=80" />
         <h3>Baby Girl Cake</h3>
         <p>Enriched in design .</p>
-        <div class="btn-row">
-          <button class="btn cart-btn">Add to Cart</button>
-          <button class="btn wish-btn">Wishlist</button>
-        </div>
+
         </div>
       
 
