@@ -101,6 +101,9 @@
       <button onclick="filterCategory('eggless')">Eggless Cake</button>
       <button onclick="filterCategory('wedding')">Wedding Cake</button>
       <button onclick="filterCategory('cheese')">Cheese Cake</button>
+      <button onclick="filterCategory('Baby Shower')">Baby Shower Cake</button>
+      <button onclick="filterCategory('Baby Girl')">Baby Girl Cake</button>
+      
     </div>
 
     <div class="products" id="product-list">
@@ -148,6 +151,29 @@
           <button class="btn wish-btn">Wishlist</button>
         </div>
       </div>
+      
+      <!-- Baby Shower Cake -->
+      <div class="product-card" data-category="Baby Shower ">
+        <img src="https://uploads.onecompiler.io/4454cur5q/446cymb45/PXL_20251018_072808573.PORTRAIT.jpg?auto=format&fit=crop&w=800&q=80" />
+        <h3>Baby Shower Cake</h3>
+        <p>Highly designed decker elegant .</p>
+        <div class="btn-row">
+          <button class="btn cart-btn">Add to Cart</button>
+          <button class="btn wish-btn">Wishlist</button>
+        </div>
+        </div>
+        
+        <!-- Baby Girl Cake -->
+      <div class="product-card" data-category="Baby Girl ">
+        <img src="https://uploads.onecompiler.io/4454cur5q/446cymb45/PXL_20250119_074100280.PORTRAIT~2.jpg?auto=format&fit=crop&w=800&q=80" />
+        <h3>Baby Girl Cake</h3>
+        <p>Enriched in design .</p>
+        <div class="btn-row">
+          <button class="btn cart-btn">Add to Cart</button>
+          <button class="btn wish-btn">Wishlist</button>
+        </div>
+        </div>
+      
 
     </div>
   </section>
