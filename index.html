@@ -210,6 +210,44 @@
 
 </body>
 </html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WhatsApp Icon Button</title>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        .whatsapp-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            font-size: 28px;
+            padding: 15px;
+            border-radius: 50%;
+            text-decoration: none;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        .whatsapp-icon:hover {
+            background-color: #1ebe5d;
+        }
+    </style>
+</head>
+<body>
+
+<a href="https://wa.me/9867221301" target="_blank" class="whatsapp-icon">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+</body>
+</html>
+
+
 
     <p>&copy; 2021 Bajeko cake. Crafted with Love.</p>
   </footer>
@@ -225,10 +263,3 @@
   </script>
 </body>
 </html>
-
-
-
-
-
-
-
