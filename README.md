@@ -99,7 +99,6 @@
       <button onclick="filterCategory('eggless')">Eggless Cake</button>
       <button onclick="filterCategory('wedding')">Wedding Cake</button>
       <button onclick="filterCategory('cheese')">Cheese Cake</button>
-      <button onclick="filterCategory('shower')">Baby Shower Cake</button>
       <button onclick="filterCategory('baby Girl')">Baby Girl Cake</button>
       
     </div>
@@ -138,17 +137,13 @@
         
       </div>
       
-      <!-- Baby Shower Cake -->
-      <div class="product-card" data-category="shower ">
-        <img src="https://uploads.onecompiler.io/4454cur5q/446cymb45/PXL_20251018_072808573.PORTRAIT.jpg?auto=format&fit=crop&w=800&q=80" />
-        <h3>Baby Shower Cake</h3>
-        <p>Highly designed decker elegant .</p>
+      
         
-        </div>
+     
         
         <!-- Baby Girl Cake -->
       <div class="product-card" data-category="baby Girl ">
-        <img src="https://uploads.onecompiler.io/4454cur5q/446cymb45/PXL_20250119_074100280.PORTRAIT~2.jpg?auto=format&fit=crop&w=800&q=80" />
+        <img src="https://uploads.onecompiler.io/4454cur5q/44dkqaxax/PXL_20250119_074100280.PORTRAIT~2.jpg?auto=format&fit=crop&w=800&q=80" />
         <h3>Baby Girl Cake</h3>
         <p>Enriched in design .</p>
 
