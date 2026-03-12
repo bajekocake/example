@@ -52,7 +52,20 @@
 
     .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; margin-top: 20px; }
     .product-card { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
-    .product-card img { width: 80%; border-radius: 0px; height: 400px; object-fit: contain; }
+    .product-card{
+  overflow: hidden;
+}
+
+.product-card img{
+  width: 80%;
+  height: 400px;
+  object-fit: contain;
+  transition: transform 0.6s ease;
+}
+
+.product-card img:hover{
+  transform: scale(1.1);
+}
     .product-card h3 { margin: 15px 0 5px; }
     .btn-row { display: flex; justify-content: space-between; margin-top: 10px; }
     .btn {
@@ -142,7 +155,7 @@
      
         
         <!-- Baby Girl Cake -->
-      <div class="product-card" data-category="baby Girl ">
+      <div class="product-card" data-category="baby Girl">
         <img src="https://uploads.onecompiler.io/4454cur5q/44dkqaxax/PXL_20250119_074100280.PORTRAIT~2.jpg?auto=format&fit=crop&w=800&q=80" />
         <h3>Baby Girl Cake</h3>
         <p>Enriched in design .</p>
