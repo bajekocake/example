@@ -123,6 +123,11 @@
         <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/95a33ceb554a695b8f016d2a73526fc3.jpg?auto=format&fit=crop&w=800&q=80" />
         <h3>Quick Chocolate Cake</h3>
         <p>Fast-picked, rich & moist.</p>
+         <button class="book-btn"
+  onclick="window.open('https://wa.me/9779867221301?text=I want to order Classic Cheesecake')">
+  Book Order
+  </button>
+
         
       </div>
 
@@ -131,6 +136,10 @@
         <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/Red-Velvet-Birthday-Cake-scaled.jpeg?auto=format&fit=crop&w=800&q=80" />"
         <h3>Eggless Red Velvet</h3>
         <p>Soft, smooth & completely egg-free.</p>
+           <button class="book-btn"
+  onclick="window.open('https://wa.me/9779867221301?text=I want to order Classic Cheesecake')">
+  Book Order
+  </button>
         
       </div>
 
@@ -139,6 +148,10 @@
         <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/royal%20cake.jpg?auto=format&fit=crop&w=800&q=80" />
         <h3>Royal Wedding Cake</h3>
         <p>Elegant multi-tier handcrafted design.</p>
+           <button class="book-btn"
+  onclick="window.open('https://wa.me/9779867221301?text=I want to order Classic Cheesecake')">
+  Book Order
+  </button>
         
       </div>
 
@@ -147,6 +160,10 @@
         <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/1200x1200px_Blueberry_Cheesecake.png?auto=format&fit=crop&w=800&q=80" />
         <h3>Classic Cheesecake</h3>
         <p>Creamy, smooth & premium cheese blend.</p>
+        <button class="book-btn"
+  onclick="window.open('https://wa.me/9779867221301?text=I want to order Classic Cheesecake')">
+  Book Order
+  </button>
         
       </div>
       
@@ -159,7 +176,10 @@
         <img src="https://uploads.onecompiler.io/4454cur5q/44dkqaxax/PXL_20250119_074100280.PORTRAIT~2.jpg?auto=format&fit=crop&w=800&q=80" />
         <h3>Baby Girl Cake</h3>
         <p>Enriched in design .</p>
-
+<button class="book-btn"
+  onclick="window.open('https://wa.me/9779867221301?text=I want to order Classic Cheesecake')">
+  Book Order
+  </button>
         </div>
       
 
@@ -212,6 +232,20 @@
     .instagram { background: #e1306c; }
     .twitter { background: #1da1f2; }
     .youtube { background: #ff0000; }
+    .book-btn{
+  background:#e98e3a;
+  color:white;
+  border:none;
+  padding:10px 16px;
+  border-radius:20px;
+  cursor:pointer;
+  font-weight:bold;
+  margin-top:10px;
+}
+
+.book-btn:hover{
+  background:#c96f20;
+}
 </style>
 </head>
 
