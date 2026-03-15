@@ -55,6 +55,53 @@
     .product-card{
   overflow: hidden;
 }
+/* Gallery */
+.gallery-section{
+  display:none; /* Hidden initially */
+  padding:40px;
+  text-align:center;
+}
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
+.gallery img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+  border-radius:10px;
+  cursor:pointer;
+  transition:transform 0.3s;
+}
+.gallery img:hover{transform:scale(1.1);}
+
+/* Lightbox */
+.lightbox{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  justify-content:center;
+  align-items:center;
+  z-index:1000;
+}
+.lightbox img{
+  max-width:90%;
+  max-height:90%;
+  border-radius:10px;
+}
+.lightbox span{
+  position:absolute;
+  top:20px;
+  right:30px;
+  color:white;
+  font-size:40px;
+  cursor:pointer;
+}
 
 .product-card img{
   width: 80%;
@@ -97,6 +144,7 @@
   <nav>
     <a href="#home"> Home</a>
     <a href="#products"> Products</a>
+    <a onclick="showGallery()">Gallery</a>
     <a href="#contact"> Contact</a>
     
   
@@ -187,15 +235,67 @@
   </section>
    
   </div>
+  <!-- Gallery Section -->
+<section class="gallery-section" id="gallery-section">
+  <h2>Cake Gallery</h2>
+  <div class="gallery" id="gallery-container"></div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <span onclick="closeLightbox()">&times;</span>
+  <img id="lightbox-img">
+</div>
 
   <script>
-    function openModal(id) {
-      document.getElementById(id).style.display = 'flex';
-    }
-    function closeModal(id) {
-      document.getElementById(id).style.display = 'none';
-    }
-    </script>
+// Filter products
+function filterCategory(category){
+  const cards=document.querySelectorAll('.product-card');
+  cards.forEach(card=>{
+    card.style.display = card.getAttribute('data-category')===category?'block':'none';
+  });
+}
+
+// Show gallery
+const galleryImages=[
+  'https://uploads.onecompiler.io/4454cur5q/4454cuf35/images%20(7).jpg',
+  'https://uploads.onecompiler.io/4454cur5q/4454cuf35/IMG_20250726_114354841.jpg',
+  'https://uploads.onecompiler.io/4454cur5q/4454cuf35/IMG_20250526_101643373.jpg',
+  'https://uploads.onecompiler.io/4454cur5q/4454cuf35/royal%20cake.jpg',
+  'https://uploads.onecompiler.io/4454cur5q/4454cuf35/95a33ceb554a695b8f016d2a73526fc3.jpg',
+  'https://uploads.onecompiler.io/4454cur5q/4454cuf35/Red-Velvet-Birthday-Cake-scaled.jpeg'
+];
+
+function showGallery(){
+  document.getElementById('products').style.display='none';
+  const gallerySection=document.getElementById('gallery-section');
+  const galleryContainer=document.getElementById('gallery-container');
+  gallerySection.style.display='block';
+  galleryContainer.innerHTML='';
+  galleryImages.forEach(src=>{
+    const img=document.createElement('img');
+    img.src=src;
+    img.onclick=()=>openLightbox(img);
+    galleryContainer.appendChild(img);
+  });
+  gallerySection.scrollIntoView({behavior:'smooth'});
+}
+
+// Lightbox
+function openLightbox(img){
+  const lightbox=document.getElementById('lightbox');
+  const lightboxImg=document.getElementById('lightbox-img');
+  lightbox.style.display='flex';
+  lightboxImg.src=img.src;
+}
+function closeLightbox(){document.getElementById('lightbox').style.display='none';}
+
+// Show products
+function showSection(id){
+  document.getElementById('gallery-section').style.display='none';
+  document.getElementById('products').style.display='block';
+}
+</script>
 
   <section class="section" id="contact">
     <h2>Contact Us</h2>
