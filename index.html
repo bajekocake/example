@@ -124,7 +124,7 @@
         <h3>Quick Chocolate Cake</h3>
         <p>Fast-picked, rich & moist.</p>
          <button class="book-btn"
-  onclick="window.open('https://wa.me/9779867221301?text=I want to order Classic Cheesecake')">
+  onclick="window.open('https://wa.me/9779867221301?text=I want to order Chocolate cake')">
   Book Order
   </button>
 
@@ -137,7 +137,7 @@
         <h3>Eggless Red Velvet</h3>
         <p>Soft, smooth & completely egg-free.</p>
            <button class="book-btn"
-  onclick="window.open('https://wa.me/9779867221301?text=I want to order Classic Cheesecake')">
+  onclick="window.open('https://wa.me/9779867221301?text=I want to order RedVelvet cake')">
   Book Order
   </button>
         
@@ -149,7 +149,7 @@
         <h3>Royal Wedding Cake</h3>
         <p>Elegant multi-tier handcrafted design.</p>
            <button class="book-btn"
-  onclick="window.open('https://wa.me/9779867221301?text=I want to order Classic Cheesecake')">
+  onclick="window.open('https://wa.me/9779867221301?text=I want to order Wedding Cake')">
   Book Order
   </button>
         
@@ -177,7 +177,7 @@
         <h3>Baby Girl Cake</h3>
         <p>Enriched in design .</p>
 <button class="book-btn"
-  onclick="window.open('https://wa.me/9779867221301?text=I want to order Classic Cheesecake')">
+  onclick="window.open('https://wa.me/9779867221301?text=I want to order Barbie Cake')">
   Book Order
   </button>
         </div>
