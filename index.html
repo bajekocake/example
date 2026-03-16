@@ -68,7 +68,7 @@
 }
 .gallery img{
   width:100%;
-  height:200px;
+  height:100%;
   object-fit:cover;
   border-radius:10px;
   cursor:pointer;
@@ -258,12 +258,14 @@ function filterCategory(category){
 
 // Show gallery
 const galleryImages=[
-  'https://uploads.onecompiler.io/4454cur5q/4454cuf35/images%20(7).jpg',
-  'https://uploads.onecompiler.io/4454cur5q/4454cuf35/IMG_20250726_114354841.jpg',
-  'https://uploads.onecompiler.io/4454cur5q/4454cuf35/IMG_20250526_101643373.jpg',
-  'https://uploads.onecompiler.io/4454cur5q/4454cuf35/royal%20cake.jpg',
-  'https://uploads.onecompiler.io/4454cur5q/4454cuf35/95a33ceb554a695b8f016d2a73526fc3.jpg',
-  'https://uploads.onecompiler.io/4454cur5q/4454cuf35/Red-Velvet-Birthday-Cake-scaled.jpeg'
+  'https://i.postimg.cc/DyLW2Pmc/PXL_20251224_113332476_PORTRAIT.jpg',
+  'https://i.postimg.cc/4dYdjzDG/PXL_20250802_125718951.jpg',
+  'https://i.postimg.cc/DZRZhSTH/PXL_20251127_075918847_PORTRAIT_2.jpg',
+  'https://i.postimg.cc/cHPHWvSz/PXL_20251209_094301693_PORTRAIT_2.jpg',
+  'https://i.postimg.cc/bJZJ4Q7h/PXL_20260130_114312937_PORTRAIT.jpg',
+  
+  
+  
 ];
 
 function showGallery(){
