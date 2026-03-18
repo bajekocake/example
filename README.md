@@ -3,7 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bajeko Cake</title>
+  <meta name="description" content="Bajeko Cake - Premium cake shop in Kathmandu. Order birthday cakes, wedding cakes, eggless cakes and more. Fast delivery available.">
+
+<meta name="keywords" content="cake shop Kathmandu, birthday cake Nepal, wedding cake Kathmandu, eggless cake Nepal, Bajeko Cake">
+
+<meta name="author" content="Bajeko Cake">
+
+<meta name="robots" content="index, follow">
+<meta name="geo.region" content="NP-BAG">
+<meta name="geo.placename" content="Kathmandu">
+<meta name="geo.position" content="27.6693;85.3302">
+<meta name="ICBM" content="27.6693, 85.3302">
+<meta property="og:title" content="Bajeko Cake - Premium Cakes in Kathmandu">
+<meta property="og:description" content="Order delicious cakes for every occasion. Birthday, wedding, eggless & more.">
+<meta property="og:image" content="https://your-image-link.jpg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yourwebsite.com">
+  <title>Bajeko Cake | Best Cake Shop in Kathmandu | Order Online</title>
   <style>
   
   .map-container {
@@ -21,8 +37,11 @@
 
     .slider { position: relative; width: 100%; max-height: 400px; overflow: hidden; }
     .slides { display: flex; width: 300%; animation: slide 13s infinite; }
-    .slides img { width: 400px; height: 400px; object-fit: cover; }
-    .
+    .slides img {
+  width: 100%;
+  height: 300px;
+}
+    
     .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); justify-content: center; align-items: center; }
     
     @keyframes slide {
@@ -32,9 +51,6 @@
       100% { transform: translateX(0); }
     }
     
-    
-
-    
     h2 { font-size: 2.2rem; margin-bottom: 20px; }
     <div class="slider">
     <div class="slides">
@@ -43,7 +59,6 @@
       <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/IMG_20250526_101643373.jpg">
     </div>
   </div>
-  .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #e98e3a; justify-content: center; align-items: center; }
     .modal-content { background: white; padding: 20px; border-radius: 8px; width: 300px; }
     .modal-content input { width: 100%; padding: 8px; margin: 10px 0; }
     
@@ -137,7 +152,7 @@
 </head>
 <body>
   <header>
-    <h1>Bajeko Cake</h1>
+    <h1>Bajeko Cake - Premium Cakes in Kathmandu</h1>
     <div class="slider">
     <div class="slides">
       <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/IMG_20250526_101643373.jpg" alt="Cake 1">
@@ -295,13 +310,10 @@ function showProducts(){
 const galleryImages = [
   {src:'https://i.postimg.cc/DyLW2Pmc/PXL_20251224_113332476_PORTRAIT.jpg', category:'kid'},
   {src:'https://i.postimg.cc/4dYdjzDG/PXL_20250802_125718951.jpg', category:'kid'},
-  
-  {src:'https://i.postimg.cc/DZRZhSTH/PXL_20251127_075918847_PORTRAIT_2.jpg', category:'girl'},
+  {src:'https://i.postimg.cc/DZRZhSTH/PXL_20251127_075918847_PORTRAIT_2.jpg', category:'wedding'},
   {src:'https://i.postimg.cc/cHPHWvSz/PXL_20251209_094301693_PORTRAIT_2.jpg', category:'girl'},
-  
-  {src:'https://i.postimg.cc/bJZJ4Q7h/PXL_20260130_114312937_PORTRAIT.jpg', category:'wedding'},
-  {src:'https://uploads.onecompiler.io/4454cur5q/44ggazag5/PXL_20260131_111103303.PORTRAIT.jpg', category:'wedding'},
-  
+  {src:'https://i.postimg.cc/bJZJ4Q7h/PXL_20260130_114312937_PORTRAIT.jpg', category:'girl'},
+  {src:'https://uploads.onecompiler.io/4454cur5q/44ggazag5/PXL_20260131_111103303.PORTRAIT.jpg', category:'girl'},
   {src:'https://uploads.onecompiler.io/4454cur5q/44ggazag5/PXL_20260110_103316714.PORTRAIT~2.jpg', category:'girl'}
 ];
 
@@ -353,7 +365,7 @@ function showSection(id){
   <div class="map-container">
    
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.5511559418815!2d85.33028537405147!3d27.669355327168677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb198746b6aba3%3A0x275d892c608ba5ef!2sBajeko%20Cake!5e0!3m2!1sen!2snp!4v1773818571061!5m2!1sen!2snp" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-     
+     <p>Visit Bajeko Cake in Kathmandu for fresh and delicious cakes.</p>
   </div>
 
   <br>
@@ -371,6 +383,21 @@ function showSection(id){
     <head>
 <meta charset="UTF-8">
 <title>Social Media Buttons</title>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Bakery",
+  "name": "Bajeko Cake",
+  "image": "https://your-image-link.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Kathmandu",
+    "addressCountry": "Nepal"
+  },
+  "telephone": "+977-9867221301"
+}
+</script>
 
 <!-- Font Awesome Icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
