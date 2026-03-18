@@ -18,7 +18,8 @@
 <meta property="og:description" content="Order delicious cakes for every occasion. Birthday, wedding, eggless & more.">
 <meta property="og:image" content="https://your-image-link.jpg">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://yourwebsite.com">
+<meta property="og:url" content="https://bajekocake.com.np">
+<link rel="canonical" href="https://bajekocake.com.np">
   <title>Bajeko Cake | Best Cake Shop in Kathmandu | Order Online</title>
   <style>
   
@@ -36,23 +37,26 @@
     nav a { margin: 0 18px; text-decoration: none; color: #5a3e1b; font-weight: bold; }
 
     .slider { position: relative; width: 100%; max-height: 400px; overflow: hidden; }
-    .slides { display: flex; width: 300%; animation: slide 100s infinite; }
-   .slides img { width: 100%; height: 400px; object-fit: cover; }
+    .slides { display: flex; width: 300%; animation: slide 80s infinite; }
+   .slides img { width: 400px; height: 400px; object-fit: cover; }
     
     .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); justify-content: center; align-items: center; }
     
-   @keyframes slide {
-  0%, 100% { transform: translateX(0); }
-  33% { transform: translateX(-100%); }
-  66% { transform: translateX(-200%); }
-}
+    @keyframes slide {
+      0% { transform: translateX(0); }
+      33% { transform: translateX(-40%); }
+      66% { transform: translateX(-60%); }
+      100% { transform: translateX(0); }
+    }
     
     h2 { font-size: 2.2rem; margin-bottom: 20px; }
-   
+    <div class="slider">
+    <div class="slides">
       <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/images%20(7).jpg" >
       <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/IMG_20250726_114354841.jpg" >
       <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/IMG_20250526_101643373.jpg">
-   >
+    </div>
+  </div>
     .modal-content { background: white; padding: 20px; border-radius: 8px; width: 300px; }
     .modal-content input { width: 100%; padding: 8px; margin: 10px 0; }
     
@@ -403,7 +407,7 @@ function showSection(id){
   "@context": "https://schema.org",
   "@type": "Bakery",
   "name": "Bajeko Cake",
-  "image": "https://your-image-link.jpg",
+  "image": "https://uploads.onecompiler.io/4454cur5q/4454cuf35/images%20(7).jpg",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Kathmandu",
