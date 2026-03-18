@@ -37,7 +37,7 @@
     nav a { margin: 0 18px; text-decoration: none; color: #5a3e1b; font-weight: bold; }
 
     .slider { position: relative; width: 100%; max-height: 400px; overflow: hidden; }
-    .slides { display: flex; width: 300%; animation: slide 80s infinite; }
+    .slides { display: flex; width: 300%; animation: slide 10s infinite; }
    .slides img { width: 400px; height: 400px; object-fit: cover; }
     
     .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); justify-content: center; align-items: center; }
@@ -55,6 +55,8 @@
       <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/images%20(7).jpg" >
       <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/IMG_20250726_114354841.jpg" >
       <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/IMG_20250526_101643373.jpg">
+      <img src="https://uploads.onecompiler.io/4454cur5q/44ggazag5/PXL_20260130_114312937.PORTRAIT.jpg">
+      <img src="https://uploads.onecompiler.io/4454cur5q/44ggazag5/PXL_20260110_103316714.PORTRAIT~2.jpg">
     </div>
   </div>
     .modal-content { background: white; padding: 20px; border-radius: 8px; width: 300px; }
