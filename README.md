@@ -18,7 +18,8 @@
 <meta property="og:description" content="Order delicious cakes for every occasion. Birthday, wedding, eggless & more.">
 <meta property="og:image" content="https://your-image-link.jpg">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://yourwebsite.com">
+<meta property="og:url" content="https://bajekocake.com.np">
+<link rel="canonical" href="https://bajekocake.com.np">
   <title>Bajeko Cake | Best Cake Shop in Kathmandu | Order Online</title>
   <style>
   
@@ -65,7 +66,7 @@
       border: none;
       background: #e98e3a;
       color: white;
-      font-size: 10pxpx;
+      font-size: 10px;
       border-radius: 35px;
       cursor: pointer;
     }
@@ -179,7 +180,7 @@
       <button onclick="filterCategory('eggless')">Eggless Cake</button>
       <button onclick="filterCategory('wedding')">Wedding Cake</button>
       <button onclick="filterCategory('cheese')">Cheese Cake</button>
-      <button onclick="filterCategory('baby Girl')">Baby Girl Cake</button>
+      <button onclick="filterCategory('baby-Girl')">Baby Girl Cake</button>
       <button onclick="filterCategory('baby shower')">Baby Shower Cake</button>
       
     </div>
@@ -201,7 +202,7 @@
 
       <!-- Eggless Cake -->
       <div class="product-card" data-category="eggless">
-        <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/Red-Velvet-Birthday-Cake-scaled.jpeg?auto=format&fit=crop&w=800&q=80" />"
+        <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/Red-Velvet-Birthday-Cake-scaled.jpeg?auto=format&fit=crop&w=800&q=80" />
         <h3>Eggless Red Velvet</h3>
         <p>Soft, smooth & completely egg-free.</p>
            <button class="book-btn"
@@ -240,7 +241,7 @@
      
         
         <!-- Baby Girl Cake -->
-      <div class="product-card" data-category="baby Girl">
+      <div class="product-card" data-category="baby-Girl">
         <img src="https://uploads.onecompiler.io/4454cur5q/44dkqaxax/PXL_20250119_074100280.PORTRAIT~2.jpg?auto=format&fit=crop&w=800&q=80" />
         <h3>Baby Girl Cake</h3>
         <p>Enriched in design .</p>
@@ -406,7 +407,7 @@ function showSection(id){
   "@context": "https://schema.org",
   "@type": "Bakery",
   "name": "Bajeko Cake",
-  "image": "https://your-image-link.jpg",
+  "image": "https://uploads.onecompiler.io/4454cur5q/4454cuf35/images%20(7).jpg",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Kathmandu",
