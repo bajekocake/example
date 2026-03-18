@@ -308,6 +308,17 @@ const galleryImages = [
   {src:'https://i.postimg.cc/DyLW2Pmc/PXL_20251224_113332476_PORTRAIT.jpg', category:'kid'},
   {src:'https://i.postimg.cc/4dYdjzDG/PXL_20250802_125718951.jpg', category:'kid'},
   {src:'https://i.postimg.cc/DZRZhSTH/PXL_20251127_075918847_PORTRAIT_2.jpg', category:'wedding'},
+  {src:'https://i.postimg.cc/GtFV3mR0/PXL_20250830_075311579_PORTRAIT_2.jpg', category:'wedding'},
+  {src:'https://i.postimg.cc/kG3Ldtkv/PXL_20250503_043751103_PORTRAIT.jpg', category:'wedding'},
+  {src:'https://i.postimg.cc/Bb9RG1dY/PXL_20250306_113235580_PORTRAIT_2.jpg', category:'wedding'},
+  {src:'https://i.postimg.cc/jqPG4Z7c/image_(2).jpg', category:'wedding'},
+  {src:'https://i.postimg.cc/qqsSBvTS/FB_IMG_1738990145604.jpg', category:'wedding'},
+  {src:'https://i.postimg.cc/3JhzSmjK/032150d2_bc68_489b_930a_3d9f9022b322.jpg', category:'wedding'},
+  
+  
+  
+  
+  
   {src:'https://i.postimg.cc/cHPHWvSz/PXL_20251209_094301693_PORTRAIT_2.jpg', category:'girl'},
   {src:'https://i.postimg.cc/bJZJ4Q7h/PXL_20260130_114312937_PORTRAIT.jpg', category:'girl'},
   {src:'https://uploads.onecompiler.io/4454cur5q/44ggazag5/PXL_20260131_111103303.PORTRAIT.jpg', category:'girl'},
