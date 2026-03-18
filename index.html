@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bajeko Cake</title>
   <style>
+  
+  .map-container {
+  max-width: 900px;
+  margin: auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
     body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; background: #fff7f2; }
     header { background: linear-gradient(135deg, #f7b16a, #e98e3a); padding: 30px; text-align: center; color: white; }
     header h1 { margin: 0; font-size: 3rem; }
@@ -13,7 +21,7 @@
 
     .slider { position: relative; width: 100%; max-height: 400px; overflow: hidden; }
     .slides { display: flex; width: 300%; animation: slide 13s infinite; }
-    .slides img { width: 400px; height: 400px; object-fit: cover }; }
+    .slides img { width: 400px; height: 400px; object-fit: cover; }
     .
     .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); justify-content: center; align-items: center; }
     
@@ -26,7 +34,7 @@
     
     
 
-    .section { padding: 5px; text-align: center; }
+    
     h2 { font-size: 2.2rem; margin-bottom: 20px; }
     <div class="slider">
     <div class="slides">
@@ -142,7 +150,6 @@
   </header>
 
   <nav>
-    <a href="#home"> Home</a>
     <a href="#products"> Products</a>
     <a onclick="showGallery()">Gallery</a>
     <a href="#contact"> Contact</a>
@@ -263,6 +270,9 @@ const galleryImages=[
   'https://i.postimg.cc/DZRZhSTH/PXL_20251127_075918847_PORTRAIT_2.jpg',
   'https://i.postimg.cc/cHPHWvSz/PXL_20251209_094301693_PORTRAIT_2.jpg',
   'https://i.postimg.cc/bJZJ4Q7h/PXL_20260130_114312937_PORTRAIT.jpg',
+  'https://uploads.onecompiler.io/4454cur5q/44ggazag5/PXL_20260131_111103303.PORTRAIT.jpg',
+  'https://uploads.onecompiler.io/4454cur5q/44ggazag5/PXL_20260110_103316714.PORTRAIT~2.jpg',
+  
   
   
   
@@ -300,6 +310,22 @@ function showSection(id){
 </script>
 
   <section class="section" id="contact">
+    <!-- Map Section -->
+<section class="section" id="map">
+  <h2>Find Us on Map</h2>
+  
+  <div class="map-container">
+   
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.5511559418815!2d85.33028537405147!3d27.669355327168677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb198746b6aba3%3A0x275d892c608ba5ef!2sBajeko%20Cake!5e0!3m2!1sen!2snp!4v1773818571061!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     
+  </div>
+
+  <br>
+  
+  <a href="https://www.google.com/maps" target="_blank">
+    <button class="book-btn">Get Directions</button>
+  </a>
+</section>
     <h2>Contact Us</h2>
     <p>Email: bajekocake@gmail.com</p>
     <p>Phone: +977-9867221301</p>
@@ -370,6 +396,8 @@ function showSection(id){
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <style>
+    
+    
         .whatsapp-icon {
             position: fixed;
             bottom: 20px;
