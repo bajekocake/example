@@ -7,11 +7,11 @@
   <style>
   
   .map-container {
-  max-width: 900px;
+  max-width: 300px;
   margin: auto;
-  border-radius: 15px;
+  border-radius: 5px;
   overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 5px rgba(0,0,0,0.2);
 }
     body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; background: #fff7f2; }
     header { background: linear-gradient(135deg, #f7b16a, #e98e3a); padding: 30px; text-align: center; color: white; }
@@ -150,8 +150,8 @@
   </header>
 
   <nav>
-    <a href="#products"> Products</a>
-    <a onclick="showGallery()">Gallery</a>
+    <a href="#" onclick="showProducts()">Products</a>
+    <a href="#" onclick="showGallery()">Gallery</a>
     <a href="#contact"> Contact</a>
     
   
@@ -168,6 +168,7 @@
       <button onclick="filterCategory('wedding')">Wedding Cake</button>
       <button onclick="filterCategory('cheese')">Cheese Cake</button>
       <button onclick="filterCategory('baby Girl')">Baby Girl Cake</button>
+      <button onclick="filterCategory('baby shower')">Baby Shower Cake</button>
       
     </div>
 
@@ -236,6 +237,17 @@
   Book Order
   </button>
         </div>
+        
+        <!-- Baby Shower Cake -->
+      <div class="product-card" data-category="baby shower">
+        <img src="https://uploads.onecompiler.io/4454cur5q/44ggazag5/PXL_20251018_072821655%20(1).jpg?auto=format&fit=crop&w=800&q=80" />
+        <h3>Baby Shower Cake</h3>
+        <p>Twinkle, twinkle little star, can't wait to see how cute you are. </p>
+<button class="book-btn"
+  onclick="window.open('https://wa.me/9779867221301?text=I want to order Cake')">
+  Book Order
+  </button>
+        </div>
       
 
     </div>
@@ -245,6 +257,15 @@
   <!-- Gallery Section -->
 <section class="gallery-section" id="gallery-section">
   <h2>Cake Gallery</h2>
+
+  <!-- Gallery Categories -->
+  <div class="category-buttons">
+    <button onclick="filterGallery('all')">All</button>
+    <button onclick="filterGallery('kid')">Kid Cake</button>
+    <button onclick="filterGallery('girl')">Girl Cake</button>
+    <button onclick="filterGallery('wedding')">Wedding Cake</button>
+  </div>
+
   <div class="gallery" id="gallery-container"></div>
 </section>
 
@@ -263,34 +284,49 @@ function filterCategory(category){
   });
 }
 
+function showProducts(){
+  document.getElementById('gallery-section').style.display='none';
+  document.getElementById('products').style.display='block';
+
+  // scroll to products
+  document.getElementById('products').scrollIntoView({behavior:'smooth'});
+}
 // Show gallery
-const galleryImages=[
-  'https://i.postimg.cc/DyLW2Pmc/PXL_20251224_113332476_PORTRAIT.jpg',
-  'https://i.postimg.cc/4dYdjzDG/PXL_20250802_125718951.jpg',
-  'https://i.postimg.cc/DZRZhSTH/PXL_20251127_075918847_PORTRAIT_2.jpg',
-  'https://i.postimg.cc/cHPHWvSz/PXL_20251209_094301693_PORTRAIT_2.jpg',
-  'https://i.postimg.cc/bJZJ4Q7h/PXL_20260130_114312937_PORTRAIT.jpg',
-  'https://uploads.onecompiler.io/4454cur5q/44ggazag5/PXL_20260131_111103303.PORTRAIT.jpg',
-  'https://uploads.onecompiler.io/4454cur5q/44ggazag5/PXL_20260110_103316714.PORTRAIT~2.jpg',
+const galleryImages = [
+  {src:'https://i.postimg.cc/DyLW2Pmc/PXL_20251224_113332476_PORTRAIT.jpg', category:'kid'},
+  {src:'https://i.postimg.cc/4dYdjzDG/PXL_20250802_125718951.jpg', category:'kid'},
   
+  {src:'https://i.postimg.cc/DZRZhSTH/PXL_20251127_075918847_PORTRAIT_2.jpg', category:'girl'},
+  {src:'https://i.postimg.cc/cHPHWvSz/PXL_20251209_094301693_PORTRAIT_2.jpg', category:'girl'},
   
+  {src:'https://i.postimg.cc/bJZJ4Q7h/PXL_20260130_114312937_PORTRAIT.jpg', category:'wedding'},
+  {src:'https://uploads.onecompiler.io/4454cur5q/44ggazag5/PXL_20260131_111103303.PORTRAIT.jpg', category:'wedding'},
   
-  
+  {src:'https://uploads.onecompiler.io/4454cur5q/44ggazag5/PXL_20260110_103316714.PORTRAIT~2.jpg', category:'girl'}
 ];
 
 function showGallery(){
   document.getElementById('products').style.display='none';
-  const gallerySection=document.getElementById('gallery-section');
-  const galleryContainer=document.getElementById('gallery-container');
+
+  const gallerySection = document.getElementById('gallery-section');
   gallerySection.style.display='block';
-  galleryContainer.innerHTML='';
-  galleryImages.forEach(src=>{
-    const img=document.createElement('img');
-    img.src=src;
-    img.onclick=()=>openLightbox(img);
-    galleryContainer.appendChild(img);
-  });
+
+  filterGallery('all');
+
   gallerySection.scrollIntoView({behavior:'smooth'});
+}
+function filterGallery(category){
+  const galleryContainer = document.getElementById('gallery-container');
+  galleryContainer.innerHTML = '';
+
+  galleryImages.forEach(item=>{
+    if(category === 'all' || item.category === category){
+      const img = document.createElement('img');
+      img.src = item.src;
+      img.onclick = ()=>openLightbox(img);
+      galleryContainer.appendChild(img);
+    }
+  });
 }
 
 // Lightbox
@@ -316,7 +352,7 @@ function showSection(id){
   
   <div class="map-container">
    
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.5511559418815!2d85.33028537405147!3d27.669355327168677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb198746b6aba3%3A0x275d892c608ba5ef!2sBajeko%20Cake!5e0!3m2!1sen!2snp!4v1773818571061!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.5511559418815!2d85.33028537405147!3d27.669355327168677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb198746b6aba3%3A0x275d892c608ba5ef!2sBajeko%20Cake!5e0!3m2!1sen!2snp!4v1773818571061!5m2!1sen!2snp" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
      
   </div>
 
