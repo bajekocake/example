@@ -21,6 +21,7 @@
 <meta property="og:url" content="https://bajekocake.com.np">
 <link rel="canonical" href="https://bajekocake.com.np">
   <title>Bajeko Cake | Best Cake Shop in Kathmandu | Order Online</title>
+  <link rel="icon" type="image/png" href="logo.png">
   <style>
   
   .map-container {
