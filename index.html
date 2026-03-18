@@ -37,10 +37,7 @@
 
     .slider { position: relative; width: 100%; max-height: 400px; overflow: hidden; }
     .slides { display: flex; width: 300%; animation: slide 13s infinite; }
-    .slides img {
-  width: 100%;
-  height: 300px;
-}
+   .slides img { width: 400px; height: 400px; object-fit: cover; }
     
     .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); justify-content: center; align-items: center; }
     
