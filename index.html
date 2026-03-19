@@ -69,7 +69,7 @@
       border: none;
       background: #e98e3a;
       color: white;
-      font-size: 10px;
+      font-size: 13px;
       border-radius: 35px;
       cursor: pointer;
     }
@@ -153,7 +153,11 @@
 </head>
 <body>
   <header>
-    <h1>Bajeko Cake - Premium Cakes in Kathmandu</h1>
+    <div class="header-content">
+        <h1>Bajeko Cake</h1>
+        <p>Premium Cakes in Kathmandu 🎂</p>
+    </div>
+</header>
     <div class="slider">
     <div class="slides">
       <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/IMG_20250526_101643373.jpg" alt="Cake 1">
