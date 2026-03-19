@@ -391,7 +391,7 @@ function showSection(id){
 
   <br>
   
- <a href="https://www.google.com/maps/dir/?api=1&destination=27.6693,85.3302" target="_blank">
+ <a href="https://www.google.com/maps/dir/?api=1&destination=27.669502606657826, 85.33291393880297" target="_blank">
   <button class="book-btn">Get Directions</button>
 </a>
 </section>
