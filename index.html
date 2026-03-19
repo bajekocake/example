@@ -391,9 +391,9 @@ function showSection(id){
 
   <br>
   
-  <a href="https://www.google.com/maps" target="_blank">
-    <button class="book-btn">Get Directions</button>
-  </a>
+ <a href="https://www.google.com/maps/dir/?api=1&destination=27.6693,85.3302" target="_blank">
+  <button class="book-btn">Get Directions</button>
+</a>
 </section>
     <h2>Contact Us</h2>
     <p>Email: bajekocake@gmail.com</p>
