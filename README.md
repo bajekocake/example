@@ -395,12 +395,12 @@ function showSection(id){
   <button class="book-btn">Get Directions</button>
 </a>
 </section>
-    <h2>Contact Us</h2>
-    <p>Email: bajekocake@gmail.com</p>
-    <p>Phone: +977-9867221301</p>
   </section>
 
   <footer>
+    <h2>Contact Us</h2>
+    <p>Email: bajekocake@gmail.com</p>
+    <p>Phone: +977-9867221301</p>
     <head>
 <meta charset="UTF-8">
 <title>Social Media Buttons</title>
@@ -425,20 +425,23 @@ function showSection(id){
 
 <style>
     .social-buttons {
-        display: flex;
-        gap: 15px;
-    }
+    display: flex;
+    justify-content: center;   /* center horizontally */
+    align-items: center;       /* center vertically (optional) */
+    gap: 15px;
+    margin-top: 20px;
+}
 
-    .social-buttons a {
-        text-decoration: none;
-        font-size: 28px;
-        color: white;
-        padding: 12px;
-        border-radius: 50%;
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-    }
+.social-buttons a {
+    text-decoration: none;
+    font-size: 28px;
+    color: white;
+    padding: 12px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
 
     .facebook { background: #1877f2; }
     .instagram { background: #e1306c; }
