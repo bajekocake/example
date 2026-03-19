@@ -157,6 +157,7 @@
         <h1>Bajeko Cake</h1>
         <p>Premium Cakes in Kathmandu 🎂</p>
     </div>
+    
 </header>
     <div class="slider">
     <div class="slides">
@@ -165,6 +166,10 @@
       <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/images%20(7).jpg" alt="Cake 3">
     </div>
   </div>
+  <section class="mothers-day">
+    
+    
+</section>
   
     
   </header>
@@ -382,6 +387,26 @@ function showSection(id){
 }
 </script>
 
+<section class="upcoming-event">
+  <h2 class="flash-title">🌸 Mother's Day 🌸</h2>
+  <p>Celebrate your mom with a special cake made with love 💖</p>
+
+  <!-- Flip Countdown -->
+  <div class="flip-countdown">
+      <div class="time-box"><span id="event-days">00</span><p>Days</p></div>
+      <div class="time-box"><span id="event-hours">00</span><p>Hours</p></div>
+      <div class="time-box"><span id="event-minutes">00</span><p>Minutes</p></div>
+      <div class="time-box"><span id="event-seconds">00</span><p>Seconds</p></div>
+  </div>
+
+  <!-- WhatsApp Order Button -->
+  <a href="https://wa.me/9779867221301?text=Hello%20Bajeko%20Cake,%20I%20want%20to%20order%20a%20Mother's%20Day%20cake" 
+     target="_blank" 
+     class="order-btn">
+     Order Now on WhatsApp
+  </a>
+</section>
+
   <section class="section" id="contact">
     <!-- Map Section -->
 <section class="section" id="map">
@@ -428,6 +453,83 @@ function showSection(id){
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
+/* Upcoming Event Section */
+.upcoming-event {
+    background: #fff3f6;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 15px;
+    margin: 40px auto;
+}
+
+/* Flashing Event Title */
+.flash-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #e4405f;
+    animation: flash 1s infinite;
+}
+
+@keyframes flash {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0.2; }
+}
+
+/* Flip Countdown */
+.flip-countdown {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.time-box {
+    background: #222;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 70px;
+    text-align: center;
+}
+
+.time-box span {
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+}
+
+.flip {
+    animation: flip 0.5s;
+}
+
+@keyframes flip {
+    0% { transform: rotateX(0); }
+    50% { transform: rotateX(90deg); }
+    100% { transform: rotateX(0); }
+}
+
+/* WhatsApp Order Button */
+.order-btn {
+    display: inline-block;
+    background: #25D366;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.order-btn:hover {
+    background: #1ebe5d;
+}
+
+
+
+
+
+
     .social-buttons {
     display: flex;
     justify-content: center;   /* center horizontally */
@@ -474,6 +576,39 @@ function showSection(id){
     <a href="https://facebook.com/BAJEKOCAKE" class="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
     <a href="https://www.instagram.com/baje_ko_cake?igsh=MWJqMmVkdnI5dzl1dQ==" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a>
     </div>
+    
+    <script>
+const eventDate = new Date("April 17, 2026 00:00:00").getTime();
+
+function updateEventFlip(id, value) {
+    const el = document.getElementById(id);
+    if (el.innerText != value) {
+        el.classList.add("flip");
+        setTimeout(() => {
+            el.innerText = value;
+            el.classList.remove("flip");
+        }, 250);
+    }
+}
+
+setInterval(() => {
+    const now = new Date().getTime();
+    const distance = eventDate - now;
+
+    if (distance < 0) return;
+
+    const days = String(Math.floor(distance / (1000*60*60*24))).padStart(2,'0');
+    const hours = String(Math.floor((distance % (1000*60*60*24))/(1000*60*60))).padStart(2,'0');
+    const minutes = String(Math.floor((distance % (1000*60*60))/(1000*60))).padStart(2,'0');
+    const seconds = String(Math.floor((distance % (1000*60))/1000)).padStart(2,'0');
+
+    updateEventFlip("event-days", days);
+    updateEventFlip("event-hours", hours);
+    updateEventFlip("event-minutes", minutes);
+    updateEventFlip("event-seconds", seconds);
+
+}, 1000);
+</script>
 
 </body>
 </html>
