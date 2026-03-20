@@ -287,8 +287,9 @@
   <div class="category-buttons">
     <button onclick="filterGallery('all')">All</button>
     <button onclick="filterGallery('kid')">Kid Cake</button>
-    <button onclick="filterGallery('girl')">Girl Cake</button>
+    <button onclick="filterGallery('elegant')">Elegant Cake</button>
     <button onclick="filterGallery('wedding')">Wedding Cake</button>
+    <button onclick="filterGallery('football')">Football Cake</button>
   </div>
 
   <div class="gallery" id="gallery-container"></div>
@@ -327,7 +328,14 @@ const galleryImages = [
   {src:'https://i.postimg.cc/hjBTVDxD/PXL_20250223_112245511_PORTRAIT_2.jpg', category:'kid'},
   {src:'https://i.postimg.cc/zBrKTzWr/PXL_20240703_075616887_PORTRAIT_3.jpg', category:'kid'},
   {src:'https://i.postimg.cc/85SMLpv0/PXL_20250105_044821131_PORTRAIT_3.jpg', category:'kid'},
- 
+ {src:'https://i.postimg.cc/YCJGQLqb/1758286240421_2.jpg', category:'kid'},
+  {src:'https://i.postimg.cc/sgtQ5GDm/1758372936233_2.jpg', category:'kid'},
+  {src:'https://i.postimg.cc/GpGBK3HV/PXL_20251219_065311679_PORTRAIT_2_(1).jpg', category:'kid'},
+  {src:'https://i.postimg.cc/pTvm6NFS/PXL_20250622_104617056.jpg', category:'kid'},
+  
+  
+  
+  
   
   {src:'https://i.postimg.cc/DZRZhSTH/PXL_20251127_075918847_PORTRAIT_2.jpg', category:'wedding'},
   {src:'https://i.postimg.cc/GtFV3mR0/PXL_20250830_075311579_PORTRAIT_2.jpg', category:'wedding'},
@@ -336,15 +344,35 @@ const galleryImages = [
   {src:'https://i.postimg.cc/jqPG4Z7c/image_(2).jpg', category:'wedding'},
   {src:'https://i.postimg.cc/qqsSBvTS/FB_IMG_1738990145604.jpg', category:'wedding'},
   {src:'https://i.postimg.cc/3JhzSmjK/032150d2_bc68_489b_930a_3d9f9022b322.jpg', category:'wedding'},
+
+  
+  {src:'https://i.postimg.cc/cHPHWvSz/PXL_20251209_094301693_PORTRAIT_2.jpg', category:'kid'},
+  {src:'https://i.postimg.cc/bJZJ4Q7h/PXL_20260130_114312937_PORTRAIT.jpg', category:'kid'},
+  {src:'https://uploads.onecompiler.io/4454cur5q/44ggazag5/PXL_20260131_111103303.PORTRAIT.jpg', category:'kid'},
+  {src:'https://uploads.onecompiler.io/4454cur5q/44ggazag5/PXL_20260110_103316714.PORTRAIT~2.jpg', category:'kid'},
+  
+  
+  {src:'https://i.postimg.cc/zBLq70ds/1773993315025_2.jpg', category:'football'},
+  {src:'https://i.postimg.cc/rmdqjQhH/1757956305870_2.jpg', category:'football'},
+  {src:'https://i.postimg.cc/W3Ds8XWR/1773993502852_3.jpg', category:'football'},
+  {src:'https://i.postimg.cc/ZR9JHVf1/1756982700362_2.jpg', category:'football'},
+  {src:'https://i.postimg.cc/wvSgGLZj/PXL_20250409_095903230_PORTRAIT_2.jpg', category:'football'},
+  {src:'https://i.postimg.cc/qMHpcc25/PXL_20250724_114313368_PORTRAIT.jpg', category:'football'},
+  {src:'https://i.postimg.cc/htSg6Syy/PXL_20250622_063451460_PORTRAIT_2.jpg', category:'football'},
+  
+  
+  {src:'https://i.postimg.cc/J0vmSJFK/1773807815441_3.jpg', category:'elegant'},
+  {src:'https://i.postimg.cc/BbksRDzg/1773747361217_3.jpg', category:'elegant'},
+  {src:'https://i.postimg.cc/C5XY9D2G/1758030051689.png', category:'elegant'},
+  {src:'https://i.postimg.cc/rs3c7WHQ/1760514305142_2.jpg', category:'elegant'},
+  {src:'https://i.postimg.cc/x8hYBHZd/1757957251368_3.jpg', category:'elegant'},
+  {src:'https://i.postimg.cc/vTkMC9Kx/1758739521493_3.jpg', category:'elegant'},
+  {src:'https://i.postimg.cc/hv6gNxYt/1758221201169_2.jpg', category:'elegant'},
+  
+
   
   
   
-  
-  
-  {src:'https://i.postimg.cc/cHPHWvSz/PXL_20251209_094301693_PORTRAIT_2.jpg', category:'girl'},
-  {src:'https://i.postimg.cc/bJZJ4Q7h/PXL_20260130_114312937_PORTRAIT.jpg', category:'girl'},
-  {src:'https://uploads.onecompiler.io/4454cur5q/44ggazag5/PXL_20260131_111103303.PORTRAIT.jpg', category:'girl'},
-  {src:'https://uploads.onecompiler.io/4454cur5q/44ggazag5/PXL_20260110_103316714.PORTRAIT~2.jpg', category:'girl'}
 ];
 
 function showGallery(){
@@ -415,7 +443,7 @@ function showSection(id){
   <div class="map-container">
    
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.5511559418815!2d85.33028537405147!3d27.669355327168677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb198746b6aba3%3A0x275d892c608ba5ef!2sBajeko%20Cake!5e0!3m2!1sen!2snp!4v1773818571061!5m2!1sen!2snp" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-     <p>Visit Bajeko Cake in Kathmandu for fresh and delicious cakes.</p>
+     <p>Free delivery inside Kathmandu,Lalitpur,Bhaktapur.</p>
   </div>
 
   <br>
