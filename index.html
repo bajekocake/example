@@ -175,6 +175,7 @@
   </header>
 
   <nav>
+    <a href="#" onclick="showHome()">Home</a>
     <a href="#" onclick="showProducts()">Products</a>
     <a href="#" onclick="showGallery()">Gallery</a>
     <a href="#contact"> Contact</a>
