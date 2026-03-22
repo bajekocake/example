@@ -190,26 +190,23 @@ display:none;
 <div class="featured-grid">
 
 <div class="featured-card">
-<img src="https://i.postimg.cc/J0vmSJFK/1773807815441_3.jpg">
-<h3>Elegant Cake</h3>
+<img src="https://i.postimg.cc/wTwZn16Z/Gemini_Generated_Image_1gg6s21gg6s21gg6.png">
+
 <button onclick="orderWhatsApp('Elegant Cake')">Order Now</button>
 </div>
 
 <div class="featured-card">
-<img src="https://i.postimg.cc/BbksRDzg/1773747361217_3.jpg">
-<h3>Premium Cake</h3>
+<img src="https://i.postimg.cc/NfdSZKgV/Gemini_Generated_Image_2cm93x2cm93x2cm9.png">
 <button onclick="orderWhatsApp('Premium Cake')">Order Now</button>
 </div>
 
 <div class="featured-card">
-<img src="https://i.postimg.cc/C5XY9D2G/1758030051689.png">
-<h3>Birthday Cake</h3>
+<img src="https://i.postimg.cc/PrS90CtR/Gemini_Generated_Image_6wm7k26wm7k26wm7.png">
 <button onclick="orderWhatsApp('Birthday Cake')">Order Now</button>
 </div>
 
 <div class="featured-card">
-<img src="https://i.postimg.cc/sgtQ5GDm/1758372936233_2.jpg">
-<h3>Kids Cake</h3>
+<img src="https://i.postimg.cc/dt5pghqf/Gemini_Generated_Image_douvbmdouvbmdouv.png">
 <button onclick="orderWhatsApp('Kids Cake')">Order Now</button>
 </div>
 
@@ -652,7 +649,7 @@ function showSection(id){
 
 
 .featured{
-padding:50px 20px;
+padding:60px 30px;
 text-align:center;
 background:#fff7f2;
 }
@@ -678,8 +675,8 @@ transform:translateY(-5px);
 
 .featured-card img{
 width:100%;
-height:100%;
-object-fit:contain;
+height:80%;
+object-fit:cover;
 border-radius:10px;
 }
 
