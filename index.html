@@ -159,8 +159,20 @@ display:none;
     </div>
     
 </header>
- <section id="home-section">
 
+
+ <nav>
+    <a href="#" onclick="showHome()">Home</a>
+    <a href="#" onclick="showProducts()">Products</a>
+    <a href="#" onclick="showGallery()">Gallery</a>
+    <a href="#contact"> Contact</a>
+    
+  
+  </nav>
+  
+<section id="home-section">
+
+<!-- Slider -->
 <div class="hero">
   <div class="slider">
     <div class="slides">
@@ -171,53 +183,46 @@ display:none;
   </div>
 </div>
 
-</section>
-
-
-  <section class="mothers-day">
-    <section class="featured">
+<!-- Featured Cakes -->
+<section class="featured">
 <h2>Featured Cakes</h2>
 
 <div class="featured-grid">
 
 <div class="featured-card">
 <img src="https://i.postimg.cc/J0vmSJFK/1773807815441_3.jpg">
-
+<h3>Elegant Cake</h3>
 <button onclick="showProducts()">Order Now</button>
 </div>
 
 <div class="featured-card">
 <img src="https://i.postimg.cc/BbksRDzg/1773747361217_3.jpg">
+<h3>Premium Cake</h3>
 <button onclick="showProducts()">Order Now</button>
 </div>
 
 <div class="featured-card">
 <img src="https://i.postimg.cc/C5XY9D2G/1758030051689.png">
+<h3>Birthday Cake</h3>
 <button onclick="showProducts()">Order Now</button>
 </div>
 
 <div class="featured-card">
 <img src="https://i.postimg.cc/sgtQ5GDm/1758372936233_2.jpg">
+<h3>Kids Cake</h3>
 <button onclick="showProducts()">Order Now</button>
 </div>
 
 </div>
 </section>
-    
-    
-</section>
-  
-    
-  </header>
 
-  <nav>
-    <a href="#" onclick="showHome()">Home</a>
-    <a href="#" onclick="showProducts()">Products</a>
-    <a href="#" onclick="showGallery()">Gallery</a>
-    <a href="#contact"> Contact</a>
+</section>
+
+
     
-  
-  </nav>
+
+
+ 
 
   
 
@@ -647,14 +652,15 @@ function showSection(id){
 
 
 .featured{
-padding:40px;
+padding:50px 20px;
 text-align:center;
+background:#fff7f2;
 }
 
 .featured-grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
+gap:25px;
 margin-top:20px;
 }
 
@@ -663,11 +669,16 @@ background:white;
 padding:15px;
 border-radius:12px;
 box-shadow:0 4px 10px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.featured-card:hover{
+transform:translateY(-5px);
 }
 
 .featured-card img{
-width:80%;
-height:80%;
+width:100%;
+height:220px;
 object-fit:cover;
 border-radius:10px;
 }
@@ -677,14 +688,10 @@ margin-top:10px;
 background:#e98e3a;
 color:white;
 border:none;
-padding:8px 14px;
+padding:10px 16px;
 border-radius:20px;
 cursor:pointer;
 font-weight:bold;
-}
-
-.featured-card button:hover{
-background:#c96f20;
 }
 
 </style>
