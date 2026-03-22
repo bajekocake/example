@@ -149,7 +149,173 @@ display:none;
     
 
     footer { background: #5a3e1b; color: white; text-align: center; padding: 25px; margin-top: 50px; }
+  
+  
+  /* Upcoming Event Section */
+.upcoming-event {
+    background: #fff3f6;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 15px;
+    margin: 40px auto;
+}
+
+/* Flashing Event Title */
+.flash-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #e4405f;
+    animation: flash 1s infinite;
+}
+
+@keyframes flash {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0.2; }
+}
+
+/* Flip Countdown */
+.flip-countdown {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.time-box {
+    background: #222;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 70px;
+    text-align: center;
+}
+
+.time-box span {
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+}
+
+.flip {
+    animation: flip 0.5s;
+}
+
+@keyframes flip {
+    0% { transform: rotateX(0); }
+    50% { transform: rotateX(90deg); }
+    100% { transform: rotateX(0); }
+}
+
+/* WhatsApp Order Button */
+.order-btn {
+    display: inline-block;
+    background: #25D366;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.order-btn:hover {
+    background: #1ebe5d;
+}
+
+
+
+
+
+
+    .social-buttons {
+    display: flex;
+    justify-content: center;   /* center horizontally */
+    align-items: center;       /* center vertically (optional) */
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-buttons a {
+    text-decoration: none;
+    font-size: 28px;
+    color: white;
+    padding: 12px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .facebook { background: #1877f2; }
+    .instagram { background: #e1306c; }
+    .twitter { background: #1da1f2; }
+    .youtube { background: #ff0000; }
+    .book-btn{
+  background:#e98e3a;
+  color:white;
+  border:none;
+  padding:10px 16px;
+  border-radius:20px;
+  cursor:pointer;
+  font-weight:bold;
+  margin-top:10px;
+}
+
+.book-btn:hover{
+  background:#c96f20;
+}
+
+
+.featured{
+padding:60px 30px;
+text-align:center;
+background:#fff7f2;
+}
+
+.featured-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+margin-top:20px;
+}
+
+.featured-card{
+background:white;
+padding:15px;
+border-radius:12px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.featured-card:hover{
+transform:translateY(-5px);
+}
+
+.featured-card img{
+width:100%;
+height:80%;
+object-fit:cover;
+border-radius:10px;
+}
+
+.featured-card button{
+margin-top:10px;
+background:#e98e3a;
+color:white;
+border:none;
+padding:10px 16px;
+border-radius:20px;
+cursor:pointer;
+font-weight:bold;
+}
+
+  
+  
+  
   </style>
+  
+  
 </head>
 <body>
   <header>
@@ -192,22 +358,22 @@ display:none;
 <div class="featured-card">
 <img src="https://i.postimg.cc/wTwZn16Z/Gemini_Generated_Image_1gg6s21gg6s21gg6.png">
 
-<button onclick="orderWhatsApp('Elegant Cake')">Order Now</button>
+<button onclick="orderWhatsApp(' Cake')">Order Now</button>
 </div>
 
 <div class="featured-card">
 <img src="https://i.postimg.cc/NfdSZKgV/Gemini_Generated_Image_2cm93x2cm93x2cm9.png">
-<button onclick="orderWhatsApp('Premium Cake')">Order Now</button>
+<button onclick="orderWhatsApp('Cake')">Order Now</button>
 </div>
 
 <div class="featured-card">
 <img src="https://i.postimg.cc/PrS90CtR/Gemini_Generated_Image_6wm7k26wm7k26wm7.png">
-<button onclick="orderWhatsApp('Birthday Cake')">Order Now</button>
+<button onclick="orderWhatsApp('Cake')">Order Now</button>
 </div>
 
 <div class="featured-card">
 <img src="https://i.postimg.cc/dt5pghqf/Gemini_Generated_Image_douvbmdouvbmdouv.png">
-<button onclick="orderWhatsApp('Kids Cake')">Order Now</button>
+<button onclick="orderWhatsApp('Cake')">Order Now</button>
 </div>
 
 </div>
@@ -509,9 +675,7 @@ function showSection(id){
     <h2>Contact Us</h2>
     <p>Email: bajekocake@gmail.com</p>
     <p>Phone: +977-9867221301</p>
-    <head>
-<meta charset="UTF-8">
-<title>Social Media Buttons</title>
+
 
 <script type="application/ld+json">
 {
@@ -528,173 +692,11 @@ function showSection(id){
 }
 </script>
 
-<!-- Font Awesome Icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-<style>
-/* Upcoming Event Section */
-.upcoming-event {
-    background: #fff3f6;
-    text-align: center;
-    padding: 40px 20px;
-    border-radius: 15px;
-    margin: 40px auto;
-}
-
-/* Flashing Event Title */
-.flash-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #e4405f;
-    animation: flash 1s infinite;
-}
-
-@keyframes flash {
-    0%, 50%, 100% { opacity: 1; }
-    25%, 75% { opacity: 0.2; }
-}
-
-/* Flip Countdown */
-.flip-countdown {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin: 20px 0;
-}
-
-.time-box {
-    background: #222;
-    color: white;
-    padding: 15px;
-    border-radius: 10px;
-    width: 70px;
-    text-align: center;
-}
-
-.time-box span {
-    font-size: 24px;
-    font-weight: bold;
-    display: block;
-}
-
-.flip {
-    animation: flip 0.5s;
-}
-
-@keyframes flip {
-    0% { transform: rotateX(0); }
-    50% { transform: rotateX(90deg); }
-    100% { transform: rotateX(0); }
-}
-
-/* WhatsApp Order Button */
-.order-btn {
-    display: inline-block;
-    background: #25D366;
-    color: white;
-    padding: 12px 20px;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 15px;
-    transition: 0.3s;
-}
-
-.order-btn:hover {
-    background: #1ebe5d;
-}
 
 
 
 
 
-
-    .social-buttons {
-    display: flex;
-    justify-content: center;   /* center horizontally */
-    align-items: center;       /* center vertically (optional) */
-    gap: 15px;
-    margin-top: 20px;
-}
-
-.social-buttons a {
-    text-decoration: none;
-    font-size: 28px;
-    color: white;
-    padding: 12px;
-    border-radius: 50%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-}
-
-    .facebook { background: #1877f2; }
-    .instagram { background: #e1306c; }
-    .twitter { background: #1da1f2; }
-    .youtube { background: #ff0000; }
-    .book-btn{
-  background:#e98e3a;
-  color:white;
-  border:none;
-  padding:10px 16px;
-  border-radius:20px;
-  cursor:pointer;
-  font-weight:bold;
-  margin-top:10px;
-}
-
-.book-btn:hover{
-  background:#c96f20;
-}
-
-
-.featured{
-padding:60px 30px;
-text-align:center;
-background:#fff7f2;
-}
-
-.featured-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:25px;
-margin-top:20px;
-}
-
-.featured-card{
-background:white;
-padding:15px;
-border-radius:12px;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
-transition:0.3s;
-}
-
-.featured-card:hover{
-transform:translateY(-5px);
-}
-
-.featured-card img{
-width:100%;
-height:80%;
-object-fit:cover;
-border-radius:10px;
-}
-
-.featured-card button{
-margin-top:10px;
-background:#e98e3a;
-color:white;
-border:none;
-padding:10px 16px;
-border-radius:20px;
-cursor:pointer;
-font-weight:bold;
-}
-
-</style>
-</head>
-
-<body>
 
 <div class="social-buttons">
     <a href="https://facebook.com/BAJEKOCAKE" class="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -734,7 +736,7 @@ setInterval(() => {
 }, 1000);
 </script>
 
-</body>
+
 </html>
 <html lang="en">
 <head>
