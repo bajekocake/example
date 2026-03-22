@@ -51,15 +51,7 @@
     }
     
     h2 { font-size: 2.2rem; margin-bottom: 20px; }
-    <div class="slider">
-    <div class="slides">
-      <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/images%20(7).jpg" >
-      <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/IMG_20250726_114354841.jpg" >
-      <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/IMG_20250526_101643373.jpg">
-      <img src="https://uploads.onecompiler.io/4454cur5q/44ggazag5/PXL_20260130_114312937.PORTRAIT.jpg">
-      <img src="https://uploads.onecompiler.io/4454cur5q/44ggazag5/PXL_20260110_103316714.PORTRAIT~2.jpg">
-    </div>
-  </div>
+    
     .modal-content { background: white; padding: 20px; border-radius: 8px; width: 300px; }
     .modal-content input { width: 100%; padding: 8px; margin: 10px 0; }
     
@@ -147,6 +139,14 @@
       font-weight: bold;
     }
     
+    #products{
+display:none;
+}
+
+#gallery-section{
+display:none;
+}
+    
 
     footer { background: #5a3e1b; color: white; text-align: center; padding: 25px; margin-top: 50px; }
   </style>
@@ -159,14 +159,50 @@
     </div>
     
 </header>
-    <div class="slider">
+ <section id="home-section">
+
+<div class="hero">
+  <div class="slider">
     <div class="slides">
-      <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/IMG_20250526_101643373.jpg" alt="Cake 1">
-      <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/IMG_20250726_114354841.jpg" alt="Cake 2">
-      <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/images%20(7).jpg" alt="Cake 3">
+      <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/IMG_20250526_101643373.jpg">
+      <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/IMG_20250726_114354841.jpg">
+      <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/images%20(7).jpg">
     </div>
   </div>
+</div>
+
+</section>
+
+
   <section class="mothers-day">
+    <section class="featured">
+<h2>Featured Cakes</h2>
+
+<div class="featured-grid">
+
+<div class="featured-card">
+<img src="https://i.postimg.cc/J0vmSJFK/1773807815441_3.jpg">
+
+<button onclick="showProducts()">Order Now</button>
+</div>
+
+<div class="featured-card">
+<img src="https://i.postimg.cc/BbksRDzg/1773747361217_3.jpg">
+<button onclick="showProducts()">Order Now</button>
+</div>
+
+<div class="featured-card">
+<img src="https://i.postimg.cc/C5XY9D2G/1758030051689.png">
+<button onclick="showProducts()">Order Now</button>
+</div>
+
+<div class="featured-card">
+<img src="https://i.postimg.cc/sgtQ5GDm/1758372936233_2.jpg">
+<button onclick="showProducts()">Order Now</button>
+</div>
+
+</div>
+</section>
     
     
 </section>
@@ -183,7 +219,7 @@
   
   </nav>
 
-  <div class="hero" id="home">Premium Cakes for Every Occasion</div>
+  
 
   <section class="section" id="products">
     <h2>Shop by Category</h2>
@@ -311,12 +347,24 @@ function filterCategory(category){
   });
 }
 
-function showProducts(){
-  document.getElementById('gallery-section').style.display='none';
-  document.getElementById('products').style.display='block';
 
-  // scroll to products
-  document.getElementById('products').scrollIntoView({behavior:'smooth'});
+
+
+
+function showHome(){
+document.getElementById('home-section').style.display='block';
+document.getElementById('products').style.display='none';
+document.getElementById('gallery-section').style.display='none';
+
+window.scrollTo({top:0,behavior:'smooth'});
+}
+
+function showProducts(){
+document.getElementById('home-section').style.display='none';
+document.getElementById('products').style.display='block';
+document.getElementById('gallery-section').style.display='none';
+
+document.getElementById('products').scrollIntoView({behavior:'smooth'});
 }
 // Show gallery
 const galleryImages = [
@@ -377,15 +425,15 @@ const galleryImages = [
 ];
 
 function showGallery(){
-  document.getElementById('products').style.display='none';
+document.getElementById('home-section').style.display='none';
+document.getElementById('products').style.display='none';
+document.getElementById('gallery-section').style.display='block';
 
-  const gallerySection = document.getElementById('gallery-section');
-  gallerySection.style.display='block';
+filterGallery('all');
 
-  filterGallery('all');
-
-  gallerySection.scrollIntoView({behavior:'smooth'});
+document.getElementById('gallery-section').scrollIntoView({behavior:'smooth'});
 }
+showHome();
 function filterGallery(category){
   const galleryContainer = document.getElementById('gallery-container');
   galleryContainer.innerHTML = '';
@@ -596,6 +644,49 @@ function showSection(id){
 .book-btn:hover{
   background:#c96f20;
 }
+
+
+.featured{
+padding:40px;
+text-align:center;
+}
+
+.featured-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+margin-top:20px;
+}
+
+.featured-card{
+background:white;
+padding:15px;
+border-radius:12px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.featured-card img{
+width:80%;
+height:80%;
+object-fit:cover;
+border-radius:10px;
+}
+
+.featured-card button{
+margin-top:10px;
+background:#e98e3a;
+color:white;
+border:none;
+padding:8px 14px;
+border-radius:20px;
+cursor:pointer;
+font-weight:bold;
+}
+
+.featured-card button:hover{
+background:#c96f20;
+}
+
 </style>
 </head>
 
