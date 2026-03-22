@@ -192,25 +192,25 @@ display:none;
 <div class="featured-card">
 <img src="https://i.postimg.cc/J0vmSJFK/1773807815441_3.jpg">
 <h3>Elegant Cake</h3>
-<button onclick="showProducts()">Order Now</button>
+<button onclick="orderWhatsApp('Elegant Cake')">Order Now</button>
 </div>
 
 <div class="featured-card">
 <img src="https://i.postimg.cc/BbksRDzg/1773747361217_3.jpg">
 <h3>Premium Cake</h3>
-<button onclick="showProducts()">Order Now</button>
+<button onclick="orderWhatsApp('Premium Cake')">Order Now</button>
 </div>
 
 <div class="featured-card">
 <img src="https://i.postimg.cc/C5XY9D2G/1758030051689.png">
 <h3>Birthday Cake</h3>
-<button onclick="showProducts()">Order Now</button>
+<button onclick="orderWhatsApp('Birthday Cake')">Order Now</button>
 </div>
 
 <div class="featured-card">
 <img src="https://i.postimg.cc/sgtQ5GDm/1758372936233_2.jpg">
 <h3>Kids Cake</h3>
-<button onclick="showProducts()">Order Now</button>
+<button onclick="orderWhatsApp('Kids Cake')">Order Now</button>
 </div>
 
 </div>
@@ -791,6 +791,13 @@ setInterval(() => {
       });
     }
    
+   
+   function orderWhatsApp(product){
+const phone = "9779867221301";
+const message = `Hello Bajeko Cake, I want to order ${product}`;
+const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+window.open(url, '_blank');
+}
   </script>
 </body>
 </html>
