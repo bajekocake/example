@@ -22,6 +22,8 @@
 <link rel="canonical" href="https://bajekocake.com.np">
   <title>Bajeko Cake | Best Cake Shop in Kathmandu | Order Online</title>
   <link rel="icon" type="image/png" href="logo.png">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
   <style>
   
   .map-container {
@@ -300,7 +302,7 @@ border-radius:10px;
 }
 
 .featured-card button{
-margin-top:10px;
+margin-top:auto-fit;
 background:#e98e3a;
 color:white;
 border:none;
@@ -309,9 +311,66 @@ border-radius:20px;
 cursor:pointer;
 font-weight:bold;
 }
+.feature-card button:hover {
+  background: #f7b16a;
+  transform: scale(1.05);
+}
+.featured h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 48px;
+  color: #e98e3a;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.15);
+}
 
-  
-  
+.cake-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Responsive columns */
+  gap: 20px; /* Space between cards */
+  padding: 20px;
+  justify-items: center; /* Center cards in grid */
+}
+.cake-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  width: 100%;
+  max-width: 250px; /* Controls card width */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cake-card img {
+  width: 100%;
+  height: 100%; /* Uniform image height */
+  object-fit: cover; /* Crops the image to fit without stretching */
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.cake-card h3 {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.cake-card button {
+  background: #e98e3a;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%; /* Button stretches across card */
+  transition: background 0.3s, transform 0.2s;
+}
+
+.cake-card button:hover {
+  background: #f7b16a;
+  transform: scale(1.05);
+}
   
   </style>
   
@@ -378,6 +437,39 @@ font-weight:bold;
 
 </div>
 </section>
+
+
+<!-- Trending Cakes -->
+<section class="featured">
+  <h1>Trending Cakes</h1>
+
+  <div class="cake-container">
+    
+    <div class="cake-card">
+      <img src="https://i.postimg.cc/x8hYBHZd/1757957251368_3.jpg" alt="Butterfly Cake">
+      <h3>Butterfly Cake</h3>
+      
+     <button onclick="orderWhatsApp('Cake')">Order Now</button>
+    </div>
+
+    <div class="cake-card">
+      <img src="https://i.postimg.cc/J0vmSJFK/1773807815441_3.jpg" alt="Calender cake">
+      <h3>Calender cake</h3>
+      
+      <button onclick="orderWhatsApp('Cake')">Order Now</button>
+    </div>
+
+    <div class="cake-card">
+      <img src="https://i.postimg.cc/ZRXRmWm5/PXL_20260213_105958536_PORTRAIT_2.jpg" alt="Fruit Cake">
+      <h3>Farewell Cake</h3>
+      
+     <button onclick="orderWhatsApp('Cake')">Order Now</button>
+    </div>
+
+  </div>
+</section>
+
+
 
 </section>
 
