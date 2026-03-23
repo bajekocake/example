@@ -112,15 +112,76 @@
     .lightbox img{ max-width:90%; max-height:90%; border-radius:10px; }
     .lightbox span{ position:absolute; top:20px; right:30px; color:white; font-size:40px; cursor:pointer; }
 
-    /* Upcoming Event */
-    .upcoming-event { background:#fff3f6; text-align:center; padding:40px 20px; border-radius:15px; margin:40px auto; }
-    .flash-title { font-size:2.5rem; font-weight:bold; color:#e4405f; animation:flash 1s infinite; }
-    @keyframes flash { 0%,50%,100%{opacity:1;} 25%,75%{opacity:0.2;} }
-    .flip-countdown { display:flex; justify-content:center; gap:15px; margin:20px 0; }
-    .time-box { background:#222; color:white; padding:15px; border-radius:10px; width:70px; text-align:center; }
-    .time-box span { font-size:24px; font-weight:bold; display:block; }
-    .flip { animation:flip 0.5s; }
-    @keyframes flip { 0%{transform:rotateX(0);} 50%{transform:rotateX(90deg);} 100%{transform:rotateX(0);} }
+     /* Upcoming Event Section */
+ /* Upcoming Event Section */
+.upcoming-event {
+    background: #fff3f6;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 15px;
+    margin: 40px auto;
+}
+
+/* Flashing Event Title */
+.flash-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #e4405f;
+    animation: flash 1s infinite;
+}
+
+@keyframes flash {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0.2; }
+}
+
+/* Flip Countdown */
+.flip-countdown {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.time-box {
+    background: #222;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100px;
+    text-align: center;
+}
+
+.time-box span {
+    font-size: 30px;
+    font-weight: bold;
+    display: block;
+}
+
+.flip {
+    animation: flip 0.5s;
+}
+
+@keyframes flip {
+    0% { transform: rotateX(0); }
+    50% { transform: rotateX(90deg); }
+    100% { transform: rotateX(0); }
+}
+
+
+/* WhatsApp Order Button */
+.order-btn {
+    display: inline-block;
+    background: #25D366;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
 
     /* WhatsApp Floating */
     .whatsapp-icon { position:fixed; bottom:20px; right:20px; background:#25D366; color:white; font-size:28px; padding:15px; border-radius:50%; text-decoration:none; box-shadow:0 4px 10px rgba(0,0,0,0.3); }
@@ -289,13 +350,21 @@
 <section class="upcoming-event">
   <h2 class="flash-title">🌸 Mother's Day 🌸</h2>
   <p>Celebrate your mom with a special cake made with love 💖</p>
+
+  <!-- Flip Countdown -->
   <div class="flip-countdown">
-    <div class="time-box"><span id="event-days">00</span><p>Days</p></div>
-    <div class="time-box"><span id="event-hours">00</span><p>Hours</p></div>
-    <div class="time-box"><span id="event-minutes">00</span><p>Minutes</p></div>
-    <div class="time-box"><span id="event-seconds">00</span><p>Seconds</p></div>
+      <div class="time-box"><span id="event-days">00</span><p>Days</p></div>
+      <div class="time-box"><span id="event-hours">00</span><p>Hours</p></div>
+      <div class="time-box"><span id="event-minutes">00</span><p>Minutes</p></div>
+      <div class="time-box"><span id="event-seconds">00</span><p>Seconds</p></div>
   </div>
-  <a href="https://wa.me/9779867221301?text=Hello%20Bajeko%20Cake,%20I%20want%20to%20order%20a%20Mother's%20Day%20cake" target="_blank" class="order-btn">Order Now on WhatsApp</a>
+
+  <!-- WhatsApp Order Button -->
+  <a href="https://wa.me/9779867221301?text=Hello%20Bajeko%20Cake,%20I%20want%20to%20order%20a%20Mother's%20Day%20cake" 
+     target="_blank" 
+     class="order-btn">
+     Order Now on WhatsApp
+  </a>
 </section>
 
 <!-- Contact / Map -->
@@ -422,17 +491,35 @@
 
   // Upcoming Event Countdown
   const eventDate = new Date("April 17, 2026 00:00:00").getTime();
-  function updateEventFlip(id, value) { const el=document.getElementById(id); if(el.innerText!=value){ el.classList.add("flip"); setTimeout(()=>{ el.innerText=value; el.classList.remove("flip"); },250); } }
-  setInterval(()=>{
-    const now=new Date().getTime();
-    const distance=eventDate-now;
-    if(distance<0) return;
-    const days=String(Math.floor(distance/(1000*60*60*24))).padStart(2,'0');
-    const hours=String(Math.floor((distance%(1000*60*60*24))/(1000*60*60))).padStart(2,'0');
-    const minutes=String(Math.floor((distance%(1000*60*60))/(1000*60))).padStart(2,'0');
-    const seconds=String(Math.floor((distance%(1000*60))/1000)).padStart(2,'0');
-    updateEventFlip("event-days",days); updateEventFlip("event-hours",hours); updateEventFlip("event-minutes",minutes); updateEventFlip("event-seconds",seconds);
-  },1000);
+
+function updateEventFlip(id, value) {
+    const el = document.getElementById(id);
+    if (el.innerText != value) {
+        el.classList.add("flip");
+        setTimeout(() => {
+            el.innerText = value;
+            el.classList.remove("flip");
+        }, 250);
+    }
+}
+
+setInterval(() => {
+    const now = new Date().getTime();
+    const distance = eventDate - now;
+
+    if (distance < 0) return;
+
+    const days = String(Math.floor(distance / (1000*60*60*24))).padStart(2,'0');
+    const hours = String(Math.floor((distance % (1000*60*60*24))/(1000*60*60))).padStart(2,'0');
+    const minutes = String(Math.floor((distance % (1000*60*60))/(1000*60))).padStart(2,'0');
+    const seconds = String(Math.floor((distance % (1000*60))/1000)).padStart(2,'0');
+
+    updateEventFlip("event-days", days);
+    updateEventFlip("event-hours", hours);
+    updateEventFlip("event-minutes", minutes);
+    updateEventFlip("event-seconds", seconds);
+
+}, 1000);
 </script>
 </body>
 </html>
