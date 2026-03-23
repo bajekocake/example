@@ -43,10 +43,18 @@
     nav a { margin:0 18px; text-decoration:none; color:#5a3e1b; font-weight:bold; cursor:pointer; }
 
     /* Slider */
-    .slider { position: relative; width:100%; max-height:400px; overflow:hidden; margin-top:20px; }
-    .slides { display:flex; width:300%; animation: slide 10s infinite; }
-    .slides img { width: 100%; height:400px; object-fit:cover; }
-    @keyframes slide { 0%{transform:translateX(0);} 33%{transform:translateX(-33.3333%);} 66%{transform:translateX(-66.6667%);} 100%{transform:translateX(0);} }
+    .slider { position: relative; width: 100%; max-height: 400px; overflow: hidden; }
+    .slides { display: flex; width: 300%; animation: slide 10s infinite; }
+   .slides img { width: 400px; height: 400px; object-fit: cover; }
+   
+   @keyframes slide {
+      0% { transform: translateX(0); }
+      33% { transform: translateX(-40%); }
+      66% { transform: translateX(-60%); }
+      100% { transform: translateX(0); }
+    }
+   
+   
 
     /* Sections */
     section { padding:40px 20px; }
