@@ -72,34 +72,68 @@
     /* Product Filter Buttons */
     .category-buttons { display:flex; justify-content:center; gap:15px; flex-wrap:wrap; margin-bottom:50px; }
     .category-buttons button { padding:10px 16px; border:none; background:#e98e3a; color:white; border-radius:35px; cursor:pointer; font-size:13px; }
-    /* products grid */
-
+    /* PRODUCTS GRID */
 .products {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
-  margin-top: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 220px));
+  justify-content: center;
+  gap: 20px;
 }
 
-/* product card */
-
+/* PRODUCT CARD */
 .product-card {
-  background: white;
-  padding: 15px;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-  overflow: hidden;
   text-align: center;
 }
 
-/* image fit inside card */
-
+/* PRODUCT IMAGE */
 .product-card img {
-  width: 70%;
-  height: 70%;
+  width: 100%;
+  aspect-ratio: 1/1;
   object-fit: cover;
   border-radius: 10px;
+  transition: 0.3s;
 }
+
+/* HOVER EFFECT */
+.product-card img:hover {
+  transform: scale(1.06);
+}
+
+/* TITLE */
+.product-card h3 {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* DESCRIPTION */
+.product-card p {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0;
+}
+
+/* BUTTON */
+.book-btn {
+  margin-top: 8px;
+  padding: 8px 14px;
+  border: none;
+  background: #e98e3a;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.book-btn:hover {
+  background: #f7b16a;
+}
+
+
+
+
+
+
 
     /* Gallery */
     .gallery-section{ display:none; text-align:center; }
@@ -274,6 +308,7 @@
 <section id="products" style="display:none">
   <h2>Shop by Category</h2>
   <div class="category-buttons">
+    <button onclick="filterCategory('all')">All</button>
     <button onclick="filterCategory('quick')">Quick Cake</button>
     <button onclick="filterCategory('eggless')">Eggless Cake</button>
     <button onclick="filterCategory('wedding')">Wedding Cake</button>
@@ -284,7 +319,7 @@
 
   <div class="products" id="product-list">
     <div class="product-card" data-category="quick">
-      <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/95a33ceb554a695b8f016d2a73526fc3.jpg?auto=format&fit=crop&w=800&q=800">
+      <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/95a33ceb554a695b8f016d2a73526fc3.jpg">
       <h3>Quick Chocolate Cake</h3>
       <p>Fast-picked, rich & moist.</p>
       <button class="book-btn" onclick="window.open('https://wa.me/9779867221301?text=I want to order Chocolate cake')">Book Order</button>
@@ -426,9 +461,20 @@
 
   // Product Filter
   function filterCategory(category){
-    const cards=document.querySelectorAll('.product-card');
-    cards.forEach(card => card.style.display = card.getAttribute('data-category')===category?'block':'none');
-  }
+const cards = document.querySelectorAll('.product-card');
+
+cards.forEach(card=>{
+if(category === "all"){
+card.style.display = "block";
+}
+else if(card.getAttribute("data-category") === category){
+card.style.display = "block";
+}
+else{
+card.style.display = "none";
+}
+});
+}
 
   // Gallery Filter
   const galleryImages = [
