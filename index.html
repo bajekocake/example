@@ -255,6 +255,8 @@
       <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/IMG_20250526_101643373.jpg">
       <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/IMG_20250726_114354841.jpg">
       <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/images%20(7).jpg">
+      <img src="https://i.postimg.cc/s2bN2BX3/unnamed.webp">
+      <img src="https://i.postimg.cc/9fsnf4MF/PXL_20221023_133551308_PORTRAIT.webp">
     </div>
   </div>
 
