@@ -3,28 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bajeko Cake | Best Cake Shop in Kathmandu | Order Online</title>
+  <title>Bajeko Cake | Premium Cake Shop in Kathmandu | Order Online</title>
   <link rel="icon" href="logo.png" type="image/png">
 
-  <!-- SEO & Social -->
-  <meta name="description" content="Bajeko Cake - Premium cake shop in Kathmandu. Order birthday cakes, wedding cakes, eggless cakes and more. Fast delivery available.">
+  <!-- Primary Meta Tags -->
+  <meta name="description" content="Bajeko Cake in Kathmandu offers premium birthday, wedding, and eggless cakes. Order online for fast delivery and celebrate every occasion with delicious cakes.">
   <meta name="keywords" content="cake shop Kathmandu, birthday cake Nepal, wedding cake Kathmandu, eggless cake Nepal, Bajeko Cake">
   <meta name="author" content="Bajeko Cake">
   <meta name="robots" content="index, follow">
+
+  <!-- Geo Tags for Local SEO -->
   <meta name="geo.region" content="NP-BAG">
   <meta name="geo.placename" content="Kathmandu">
   <meta name="geo.position" content="27.6693;85.3302">
   <meta name="ICBM" content="27.6693, 85.3302">
+
+  <!-- Open Graph / Social Sharing -->
   <meta property="og:title" content="Bajeko Cake - Premium Cakes in Kathmandu">
-  <meta property="og:description" content="Order delicious cakes for every occasion. Birthday, wedding, eggless & more.">
-  <meta property="og:image" content="https://your-image-link.jpg">
+  <meta property="og:description" content="Order delicious cakes for birthdays, weddings, and special occasions. Fast delivery in Kathmandu.">
+  <meta property="og:image" content="https://i.postimg.cc/your-main-image.jpg">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://bajekocake.com.np">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bajeko Cake - Premium Cakes in Kathmandu">
+  <meta name="twitter:description" content="Order delicious cakes for birthdays, weddings, and special occasions. Fast delivery in Kathmandu.">
+  <meta name="twitter:image" content="https://i.postimg.cc/your-main-image.jpg">
+
+  <!-- Canonical -->
   <link rel="canonical" href="https://bajekocake.com.np">
 
   <!-- Fonts & Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Structured Data (Local Business) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Bakery",
+    "name": "Bajeko Cake",
+    "image": "https://i.postimg.cc/your-main-image.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Putalisadak",
+      "addressLocality": "Kathmandu",
+      "addressRegion": "Bagmati",
+      "postalCode": "44600",
+      "addressCountry": "NP"
+    },
+    "telephone": "+977-9867221301",
+    "url": "https://bajekocake.com.np",
+    "sameAs": [
+      "https://facebook.com/BAJEKOCAKE",
+      "https://www.instagram.com/baje_ko_cake"
+    ]
+  }
+  </script>
+</head>
+  
 
   <!-- Styles -->
   <style>
@@ -236,7 +274,10 @@
 <!-- Header -->
 <header>
   <h1>Bajeko Cake</h1>
-  <p>Premium Cakes in Kathmandu 🎂</p>
+  <p>Premium Cakes in Kathmandu</p>
+    
+  <p>
+  Order Online🎂</p>
 </header>
 
 <!-- Navigation -->
@@ -428,19 +469,27 @@
   <p>&copy; 2021 Bajeko Cake. Crafted with Love.</p>
 
   <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Bakery",
-      "name": "Bajeko Cake",
-      "image": "https://uploads.onecompiler.io/4454cur5q/4454cuf35/images%20(7).jpg",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Kathmandu",
-        "addressCountry": "Nepal"
-      },
-      "telephone": "+977-9867221301"
-    }
-  </script>
+{
+  "@context": "https://schema.org",
+  "@type": "Bakery",
+  "name": "Bajeko Cake",
+  "image": "https://uploads.onecompiler.io/4454cur5q/4454cuf35/images%20(7).jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Putalisadak, Kathmandu",
+    "addressLocality": "Kathmandu",
+    "addressRegion": "Bagmati",
+    "postalCode": "44600",
+    "addressCountry": "NP"
+  },
+  "telephone": "+977-9867221301",
+  "url": "https://bajekocake.com.np",
+  "sameAs": [
+    "https://facebook.com/BAJEKOCAKE",
+    "https://www.instagram.com/baje_ko_cake"
+  ]
+}
+</script>
 </footer>
 
 <!-- WhatsApp Floating -->
