@@ -343,6 +343,12 @@
         <h3>Farewell Cake</h3>
         <button onclick="orderWhatsApp('Farewell Cake')">Order Now</button>
       </div>
+       <div class="cake-card">
+        <img src="https://i.postimg.cc/T2z8ptZ8/1774106792829_2.jpg" alt="Bride to be Cake">
+        <h3>Bride to be Cake</h3>
+        <button onclick="orderWhatsApp('Bride to be Cake')">Order Now</button>
+      </div>
+      
     </div>
   </section>
 </section>
@@ -549,6 +555,7 @@ card.style.display = "none";
     {src:'https://i.postimg.cc/kG3Ldtkv/PXL_20250503_043751103_PORTRAIT.jpg', category:'wedding'},
     {src:'https://i.postimg.cc/Bb9RG1dY/PXL_20250306_113235580_PORTRAIT_2.jpg', category:'wedding'},
     {src:'https://i.postimg.cc/jqPG4Z7c/image_(2).jpg', category:'wedding'},
+    src:'https://i.postimg.cc/gcC9ng1C/1770814177663_2.jpg', category:'wedding'},
     {src:'https://i.postimg.cc/qqsSBvTS/FB_IMG_1738990145604.jpg', category:'wedding'},
     {src:'https://i.postimg.cc/3JhzSmjK/032150d2_bc68_489b_930a_3d9f9022b322.jpg', category:'wedding'},
     /* Football Cakes */
