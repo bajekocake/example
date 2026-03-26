@@ -259,11 +259,98 @@
     .whatsapp-icon { position:fixed; bottom:20px; right:20px; background:#25D366; color:white; font-size:28px; padding:15px; border-radius:50%; text-decoration:none; box-shadow:0 4px 10px rgba(0,0,0,0.3); }
     .whatsapp-icon:hover { background:#1ebe5d; }
 
-    /* Footer */
-    footer { background:#5a3e1b; color:white; text-align:center; padding:25px; margin-top:50px; }
-    .social-buttons { display:flex; justify-content:center; gap:15px; margin-top:20px; }
-    .social-buttons a { text-decoration:none; font-size:28px; color:white; padding:12px; border-radius:50%; display:inline-flex; justify-content:center; align-items:center; }
-    .facebook { background:#1877f2; } .instagram { background:#e1306c; } .twitter { background:#1da1f2; } .youtube { background:#ff0000; }
+    .footer {
+  background: #5a3e1b;
+  color: white;
+  padding: 40px 20px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-box h3 {
+  margin-bottom: 10px;
+}
+
+.footer-logo {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.slogan {
+  font-family: 'Dancing Script', cursive;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+
+  background: linear-gradient(90deg, #d4af37, #ffd700, #fff1a8, #c5a100);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.footer-social {
+  margin-top: 10px;
+}
+
+.footer-social {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-social a {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+
+/* Facebook Modern */
+.footer-social .facebook {
+  background: linear-gradient(135deg, #1877f2, #4e9cff);
+  box-shadow: 0 4px 12px rgba(24,119,242,0.4);
+}
+
+/* Instagram Modern */
+.footer-social .instagram {
+  background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  box-shadow: 0 4px 12px rgba(225,48,108,0.4);
+}
+
+/* Hover Effect */
+.footer-social a:hover {
+  transform: translateY(-4px) scale(1.08);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+
+.copyright {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* Mobile Responsive */
+@media (max-width:768px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
 
     /* Map */
     .map-container { max-width:300px; margin:auto; border-radius:5px; overflow:hidden; box-shadow:0 5px 5px rgba(0,0,0,0.2); text-align:center; }
@@ -461,18 +548,44 @@
   </div>
 </section>
 
-<!-- Footer -->
-<footer>
-  <h2>Contact Us</h2>
-  <p>Email: bajekocake@gmail.com</p>
-  <p>Phone: +977-9867221301</p>
+<footer class="footer">
+  <div class="footer-grid">
 
-  <div class="social-buttons">
-    <a href="https://facebook.com/BAJEKOCAKE" class="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
-    <a href="https://www.instagram.com/baje_ko_cake?igsh=MWJqMmVkdnI5dzl1dQ==" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+    <!-- LEFT : Logo + Slogan -->
+    <div class="footer-box left">
+      <img src="https://i.postimg.cc/FFcqKR6R/b04ca170-1-removebg-preview.png" class="footer-logo">
+      <h3>Bajeko Cake</h3>
+      <p class="slogan">Fresh is always best.</p>
+    </div>
+
+    <!-- MIDDLE : Contact -->
+    <div class="footer-box">
+      <h3>Contact Us</h3>
+      <p>📧 bajekocake@gmail.com</p>
+      <p>📞 +977-9867221301</p>
+      <p>📍 Gwarko, Lalitpur</p>
+    </div>
+
+    <!-- RIGHT : Social -->
+    <div class="footer-box">
+      <h3>Follow Us</h3>
+
+      <div class="footer-social">
+        <a href="https://facebook.com/BAJEKOCAKE" target="_blank" class="facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <a href="https://www.instagram.com/baje_ko_cake" target="_blank" class="instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+
+    </div>
+
   </div>
 
-  <p>&copy; 2021 Bajeko Cake. Crafted with Love.</p>
+  <p class="copyright">© 2021 Bajeko Cake. Crafted with Love.</p>
+</footer>
 
   <script type="application/ld+json">
 {
