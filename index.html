@@ -436,6 +436,18 @@
         <button onclick="orderWhatsApp('Bride to be Cake')">Order Now</button>
       </div>
       
+        <div class="cake-card">
+        <img src="https://i.postimg.cc/ZY6nB1ny/1774961100650_2.jpg" alt="Combo:Bento Cake + Boquet">
+        <h3>Combo:Bento Cake + Boquet</h3>
+        <button onclick="orderWhatsApp('Combo:Bento Cake + Boquet')">Order Now</button>
+      </div>
+      
+      <div class="cake-card">
+        <img src="https://i.postimg.cc/QMtGsW95/1774961328614-2.jpg" alt="Gym Freak Cake">
+        <h3>Gym Freak Cake</h3>
+        <button onclick="orderWhatsApp('Gym Freak Cake')">Order Now</button>
+      </div>
+      
     </div>
   </section>
 </section>
@@ -650,7 +662,9 @@ card.style.display = "none";
   const galleryImages = [
     /* Kid Cakes */
     {src:'https://i.postimg.cc/DyLW2Pmc/PXL_20251224_113332476_PORTRAIT.jpg', category:'kid'},
+    {src:'https://i.postimg.cc/W3gZ4zxM/1774960855220-2.jpg', category:'kid'},
     {src:'https://i.postimg.cc/4dYdjzDG/PXL_20250802_125718951.jpg', category:'kid'},
+    {src:'https://i.postimg.cc/zBKzhgz3/1774960044583-2.jpg', category:'kid'},
     {src:'https://i.postimg.cc/NMkT437N/PXL_20250722_112947331_PORTRAIT.jpg', category:'kid'},
     {src:'https://i.postimg.cc/JnLZjrJB/PXL_20250412_093744348_PORTRAIT_2.jpg', category:'kid'},
     {src:'https://i.postimg.cc/267vwsF4/PXL_20250429_141911346_PORTRAIT.jpg', category:'kid'},
@@ -661,7 +675,11 @@ card.style.display = "none";
     {src:'https://i.postimg.cc/YCJGQLqb/1758286240421_2.jpg', category:'kid'},
     {src:'https://i.postimg.cc/sgtQ5GDm/1758372936233_2.jpg', category:'kid'},
     {src:'https://i.postimg.cc/GpGBK3HV/PXL_20251219_065311679_PORTRAIT_2_(1).jpg', category:'kid'},
+     
     {src:'https://i.postimg.cc/pTvm6NFS/PXL_20250622_104617056.jpg', category:'kid'},
+    
+    
+
     /* Wedding Cakes */
     {src:'https://i.postimg.cc/DZRZhSTH/PXL_20251127_075918847_PORTRAIT_2.jpg', category:'wedding'},
     {src:'https://i.postimg.cc/GtFV3mR0/PXL_20250830_075311579_PORTRAIT_2.jpg', category:'wedding'},
@@ -686,7 +704,9 @@ card.style.display = "none";
     {src:'https://i.postimg.cc/rs3c7WHQ/1760514305142_2.jpg', category:'elegant'},
     {src:'https://i.postimg.cc/x8hYBHZd/1757957251368_3.jpg', category:'elegant'},
     {src:'https://i.postimg.cc/vTkMC9Kx/1758739521493_3.jpg', category:'elegant'},
-    {src:'https://i.postimg.cc/hv6gNxYt/1758221201169_2.jpg', category:'elegant'}
+    {src:'https://i.postimg.cc/ZY6nB1ny/1774961100650-2.jpg', category:'elegant'},
+    {src:'https://i.postimg.cc/h4V8DZBc/1774960243175-2.jpg', category:'elegant'},
+    {src:'https://i.postimg.cc/hv6gNxYt/1758221201169_2.jpg', category:'elegant'},
   ];
 
   function filterGallery(category){
