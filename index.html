@@ -413,7 +413,7 @@
 
   <!-- Trending Cakes -->
   <section class="featured">
-    <h1>Trending Cakes</h1>
+    <h1>🎂 Trending Cakes 🎂</h1>
     <div class="cake-container">
       <div class="cake-card">
         <img src="https://i.postimg.cc/x8hYBHZd/1757957251368_3.jpg" alt="Butterfly Cake">
@@ -665,6 +665,7 @@ card.style.display = "none";
     {src:'https://i.postimg.cc/W3gZ4zxM/1774960855220-2.jpg', category:'kid'},
     {src:'https://i.postimg.cc/4dYdjzDG/PXL_20250802_125718951.jpg', category:'kid'},
     {src:'https://i.postimg.cc/zBKzhgz3/1774960044583-2.jpg', category:'kid'},
+    {src:'https://i.postimg.cc/GhZ4mkdq/1775107167364-3.jpg', category:'kid'},
     {src:'https://i.postimg.cc/NMkT437N/PXL_20250722_112947331_PORTRAIT.jpg', category:'kid'},
     {src:'https://i.postimg.cc/JnLZjrJB/PXL_20250412_093744348_PORTRAIT_2.jpg', category:'kid'},
     {src:'https://i.postimg.cc/267vwsF4/PXL_20250429_141911346_PORTRAIT.jpg', category:'kid'},
