@@ -454,11 +454,7 @@
         <button onclick="orderWhatsApp('Whiskey Chocolate Delight')">Order Now</button>
       </div>
       
-      <div class="cake-card">
-        <img src="https://i.postimg.cc/pdS5k7S6/1775455145183-2.jpg" alt="Sweet Celebration Duo">
-        <h3>Sweet Celebration Duo</h3>
-        <button onclick="orderWhatsApp('Sweet Celebration Duo')">Order Now</button>
-      </div>
+     
       
     </div>
   </section>
@@ -676,6 +672,7 @@ card.style.display = "none";
     {src:'https://i.postimg.cc/DyLW2Pmc/PXL_20251224_113332476_PORTRAIT.jpg', category:'kid'},
     {src:'https://i.postimg.cc/W3gZ4zxM/1774960855220-2.jpg', category:'kid'},
     {src:'https://i.postimg.cc/4dYdjzDG/PXL_20250802_125718951.jpg', category:'kid'},
+    {src:'https://i.postimg.cc/pdS5k7S6/1775455145183-2.jpg', category:'kid'},
     {src:'https://i.postimg.cc/zBKzhgz3/1774960044583-2.jpg', category:'kid'},
     {src:'https://i.postimg.cc/GhZ4mkdq/1775107167364-3.jpg', category:'kid'},
     {src:'https://i.postimg.cc/NMkT437N/PXL_20250722_112947331_PORTRAIT.jpg', category:'kid'},
