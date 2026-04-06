@@ -448,6 +448,18 @@
         <button onclick="orderWhatsApp('Gym Freak Cake')">Order Now</button>
       </div>
       
+      <div class="cake-card">
+        <img src="https://i.postimg.cc/wv3cjDKz/1775308767579-2.jpg" alt="Whiskey Chocolate Delight">
+        <h3>Whiskey Chocolate Delight</h3>
+        <button onclick="orderWhatsApp('Whiskey Chocolate Delight')">Order Now</button>
+      </div>
+      
+      <div class="cake-card">
+        <img src="https://i.postimg.cc/pdS5k7S6/1775455145183-2.jpg" alt="Sweet Celebration Duo">
+        <h3>Sweet Celebration Duo</h3>
+        <button onclick="orderWhatsApp('Sweet Celebration Duo')">Order Now</button>
+      </div>
+      
     </div>
   </section>
 </section>
@@ -701,6 +713,8 @@ card.style.display = "none";
     /* Elegant Cakes */
     {src:'https://i.postimg.cc/J0vmSJFK/1773807815441_3.jpg', category:'elegant'},
     {src:'https://i.postimg.cc/BbksRDzg/1773747361217_3.jpg', category:'elegant'},
+    {src:'https://i.postimg.cc/L53Xd0y4/1775287754015-2.jpg', category:'elegant'},
+    {src:'https://i.postimg.cc/ZRkKWh2K/1775464904157-2.jpg', category:'elegant'},
     {src:'https://i.postimg.cc/C5XY9D2G/1758030051689.png', category:'elegant'},
     {src:'https://i.postimg.cc/rs3c7WHQ/1760514305142_2.jpg', category:'elegant'},
     {src:'https://i.postimg.cc/x8hYBHZd/1757957251368_3.jpg', category:'elegant'},
