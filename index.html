@@ -475,6 +475,13 @@ box-shadow: 0 6px 18px rgba(0,0,0,0.4);
         <button onclick="orderWhatsApp('Whiskey Chocolate Delight')">Order Now</button>
       </div>
       
+      
+      <div class="cake-card">
+        <img src="https://i.postimg.cc/Y98gP7m0/1775649829589-3.jpg" alt="Magical Unicorn Cake">
+        <h3>Magical Unicorn Cake</h3>
+        <button onclick="orderWhatsApp('Magical Unicorn Cake')">Order Now</button>
+      </div>
+      
      
       
     </div>
