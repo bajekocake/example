@@ -401,7 +401,7 @@ box-shadow: 0 6px 18px rgba(0,0,0,0.4);
   <!-- Slider -->
   <div class="slider">
     <div class="slides">
-      <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/IMG_20250526_101643373.jpg">
+      <img src="https://i.postimg.cc/NF2X9yp7/Gemini-Generated-Image-a28fa2a28fa2a28f.png">
       <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/IMG_20250726_114354841.jpg">
       <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/images%20(7).jpg">
       <img src="https://i.postimg.cc/s2bN2BX3/unnamed.webp">
