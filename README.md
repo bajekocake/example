@@ -406,6 +406,7 @@ box-shadow: 0 6px 18px rgba(0,0,0,0.4);
       <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/images%20(7).jpg">
       <img src="https://i.postimg.cc/s2bN2BX3/unnamed.webp">
       <img src="https://i.postimg.cc/9fsnf4MF/PXL_20221023_133551308_PORTRAIT.webp">
+      <img src="https://i.postimg.cc/MGwg9VBQ/Gemini-Generated-Image-a28fa2a28fa2a28f-2.jpg">
     </div>
   </div>
 
