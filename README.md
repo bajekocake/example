@@ -318,6 +318,27 @@
   transition: 0.3s ease;
 }
 
+/* Messenger Floating Button */
+.messenger-icon {
+position: fixed;
+bottom: 90px;
+right: 20px;
+background: linear-gradient(135deg,#0084ff,#00c6ff);
+color: white;
+font-size: 26px;
+padding: 15px;
+border-radius: 50%;
+text-decoration: none;
+box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+transition: 0.3s;
+z-index: 999;
+}
+
+.messenger-icon:hover {
+transform: scale(1.1);
+box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+}
+
 /* Facebook Modern */
 .footer-social .facebook {
   background: linear-gradient(135deg, #1877f2, #4e9cff);
@@ -632,7 +653,16 @@
 </footer>
 
 <!-- WhatsApp Floating -->
-<a href="https://wa.me/9867221301" target="_blank" class="whatsapp-icon"><i class="fab fa-whatsapp"></i></a>
+<a href="https://wa.me/9779867221301" target="_blank" class="whatsapp-icon"><i class="fab fa-whatsapp"></i></a>
+
+<!-- Messenger Floating -->
+<a href="https://m.me/BAJEKOCAKE" 
+   target="_blank" 
+   class="messenger-icon">
+   <i class="fab fa-facebook-messenger"></i>
+</a>
+
+
 
 <!-- Scripts -->
 <script>
