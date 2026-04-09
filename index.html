@@ -321,7 +321,7 @@
 /* Messenger Floating Button */
 .messenger-icon {
 position: fixed;
-bottom: 90px;
+bottom: 100px;
 right: 20px;
 background: linear-gradient(135deg,#0084ff,#00c6ff);
 color: white;
