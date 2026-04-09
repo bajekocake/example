@@ -452,9 +452,9 @@ box-shadow: 0 6px 18px rgba(0,0,0,0.4);
         <button onclick="orderWhatsApp('Farewell Cake')">Order Now</button>
       </div>
        <div class="cake-card">
-        <img src="https://i.postimg.cc/T2z8ptZ8/1774106792829_2.jpg" alt="Bride to be Cake">
-        <h3>Bride to be Cake</h3>
-        <button onclick="orderWhatsApp('Bride to be Cake')">Order Now</button>
+        <img src="https://i.postimg.cc/T2z8ptZ8/1774106792829_2.jpg" alt="Just Engaged Cake">
+        <h3>Just Engaged Cake</h3>
+        <button onclick="orderWhatsApp('Just Engaged Cake')">Order Now</button>
       </div>
       
         <div class="cake-card">
@@ -480,6 +480,12 @@ box-shadow: 0 6px 18px rgba(0,0,0,0.4);
         <img src="https://i.postimg.cc/Y98gP7m0/1775649829589-3.jpg" alt="Magical Unicorn Cake">
         <h3>Magical Unicorn Cake</h3>
         <button onclick="orderWhatsApp('Magical Unicorn Cake')">Order Now</button>
+      </div>
+      
+       <div class="cake-card">
+        <img src="https://i.postimg.cc/QdHsZpY9/1775287022843-2-(1).jpg" alt="Charming Princess Cake">
+        <h3>Charming Princess Cake</h3>
+        <button onclick="orderWhatsApp('Charming Princess Cake')">Order Now</button>
       </div>
       
      
