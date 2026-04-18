@@ -415,19 +415,19 @@ box-shadow: 0 6px 18px rgba(0,0,0,0.4);
     <h2>Featured Cakes</h2>
     <div class="featured-grid">
       <div class="featured-card">
-        <img src="https://i.postimg.cc/wTwZn16Z/Gemini_Generated_Image_1gg6s21gg6s21gg6.png">
+        <img src="https://i.postimg.cc/x8hnbjhK/79b45f076d5073a05b2b61bb88a5c0f1.jpg">
         <button onclick="orderWhatsApp('Cake')">Order Now</button>
       </div>
       <div class="featured-card">
-        <img src="https://i.postimg.cc/NfdSZKgV/Gemini_Generated_Image_2cm93x2cm93x2cm9.png">
+        <img src="https://i.postimg.cc/RhNvFJP2/35cc0cfadc752e6c264a276b57c3b489.jpg">
         <button onclick="orderWhatsApp('Cake')">Order Now</button>
       </div>
       <div class="featured-card">
-        <img src="https://i.postimg.cc/PrS90CtR/Gemini_Generated_Image_6wm7k26wm7k26wm7.png">
+        <img src="https://i.postimg.cc/N0ksPc9x/eee9731959bc2bbf48e056efbe19a465.jpg">
         <button onclick="orderWhatsApp('Cake')">Order Now</button>
       </div>
       <div class="featured-card">
-        <img src="https://i.postimg.cc/dt5pghqf/Gemini_Generated_Image_douvbmdouvbmdouv.png">
+        <img src="https://i.postimg.cc/1519PXGG/280cfa49bda6d5367dbc5395527e8209.jpg">
         <button onclick="orderWhatsApp('Cake')">Order Now</button>
       </div>
     </div>
@@ -574,8 +574,8 @@ box-shadow: 0 6px 18px rgba(0,0,0,0.4);
 
 <!-- Upcoming Event -->
 <section class="upcoming-event">
-  <h2 class="flash-title">🌸 Mother's Day 🌸</h2>
-  <p>Celebrate your mom with a special cake made with love 💖</p>
+  <h2 class="flash-title">🌸 Father's Day 🌸</h2>
+  <p>Celebrate your dad with a special cake made with love 💖</p>
 
   <!-- Flip Countdown -->
   <div class="flip-countdown">
@@ -783,7 +783,7 @@ card.style.display = "none";
   function closeLightbox(){ document.getElementById('lightbox').style.display='none'; }
 
   // Upcoming Event Countdown
-  const eventDate = new Date("April 17, 2026 00:00:00").getTime();
+  const eventDate = new Date("September 11, 2026 00:00:00").getTime();
 
 function updateEventFlip(id, value) {
     const el = document.getElementById(id);
