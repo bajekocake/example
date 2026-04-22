@@ -180,11 +180,52 @@
     .gallery img:hover{ transform:scale(1.1); }
 
     /* Lightbox */
-    .lightbox{ display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); justify-content:center; align-items:center; z-index:1000; }
-    .lightbox img{ max-width:90%; max-height:90%; border-radius:10px; }
-    .lightbox span{ position:absolute; top:20px; right:30px; color:white; font-size:40px; cursor:pointer; }
+    .lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.95);
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
 
-     /* Upcoming Event Section */
+/* Image */
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  cursor: grab;
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Navigation arrows */
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  user-select: none;
+}
+
+.prev { left: 20px; }
+.next { right: 20px; }
+
  /* Upcoming Event Section */
 .upcoming-event {
     background: #fff3f6;
@@ -459,9 +500,9 @@ box-shadow: 0 6px 18px rgba(0,0,0,0.4);
       </div>
       
         <div class="cake-card">
-        <img src="https://i.postimg.cc/ZY6nB1ny/1774961100650_2.jpg" alt="Combo:Bento Cake + Boquet">
-        <h3>Combo:Bento Cake + Boquet</h3>
-        <button onclick="orderWhatsApp('Combo:Bento Cake + Boquet')">Order Now</button>
+        <img src="https://i.postimg.cc/ZY6nB1ny/1774961100650_2.jpg" alt="Combo:Bento Cake + Bouquet">
+        <h3>Combo:Bento Cake + Bouquet</h3>
+        <button onclick="orderWhatsApp('Combo:Bento Cake + Bouquet')">Order Now</button>
       </div>
       
       <div class="cake-card">
@@ -573,8 +614,13 @@ box-shadow: 0 6px 18px rgba(0,0,0,0.4);
 
 <!-- Lightbox -->
 <div class="lightbox" id="lightbox">
-  <span onclick="closeLightbox()">&times;</span>
+  <span class="close" onclick="closeLightbox()">&times;</span>
+
   <img id="lightbox-img">
+
+  <!-- Navigation -->
+  <div class="nav prev" onclick="changeSlide(-1)">❮</div>
+  <div class="nav next" onclick="changeSlide(1)">❯</div>
 </div>
 
 <!-- Upcoming Event -->
@@ -778,15 +824,71 @@ card.style.display = "none";
       if(category==='all' || item.category===category){
         const img = document.createElement('img');
         img.src=item.src;
-        img.onclick=()=>openLightbox(img);
+        img.onclick = () => openLightbox(img);
         galleryContainer.appendChild(img);
       }
     });
   }
 
   // Lightbox
-  function openLightbox(img){ document.getElementById('lightbox').style.display='flex'; document.getElementById('lightbox-img').src=img.src; }
-  function closeLightbox(){ document.getElementById('lightbox').style.display='none'; }
+  let currentIndex = 0;
+let images = [];
+let scale = 1;
+
+// Open lightbox
+function openLightbox(img, index = 0) {
+  images = Array.from(document.querySelectorAll('.gallery img, .featured-card img, .cake-card img'));
+  currentIndex = images.indexOf(img);
+
+  document.getElementById("lightbox").style.display = "flex";
+  document.getElementById("lightbox-img").src = img.src;
+  scale = 1;
+}
+
+// Close
+function closeLightbox() {
+  document.getElementById("lightbox").style.display = "none";
+}
+
+// Slide navigation
+function changeSlide(direction) {
+  currentIndex += direction;
+
+  if (currentIndex < 0) currentIndex = images.length - 1;
+  if (currentIndex >= images.length) currentIndex = 0;
+
+  document.getElementById("lightbox-img").src = images[currentIndex].src;
+  scale = 1;
+  updateZoom();
+}
+
+// Zoom (scroll)
+const lightboxImg = document.getElementById("lightbox-img");
+
+lightboxImg.addEventListener("wheel", (e) => {
+  e.preventDefault();
+  scale += e.deltaY * -0.001;
+  scale = Math.min(Math.max(1, scale), 3);
+  updateZoom();
+});
+
+function updateZoom() {
+  lightboxImg.style.transform = `scale(${scale})`;
+}
+
+// Swipe (mobile)
+let startX = 0;
+
+lightboxImg.addEventListener("touchstart", (e) => {
+  startX = e.touches[0].clientX;
+});
+
+lightboxImg.addEventListener("touchend", (e) => {
+  let endX = e.changedTouches[0].clientX;
+
+  if (startX - endX > 50) changeSlide(1);
+  if (endX - startX > 50) changeSlide(-1);
+});
 
   // Upcoming Event Countdown
   const eventDate = new Date("September 11, 2026 00:00:00").getTime();
