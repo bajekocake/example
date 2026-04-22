@@ -489,6 +489,11 @@ box-shadow: 0 6px 18px rgba(0,0,0,0.4);
         <button onclick="orderWhatsApp('Charming Princess Cake')">Order Now</button>
       </div>
       
+        <div class="cake-card">
+        <img src="https://i.postimg.cc/7PmQxsH3/1776662821347-3.jpg" alt="Elsa Frozen Cake">
+        <h3>Elsa Frozen Cake</h3>
+        <button onclick="orderWhatsApp('Elsa Frozen Cake')">Order Now</button>
+      </div>
      
       
     </div>
@@ -714,6 +719,7 @@ card.style.display = "none";
   const galleryImages = [
     /* Kid Cakes */
     {src:'https://i.postimg.cc/DyLW2Pmc/PXL_20251224_113332476_PORTRAIT.jpg', category:'kid'},
+    {src:'https://i.postimg.cc/7PmQxsH3/1776662821347-3.jpg', category:'kid'},
     {src:'https://i.postimg.cc/W3gZ4zxM/1774960855220-2.jpg', category:'kid'},
     {src:'https://i.postimg.cc/4dYdjzDG/PXL_20250802_125718951.jpg', category:'kid'},
     {src:'https://i.postimg.cc/pdS5k7S6/1775455145183-2.jpg', category:'kid'},
@@ -735,14 +741,14 @@ card.style.display = "none";
     
 
     /* Wedding Cakes */
-    {src:'https://i.postimg.cc/DZRZhSTH/PXL_20251127_075918847_PORTRAIT_2.jpg', category:'wedding'},
-    {src:'https://i.postimg.cc/GtFV3mR0/PXL_20250830_075311579_PORTRAIT_2.jpg', category:'wedding'},
-    {src:'https://i.postimg.cc/kG3Ldtkv/PXL_20250503_043751103_PORTRAIT.jpg', category:'wedding'},
-    {src:'https://i.postimg.cc/Bb9RG1dY/PXL_20250306_113235580_PORTRAIT_2.jpg', category:'wedding'},
-    {src:'https://i.postimg.cc/jqPG4Z7c/image_(2).jpg', category:'wedding'},
-    {src:'https://i.postimg.cc/gcC9ng1C/1770814177663_2.jpg', category:'wedding'},
-    {src:'https://i.postimg.cc/qqsSBvTS/FB_IMG_1738990145604.jpg', category:'wedding'},
-    {src:'https://i.postimg.cc/3JhzSmjK/032150d2_bc68_489b_930a_3d9f9022b322.jpg', category:'wedding'},
+    {src:'https://i.postimg.cc/8cRWtP1J/1776678198349-2.jpg', category:'wedding'},
+    {src:'https://i.postimg.cc/PJWZ2rtv/1776678718048-2.jpg', category:'wedding'},
+    {src:'https://i.postimg.cc/NFqm6rwk/1776678800067-2.jpg', category:'wedding'},
+    {src:'https://i.postimg.cc/fynmc0hm/1776678982123-2.jpg', category:'wedding'},
+    {src:'https://i.postimg.cc/8cQMRrV6/1776680251655-2.jpg', category:'wedding'},
+    {src:'https://i.postimg.cc/sxYSwDVB/1776680444354-2.jpg', category:'wedding'},
+    {src:'https://i.postimg.cc/d3Pr2TKT/1776681500120-2.jpg', category:'wedding'},
+    {src:'https://i.postimg.cc/PJsYW8kv/1776681572439-2.jpg', category:'wedding'},
     /* Football Cakes */
     {src:'https://i.postimg.cc/zBLq70ds/1773993315025_2.jpg', category:'football'},
     {src:'https://i.postimg.cc/rmdqjQhH/1757956305870_2.jpg', category:'football'},
