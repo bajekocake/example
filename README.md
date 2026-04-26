@@ -30,7 +30,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Bajeko Cake - Premium Cakes in Kathmandu">
   <meta name="twitter:description" content="Order delicious cakes for birthdays, weddings, and special occasions. Fast delivery in Kathmandu.">
-  <meta name="twitter:image" content="https://i.postimg.cc/your-main-image.jpg">
+  <meta name="twitter:image" content="https://i.postimg.cc/9fsnf4MF/PXL-20221023-133551308-PORTRAIT.webp">
 
   <!-- Canonical -->
   <link rel="canonical" href="https://bajekocake.com.np">
@@ -73,6 +73,8 @@
     }
    
    
+   
+   
 
     /* Sections */
     section { padding:40px 20px; }
@@ -98,6 +100,15 @@
   gap: 20px;
 }
 
+
+.featured-card, .cake-card {
+  transition: 0.3s ease;
+}
+
+.featured-card:hover, .cake-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(233,142,58,0.3);
+}
 /* PRODUCT CARD */
 .product-card {
   text-align: center;
@@ -619,7 +630,7 @@ Best Cake Shop in Kathmandu | Order Birthday, Wedding & Custom Cakes 🎂.
   </div>
 
   <!-- WhatsApp Order Button -->
-  <a href="https://wa.me/9779867221301?text=Hello%20Bajeko%20Cake,%20I%20want%20to%20order%20a%20Mother's%20Day%20cake" 
+  <a href="https://wa.me/9779867221301?text=Hello%20Bajeko%20Cake,%20I%20want%20to%20order%20a%20Father's%20Day%20cake" 
      target="_blank" 
      class="order-btn">
      Order Now on WhatsApp
@@ -675,29 +686,30 @@ Best Cake Shop in Kathmandu | Order Birthday, Wedding & Custom Cakes 🎂.
   <p class="copyright">© 2021 Bajeko Cake. Crafted with Love.</p>
 </footer>
 
-  <script type="application/ld+json">
+ <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Bakery",
   "name": "Bajeko Cake",
-  "image": "https://uploads.onecompiler.io/4454cur5q/4454cuf35/images%20(7).jpg",
+  "image": "https://bajekocake.com.np/logo.png",
+  "url": "https://bajekocake.com.np",
+  "telephone": "+9779867221301",
+  "priceRange": "$$",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Putalisadak, Kathmandu",
-    "addressLocality": "Kathmandu",
+    "streetAddress": "Gwarko",
+    "addressLocality": "Lalitpur",
     "addressRegion": "Bagmati",
     "postalCode": "44600",
     "addressCountry": "NP"
   },
-  "telephone": "+977-9867221301",
-  "url": "https://bajekocake.com.np",
+  "areaServed": ["Kathmandu","Lalitpur","Bhaktapur"],
   "sameAs": [
     "https://facebook.com/BAJEKOCAKE",
-    "https://www.instagram.com/baje_ko_cake"
+    "https://instagram.com/baje_ko_cake"
   ]
 }
 </script>
-
 
 <!-- WhatsApp Floating -->
 <a href="https://wa.me/9779867221301" target="_blank" class="whatsapp-icon"><i class="fab fa-whatsapp"></i></a>
@@ -802,17 +814,22 @@ card.style.display = "none";
   ];
 
   function filterGallery(category){
-    const galleryContainer = document.getElementById('gallery-container');
-    galleryContainer.innerHTML='';
-    galleryImages.forEach(item=>{
-      if(category==='all' || item.category===category){
-        const img = document.createElement('img');
-        img.src=item.src;
-        img.onclick = () => openLightbox(img);
-        galleryContainer.appendChild(img);
-      }
-    });
-  }
+  const galleryContainer = document.getElementById('gallery-container');
+  galleryContainer.innerHTML='';
+
+  galleryImages.forEach(item=>{
+    if(category==='all' || item.category===category){
+      const img = document.createElement('img');
+
+      img.src = item.src;
+      img.loading = "lazy"; // ✅ ADD THIS
+      img.decoding = "async"; // ✅ smoother rendering
+      img.onclick = () => openLightbox(img);
+
+      galleryContainer.appendChild(img);
+    }
+  });
+}
 
   // Lightbox
   let currentIndex = 0;
