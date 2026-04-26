@@ -402,7 +402,7 @@ box-shadow: 0 6px 18px rgba(0,0,0,0.4);
 
 <!-- Header -->
 <header>
-  <h1>Bajeko Cake - Best Cake Shop in Kathmandu</h1>
+  <h1>Bajeko Cake</h1>
   <h2 style="text-align:center; font-size:20px; color:#5a3e1b;">
 Best Cake Shop in Kathmandu | Order Birthday, Wedding & Custom Cakes 🎂.
 </h2>
@@ -697,7 +697,7 @@ Best Cake Shop in Kathmandu | Order Birthday, Wedding & Custom Cakes 🎂.
   ]
 }
 </script>
-</footer>
+
 
 <!-- WhatsApp Floating -->
 <a href="https://wa.me/9779867221301" target="_blank" class="whatsapp-icon"><i class="fab fa-whatsapp"></i></a>
