@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bajeko Cake | Premium Cake Shop in Kathmandu | Order Online</title>
+  
   <link rel="icon" href="logo.png" type="image/png">
 
   <!-- Primary Meta Tags -->
@@ -21,7 +22,7 @@
   <!-- Open Graph / Social Sharing -->
   <meta property="og:title" content="Bajeko Cake - Premium Cakes in Kathmandu">
   <meta property="og:description" content="Order delicious cakes for birthdays, weddings, and special occasions. Fast delivery in Kathmandu.">
-  <meta property="og:image" content="https://i.postimg.cc/your-main-image.jpg">
+  <meta property="og:image" content="https://i.postimg.cc/9fsnf4MF/PXL-20221023-133551308-PORTRAIT.webp">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://bajekocake.com.np">
 
@@ -38,30 +39,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <!-- Structured Data (Local Business) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Bakery",
-    "name": "Bajeko Cake",
-    "image": "https://i.postimg.cc/your-main-image.jpg",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Putalisadak",
-      "addressLocality": "Kathmandu",
-      "addressRegion": "Bagmati",
-      "postalCode": "44600",
-      "addressCountry": "NP"
-    },
-    "telephone": "+977-9867221301",
-    "url": "https://bajekocake.com.np",
-    "sameAs": [
-      "https://facebook.com/BAJEKOCAKE",
-      "https://www.instagram.com/baje_ko_cake"
-    ]
-  }
-  </script>
-</head>
+ 
+
   
 
   <!-- Styles -->
@@ -75,6 +54,7 @@
     header { background: linear-gradient(135deg, #f7b16a, #e98e3a); padding: 30px; text-align:center; color:white; }
     header h1 { font-size:3rem; }
     header p { font-size:1.2rem; margin-top:5px; }
+    
 
     /* Navigation */
     nav { background: #f2dcc0; padding:15px; text-align:center; position: sticky; top:0; z-index: 10; }
@@ -422,8 +402,10 @@ box-shadow: 0 6px 18px rgba(0,0,0,0.4);
 
 <!-- Header -->
 <header>
-  <h1>Bajeko Cake</h1>
-  <p>Premium Cakes in Kathmandu</p>
+  <h1>Bajeko Cake - Best Cake Shop in Kathmandu</h1>
+  <h2 style="text-align:center; font-size:20px; color:#5a3e1b;">
+Best Cake Shop in Kathmandu | Order Birthday, Wedding & Custom Cakes 🎂.
+</h2>
     
   <p>
   Order Online🎂</p>
@@ -456,19 +438,19 @@ box-shadow: 0 6px 18px rgba(0,0,0,0.4);
     <h2>Featured Cakes</h2>
     <div class="featured-grid">
       <div class="featured-card">
-        <img src="https://i.postimg.cc/x8hnbjhK/79b45f076d5073a05b2b61bb88a5c0f1.jpg">
+        <img src="https://i.postimg.cc/pdB31trP/5065b81874cef6dea46d7ba330d6a520.jpg"loading="lazy">
         <button onclick="orderWhatsApp('Cake')">Order Now</button>
       </div>
       <div class="featured-card">
-        <img src="https://i.postimg.cc/RhNvFJP2/35cc0cfadc752e6c264a276b57c3b489.jpg">
+        <img src="https://i.postimg.cc/RhNvFJP2/35cc0cfadc752e6c264a276b57c3b489.jpg"loading="lazy">
         <button onclick="orderWhatsApp('Cake')">Order Now</button>
       </div>
       <div class="featured-card">
-        <img src="https://i.postimg.cc/N0ksPc9x/eee9731959bc2bbf48e056efbe19a465.jpg">
+        <img src="https://i.postimg.cc/N0ksPc9x/eee9731959bc2bbf48e056efbe19a465.jpg"loading="lazy">
         <button onclick="orderWhatsApp('Cake')">Order Now</button>
       </div>
       <div class="featured-card">
-        <img src="https://i.postimg.cc/1519PXGG/280cfa49bda6d5367dbc5395527e8209.jpg">
+        <img src="https://i.postimg.cc/1519PXGG/280cfa49bda6d5367dbc5395527e8209.jpg"loading="lazy">
         <button onclick="orderWhatsApp('Cake')">Order Now</button>
       </div>
     </div>
@@ -479,59 +461,59 @@ box-shadow: 0 6px 18px rgba(0,0,0,0.4);
     <h1>🎂 Trending Cakes 🎂</h1>
     <div class="cake-container">
       <div class="cake-card">
-        <img src="https://i.postimg.cc/x8hYBHZd/1757957251368_3.jpg" alt="Butterfly Cake">
+        <img src="https://i.postimg.cc/x8hYBHZd/1757957251368_3.jpg"loading="lazy" alt="Butterfly Cake">
         <h3>Butterfly Cake</h3>
         <button onclick="orderWhatsApp('Butterfly Cake')">Order Now</button>
       </div>
       <div class="cake-card">
-        <img src="https://i.postimg.cc/J0vmSJFK/1773807815441_3.jpg" alt="Calender cake">
+        <img src="https://i.postimg.cc/J0vmSJFK/1773807815441_3.jpg"loading="lazy" alt="Calender cake">
         <h3>Calender Cake</h3>
         <button onclick="orderWhatsApp('Calender Cake')">Order Now</button>
       </div>
       <div class="cake-card">
-        <img src="https://i.postimg.cc/ZRXRmWm5/PXL_20260213_105958536_PORTRAIT_2.jpg" alt="Farewell Cake">
+        <img src="https://i.postimg.cc/ZRXRmWm5/PXL_20260213_105958536_PORTRAIT_2.jpg"loading="lazy" alt="Farewell Cake">
         <h3>Farewell Cake</h3>
         <button onclick="orderWhatsApp('Farewell Cake')">Order Now</button>
       </div>
        <div class="cake-card">
-        <img src="https://i.postimg.cc/T2z8ptZ8/1774106792829_2.jpg" alt="Just Engaged Cake">
+        <img src="https://i.postimg.cc/T2z8ptZ8/1774106792829_2.jpg"loading="lazy" alt="Just Engaged Cake">
         <h3>Just Engaged Cake</h3>
         <button onclick="orderWhatsApp('Just Engaged Cake')">Order Now</button>
       </div>
       
         <div class="cake-card">
-        <img src="https://i.postimg.cc/ZY6nB1ny/1774961100650_2.jpg" alt="Combo:Bento Cake + Bouquet">
+        <img src="https://i.postimg.cc/ZY6nB1ny/1774961100650_2.jpg"loading="lazy" alt="Combo:Bento Cake + Bouquet">
         <h3>Combo:Bento Cake + Bouquet</h3>
         <button onclick="orderWhatsApp('Combo:Bento Cake + Bouquet')">Order Now</button>
       </div>
       
       <div class="cake-card">
-        <img src="https://i.postimg.cc/QMtGsW95/1774961328614-2.jpg" alt="Gym Freak Cake">
+        <img src="https://i.postimg.cc/QMtGsW95/1774961328614-2.jpg"loading="lazy" alt="Gym Freak Cake">
         <h3>Gym Freak Cake</h3>
         <button onclick="orderWhatsApp('Gym Freak Cake')">Order Now</button>
       </div>
       
       <div class="cake-card">
-        <img src="https://i.postimg.cc/wv3cjDKz/1775308767579-2.jpg" alt="Whiskey Chocolate Delight">
+        <img src="https://i.postimg.cc/wv3cjDKz/1775308767579-2.jpg"loading="lazy" alt="Whiskey Chocolate Delight">
         <h3>Whiskey Chocolate Delight</h3>
         <button onclick="orderWhatsApp('Whiskey Chocolate Delight')">Order Now</button>
       </div>
       
       
       <div class="cake-card">
-        <img src="https://i.postimg.cc/Y98gP7m0/1775649829589-3.jpg" alt="Magical Unicorn Cake">
+        <img src="https://i.postimg.cc/Y98gP7m0/1775649829589-3.jpg"loading="lazy" alt="Magical Unicorn Cake">
         <h3>Magical Unicorn Cake</h3>
         <button onclick="orderWhatsApp('Magical Unicorn Cake')">Order Now</button>
       </div>
       
        <div class="cake-card">
-        <img src="https://i.postimg.cc/QdHsZpY9/1775287022843-2-(1).jpg" alt="Charming Princess Cake">
+        <img src="https://i.postimg.cc/QdHsZpY9/1775287022843-2-(1).jpg"loading="lazy" alt="Charming Princess Cake">
         <h3>Charming Princess Cake</h3>
         <button onclick="orderWhatsApp('Charming Princess Cake')">Order Now</button>
       </div>
       
         <div class="cake-card">
-        <img src="https://i.postimg.cc/7PmQxsH3/1776662821347-3.jpg" alt="Elsa Frozen Cake">
+        <img src="https://i.postimg.cc/7PmQxsH3/1776662821347-3.jpg"loading="lazy" alt="Elsa Frozen Cake">
         <h3>Elsa Frozen Cake</h3>
         <button onclick="orderWhatsApp('Elsa Frozen Cake')">Order Now</button>
       </div>
@@ -551,33 +533,33 @@ box-shadow: 0 6px 18px rgba(0,0,0,0.4);
     <button onclick="filterCategory('wedding')">Wedding Cake</button>
     <button onclick="filterCategory('cheese')">Cheese Cake</button>
     <button onclick="filterCategory('baby-Girl')">Baby Girl Cake</button>
-    <button onclick="filterCategory('baby shower')">Baby Shower Cake</button>
+    <button onclick="filterCategory('baby-shower')">Baby Shower Cake</button>
   </div>
 
   <div class="products" id="product-list">
     <div class="product-card" data-category="quick">
-      <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/95a33ceb554a695b8f016d2a73526fc3.jpg">
+      <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/95a33ceb554a695b8f016d2a73526fc3.jpg"loading="lazy">
       <h3>Quick Chocolate Cake</h3>
       <p>Fast-picked, rich & moist.</p>
       <button class="book-btn" onclick="window.open('https://wa.me/9779867221301?text=I want to order Chocolate cake')">Book Order</button>
     </div>
 
     <div class="product-card" data-category="eggless">
-      <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/Red-Velvet-Birthday-Cake-scaled.jpeg">
+      <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/Red-Velvet-Birthday-Cake-scaled.jpeg"loading="lazy">
       <h3>Eggless Red Velvet</h3>
       <p>Soft, smooth & completely egg-free.</p>
       <button class="book-btn" onclick="window.open('https://wa.me/9779867221301?text=I want to order RedVelvet cake')">Book Order</button>
     </div>
 
     <div class="product-card" data-category="wedding">
-      <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/royal%20cake.jpg">
+      <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/royal%20cake.jpg"loading="lazy">
       <h3>Royal Wedding Cake</h3>
       <p>Elegant multi-tier handcrafted design.</p>
       <button class="book-btn" onclick="window.open('https://wa.me/9779867221301?text=I want to order Wedding Cake')">Book Order</button>
     </div>
 
     <div class="product-card" data-category="cheese">
-      <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/1200x1200px_Blueberry_Cheesecake.png">
+      <img src="https://uploads.onecompiler.io/4454cur5q/4454cuf35/1200x1200px_Blueberry_Cheesecake.png"loading="lazy">
       <h3>Classic Cheesecake</h3>
       <p>Creamy, smooth & premium cheese blend.</p>
       <button class="book-btn" onclick="window.open('https://wa.me/9779867221301?text=I want to order Classic Cheesecake')">Book Order</button>
@@ -590,7 +572,7 @@ box-shadow: 0 6px 18px rgba(0,0,0,0.4);
       <button class="book-btn" onclick="window.open('https://wa.me/9779867221301?text=I want to order Barbie Cake')">Book Order</button>
     </div>
 
-    <div class="product-card" data-category="baby shower">
+    <div class="product-card" data-category="baby-shower">
       <img src="https://uploads.onecompiler.io/4454cur5q/44ggazag5/PXL_20251018_072821655%20(1).jpg?auto=format&fit=crop&w=800&q=80">
       <h3>Baby Shower Cake</h3>
       <p>Twinkle, twinkle little star, can't wait to see how cute you are.</p>
@@ -740,7 +722,9 @@ box-shadow: 0 6px 18px rgba(0,0,0,0.4);
   // WhatsApp Order
   function orderWhatsApp(product){
     const phone = "9779867221301";
-    const url = `https://wa.me/${phone}?text=${encodeURIComponent(`Hello Bajeko Cake, I want to order ${product}`)}`;
+    const url = `https://wa.me/${phone}?text=${encodeURIComponent(`Hello Bajeko Cake 👋,
+I want to order: ${product}
+Please share price, size, and delivery time.`)}`;
     window.open(url,'_blank');
   }
 
