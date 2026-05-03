@@ -492,6 +492,12 @@ Best Cake Shop in Kathmandu | Order Birthday, Wedding & Custom Cakes 🎂.
         <button onclick="orderWhatsApp('Just Engaged Cake')">Order Now</button>
       </div>
       
+      <div class="cake-card">
+        <img src="https://i.postimg.cc/gjnmJQTs/1777454965754-3.jpg"loading="lazy"onclick="openLightbox(this)" alt="CoCa Melon Cake">
+        <h3>CoCa Melon Cake</h3>
+        <button onclick="orderWhatsApp('CoCa Melon Cake')">Order Now</button>
+      </div>
+      
         <div class="cake-card">
         <img src="https://i.postimg.cc/ZY6nB1ny/1774961100650_2.jpg"loading="lazy" onclick="openLightbox(this)" alt="Combo:Bento Cake + Bouquet">
         <h3>Combo:Bento Cake + Bouquet</h3>
@@ -528,6 +534,7 @@ Best Cake Shop in Kathmandu | Order Birthday, Wedding & Custom Cakes 🎂.
         <h3>Elsa Frozen Cake</h3>
         <button onclick="orderWhatsApp('Elsa Frozen Cake')">Order Now</button>
       </div>
+     
      
       
     </div>
@@ -789,12 +796,14 @@ card.style.display = "none";
     {src:'https://i.postimg.cc/fynmc0hm/1776678982123-2.jpg', category:'wedding'},
     {src:'https://i.postimg.cc/8cQMRrV6/1776680251655-2.jpg', category:'wedding'},
     {src:'https://i.postimg.cc/sxYSwDVB/1776680444354-2.jpg', category:'wedding'},
+    {src:'https://i.postimg.cc/gkmHCp1k/1777456041121-2.jpg', category:'wedding'},
     {src:'https://i.postimg.cc/d3Pr2TKT/1776681500120-2.jpg', category:'wedding'},
     {src:'https://i.postimg.cc/PJsYW8kv/1776681572439-2.jpg', category:'wedding'},
     /* Football Cakes */
     {src:'https://i.postimg.cc/zBLq70ds/1773993315025_2.jpg', category:'football'},
     {src:'https://i.postimg.cc/rmdqjQhH/1757956305870_2.jpg', category:'football'},
     {src:'https://i.postimg.cc/W3Ds8XWR/1773993502852_3.jpg', category:'football'},
+    {src:'https://i.postimg.cc/Dyv1Cgbf/1777799020493-2.jpg', category:'football'},
     {src:'https://i.postimg.cc/ZR9JHVf1/1756982700362_2.jpg', category:'football'},
     {src:'https://i.postimg.cc/wvSgGLZj/PXL_20250409_095903230_PORTRAIT_2.jpg', category:'football'},
     {src:'https://i.postimg.cc/qMHpcc25/PXL_20250724_114313368_PORTRAIT.jpg', category:'football'},
