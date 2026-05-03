@@ -741,7 +741,7 @@ Best Cake Shop in Kathmandu | Order Birthday, Wedding & Custom Cakes 🎂.
   // WhatsApp Order
   function orderWhatsApp(product){
     const phone = "9779867221301";
-    const url = `https://wa.me/${phone}?text=${encodeURIComponent(`Hello Bajeko Cake 👋,
+    const url = `https://wa.me/${phone}?text=${encodeURIComponent(`Hello Bajeko Cake ,
 I want to order: ${product}
 Please share price, size, and delivery time.`)}`;
     window.open(url,'_blank');
