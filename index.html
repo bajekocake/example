@@ -743,7 +743,7 @@ Best Cake Shop in Kathmandu | Order Birthday, Wedding & Custom Cakes 🎂.
     const phone = "9779867221301";
     const url = `https://wa.me/${phone}?text=${encodeURIComponent(`Hello Bajeko Cake ,
 I want to order: ${product}
-Please share price, size, and delivery time.`)}`;
+Please share price and size.`)}`;
     window.open(url,'_blank');
   }
 
