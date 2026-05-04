@@ -6,6 +6,7 @@
   <title>Bajeko Cake | Premium Cake Shop in Kathmandu | Order Online</title>
   
   <link rel="icon" href="logo.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
 
   <!-- Primary Meta Tags -->
   <meta name="description" content="Bajeko Cake in Kathmandu offers premium birthday, wedding, and eggless cakes. Order online for fast delivery and celebrate every occasion with delicious cakes.">
@@ -45,20 +46,74 @@
 
   <!-- Styles -->
   <style>
-    /* General Reset */
-    * { box-sizing: border-box; margin:0; padding:0; }
-    body { font-family: 'Poppins', sans-serif; background: #fff7f2; }
-    h1,h2,h3,p { margin:0; }
+    /* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
-    /* Header */
-    header { background: linear-gradient(135deg, #f7b16a, #e98e3a); padding: 30px; text-align:center; color:white; }
-    header h1 { font-size:3rem; }
-    header p { font-size:1.2rem; margin-top:5px; }
+body{
+font-family:'Poppins',sans-serif;
+background:#0f0f0f;
+color:white;
+overflow-x:hidden;
+}
+/* 🔥 PREMIUM GRADIENT BACKGROUND */
+body::before{
+content:"";
+position:fixed;
+width:100%;
+height:100%;
+background: radial-gradient(circle at 20% 20%, rgba(255,180,120,0.15), transparent),
+            radial-gradient(circle at 80% 80%, rgba(255,120,180,0.12), transparent);
+z-index:-1;
+}
+
+   /* HEADER */
+header{
+text-align:center;
+padding:80px 20px;
+}
+
+header h1{
+font-family:'Playfair Display',serif;
+font-size:64px;
+letter-spacing:2px;
+background: linear-gradient(90deg,#ffd700,#fff,#ffd700);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+header p{
+margin-top:10px;
+opacity:0.7;
+}
     
 
-    /* Navigation */
-    nav { background: #f2dcc0; padding:15px; text-align:center; position: sticky; top:0; z-index: 10; }
-    nav a { margin:0 18px; text-decoration:none; color:#5a3e1b; font-weight:bold; cursor:pointer; }
+    /* NAV */
+nav{
+display:flex;
+justify-content:center;
+gap:40px;
+padding:20px;
+backdrop-filter:blur(10px);
+background:rgba(255,255,255,0.05);
+position:sticky;
+top:0;
+z-index:999;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:500;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#ffd700;
+}
 
     /* Slider */
     .slider {
