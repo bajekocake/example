@@ -650,6 +650,13 @@ Best Cake Shop in Kathmandu | Order Birthday, Wedding & Custom Cakes 🎂
       </div>
     </div>
   </section>
+  
+  <section style="text-align:center; padding:40px;">
+<h2>Why Choose Us?</h2>
+<p>⭐⭐⭐⭐⭐500+ Happy Customers</p>
+<p>⭐⭐⭐⭐⭐ Same Day Delivery</p>
+<p>⭐⭐⭐⭐⭐Premium Quality Ingredients</p>
+</section>
 
   <!-- Trending Cakes -->
   <section class="featured">
