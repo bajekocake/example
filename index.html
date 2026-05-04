@@ -61,16 +61,31 @@
     nav a { margin:0 18px; text-decoration:none; color:#5a3e1b; font-weight:bold; cursor:pointer; }
 
     /* Slider */
-    .slider { position: relative; width: 100%; max-height: 400px; overflow: hidden; }
-    .slides { display: flex; width: 300%; animation: slide 10s infinite; }
-   .slides img { width: 400px; height: 400px; object-fit: cover; }
+    .slider {
+  overflow: hidden;
+  width: 100%;
+  height: 400px;
+}
+
+.slides {
+  display: flex;
+  animation: slide 18s infinite;
+}
+
+.slides img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+@keyframes slide {
+  0%,20% { transform: translateX(0); }
+  25%,45% { transform: translateX(-100%); }
+  50%,70% { transform: translateX(-200%); }
+  75%,95% { transform: translateX(-300%); }
+  100% { transform: translateX(0); }
+}
    
-   @keyframes slide {
-      0% { transform: translateX(0); }
-      33% { transform: translateX(-40%); }
-      66% { transform: translateX(-60%); }
-      100% { transform: translateX(0); }
-    }
    
    
    
@@ -224,6 +239,74 @@
     padding: 40px 20px;
     border-radius: 15px;
     margin: 40px auto;
+    
+}
+
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.event-box {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.event-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(233,142,58,0.25);
+}
+
+.event-box h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #e98e3a;
+}
+
+/* 🎉 FESTIVAL BACKGROUND EFFECT */
+.upcoming-event {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Floating Rakhi Threads */
+.rakhi {
+  position: absolute;
+  width: 50px;
+  opacity: 0.8;
+  animation: floatRakhi linear infinite;
+}
+
+@keyframes floatRakhi {
+  0% {
+    transform: translateY(100vh) rotate(0deg);
+    opacity: 0;
+  }
+  20% { opacity: 1; }
+  100% {
+    transform: translateY(-10vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Sparkle particles */
+.sparkle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: gold;
+  border-radius: 50%;
+  animation: sparkleAnim 3s infinite ease-in-out;
+}
+
+@keyframes sparkleAnim {
+  0%,100% { opacity: 0; transform: scale(0.5); }
+  50% { opacity: 1; transform: scale(1.5); }
 }
 
 /* Flashing Event Title */
@@ -415,7 +498,7 @@ box-shadow: 0 6px 18px rgba(0,0,0,0.4);
 <header>
   <h1>Bajeko Cake</h1>
   <h2 style="text-align:center; font-size:20px; color:#5a3e1b;">
-Best Cake Shop in Kathmandu | Order Birthday, Wedding & Custom Cakes 🎂.
+Best Cake Shop in Kathmandu | Order Birthday, Wedding & Custom Cakes 🎂
 </h2>
     
   <p>
@@ -625,23 +708,54 @@ Best Cake Shop in Kathmandu | Order Birthday, Wedding & Custom Cakes 🎂.
 
 <!-- Upcoming Event -->
 <section class="upcoming-event">
-  <h2 class="flash-title">🌸 Father's Day 🌸</h2>
-  <p>Celebrate your dad with a special cake made with love 💖</p>
+  <h2 class="flash-title">🎉 Upcoming Celebrations 🎉</h2>
 
-  <!-- Flip Countdown -->
-  <div class="flip-countdown">
-      <div class="time-box"><span id="event-days">00</span><p>Days</p></div>
-      <div class="time-box"><span id="event-hours">00</span><p>Hours</p></div>
-      <div class="time-box"><span id="event-minutes">00</span><p>Minutes</p></div>
-      <div class="time-box"><span id="event-seconds">00</span><p>Seconds</p></div>
+  <div class="event-grid">
+
+    
+
+    <!-- Rakshya Bandhan -->
+    <div class="event-box">
+      <h3>🪢 Rakshya Bandhan</h3>
+      <p>Celebrate sibling love with a special cake 💝</p>
+
+      <div class="flip-countdown">
+        <div class="time-box"><span id="rb-days">00</span><p>Days</p></div>
+        <div class="time-box"><span id="rb-hours">00</span><p>Hours</p></div>
+        <div class="time-box"><span id="rb-minutes">00</span><p>Minutes</p></div>
+        <div class="time-box"><span id="rb-seconds">00</span><p>Seconds</p></div>
+      </div>
+
+      <a href="https://wa.me/9779867221301?text=I want Rakshya Bandhan cake"
+         target="_blank" class="order-btn">
+         Order Now
+      </a>
+    </div>
+    
+    <!-- Father's Day -->
+    <div class="event-box">
+      <h3>🌸 Father's Day</h3>
+      <p>Celebrate your dad with a special cake 💖</p>
+
+      <div class="flip-countdown">
+        <div class="time-box"><span id="fd-days">00</span><p>Days</p></div>
+        <div class="time-box"><span id="fd-hours">00</span><p>Hours</p></div>
+        <div class="time-box"><span id="fd-minutes">00</span><p>Minutes</p></div>
+        <div class="time-box"><span id="fd-seconds">00</span><p>Seconds</p></div>
+      </div>
+
+      <a href="https://wa.me/9779867221301?text=I want Father's Day cake"
+         target="_blank" class="order-btn">
+         Order Now
+      </a>
+    </div>
+
   </div>
+</section>
 
-  <!-- WhatsApp Order Button -->
-  <a href="https://wa.me/9779867221301?text=Hello%20Bajeko%20Cake,%20I%20want%20to%20order%20a%20Father's%20Day%20cake" 
-     target="_blank" 
-     class="order-btn">
-     Order Now on WhatsApp
-  </a>
+  
+
+ 
 </section>
 
 <!-- Contact / Map -->
@@ -900,36 +1014,64 @@ lightboxImg.addEventListener("touchend", (e) => {
   if (endX - startX > 50) changeSlide(-1);
 });
 
-  // Upcoming Event Countdown
-  const eventDate = new Date("September 11, 2026 00:00:00").getTime();
+// ✨ Sparkle Generator
+function createSparkles() {
+  const section = document.querySelector('.upcoming-event');
 
-function updateEventFlip(id, value) {
-    const el = document.getElementById(id);
-    if (el.innerText != value) {
-        el.classList.add("flip");
-        setTimeout(() => {
-            el.innerText = value;
-            el.classList.remove("flip");
-        }, 250);
-    }
+  setInterval(() => {
+    const sparkle = document.createElement('div');
+    sparkle.classList.add('sparkle');
+
+    sparkle.style.left = Math.random() * 100 + '%';
+    sparkle.style.top = Math.random() * 100 + '%';
+
+    section.appendChild(sparkle);
+
+    setTimeout(() => {
+      sparkle.remove();
+    }, 3000);
+  }, 200);
 }
 
+createSparkles();
+
+  // Upcoming Event Countdown
+// Event Dates
+const fathersDay = new Date("September 11, 2026 00:00:00").getTime();
+const rakshyaBandhan = new Date("August 28, 2026 00:00:00").getTime();
+
+function updateCountdown(targetDate, ids) {
+  const now = new Date().getTime();
+  const distance = targetDate - now;
+
+  if (distance < 0) return;
+
+  const days = String(Math.floor(distance / (1000*60*60*24))).padStart(2,'0');
+  const hours = String(Math.floor((distance % (1000*60*60*24))/(1000*60*60))).padStart(2,'0');
+  const minutes = String(Math.floor((distance % (1000*60*60))/(1000*60))).padStart(2,'0');
+  const seconds = String(Math.floor((distance % (1000*60))/1000)).padStart(2,'0');
+
+  document.getElementById(ids.days).innerText = days;
+  document.getElementById(ids.hours).innerText = hours;
+  document.getElementById(ids.minutes).innerText = minutes;
+  document.getElementById(ids.seconds).innerText = seconds;
+}
+
+// Run both timers
 setInterval(() => {
-    const now = new Date().getTime();
-    const distance = eventDate - now;
+  updateCountdown(fathersDay, {
+    days: "fd-days",
+    hours: "fd-hours",
+    minutes: "fd-minutes",
+    seconds: "fd-seconds"
+  });
 
-    if (distance < 0) return;
-
-    const days = String(Math.floor(distance / (1000*60*60*24))).padStart(2,'0');
-    const hours = String(Math.floor((distance % (1000*60*60*24))/(1000*60*60))).padStart(2,'0');
-    const minutes = String(Math.floor((distance % (1000*60*60))/(1000*60))).padStart(2,'0');
-    const seconds = String(Math.floor((distance % (1000*60))/1000)).padStart(2,'0');
-
-    updateEventFlip("event-days", days);
-    updateEventFlip("event-hours", hours);
-    updateEventFlip("event-minutes", minutes);
-    updateEventFlip("event-seconds", seconds);
-
+  updateCountdown(rakshyaBandhan, {
+    days: "rb-days",
+    hours: "rb-hours",
+    minutes: "rb-minutes",
+    seconds: "rb-seconds"
+  });
 }, 1000);
 </script>
 </body>
