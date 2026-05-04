@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bajeko Cake | Premium Cake Shop in Kathmandu | Order Online</title>
   
+  
+  <link rel="preload" as="image" href="hero.webp">
   <link rel="icon" href="logo.png" type="image/png">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
 
@@ -181,16 +183,46 @@ color:#ffd700;
 }
 /* PRODUCT CARD */
 .product-card {
-  text-align: center;
+  background:rgba(255,255,255,0.05);
+backdrop-filter:blur(20px);
+border-radius:20px;
+padding:20px;
+transition:0.4s;
+position:relative;
+overflow:hidden;
+}
+.product-card::before{
+content:"";
+position:absolute;
+width:150%;
+height:150%;
+background:linear-gradient(120deg,transparent,rgba(255,255,255,0.2),transparent);
+top:-50%;
+left:-50%;
+transform:rotate(25deg);
+opacity:0;
+transition:0.5s;
 }
 
+
+.product-card:hover::before{
+opacity:1;
+animation:shine 1.2s;
+}
+@keyframes shine{
+0%{left:-100%;}
+100%{left:100%;}
+}
+
+.product-card:hover{
+transform:translateY(-10px) scale(1.03);
+box-shadow:0 20px 60px rgba(0,0,0,0.5);
+}
 /* PRODUCT IMAGE */
 .product-card img {
-  width: 100%;
-  aspect-ratio: 1/1;
-  object-fit: cover;
-  border-radius: 10px;
-  transition: 0.3s;
+  width:100%;
+border-radius:15px;
+margin-bottom:15px;
 }
 
 /* HOVER EFFECT */
@@ -200,8 +232,8 @@ color:#ffd700;
 
 /* TITLE */
 .product-card h3 {
-  margin-top: 10px;
-  font-size: 16px;
+  font-size:20px;
+margin-bottom:10px;
 }
 
 /* DESCRIPTION */
@@ -213,19 +245,18 @@ color:#ffd700;
 
 /* BUTTON */
 .book-btn {
-  margin-top: 8px;
-  padding: 8px 14px;
-  border: none;
-  background: #e98e3a;
-  color: white;
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 13px;
-  transition: 0.3s;
+  width:100%;
+padding:10px;
+border:none;
+border-radius:30px;
+background:#ffd700;
+color:black;
+cursor:pointer;
+transition:0.3s;
 }
 
-.book-btn:hover {
-  background: #f7b16a;
+.book-btn:hover{
+background:white;
 }
 
 
@@ -260,6 +291,17 @@ color:#ffd700;
   border-radius: 10px;
   transition: transform 0.3s ease;
   cursor: grab;
+}
+
+/* FLOAT ANIMATION */
+@keyframes float{
+0%{transform:translateY(0);}
+50%{transform:translateY(-10px);}
+100%{transform:translateY(0);}
+}
+
+.product-card{
+animation:float 6s ease-in-out infinite;
 }
 
 /* Close button */
@@ -536,11 +578,10 @@ box-shadow: 0 6px 18px rgba(0,0,0,0.4);
 }
 
 /* Mobile Responsive */
-@media (max-width:768px) {
-  .footer-grid {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
+@media(max-width:768px){
+header h1{font-size:40px;}
+.hero h2{font-size:28px;}
+.grid{padding:20px;}
 }
 
     /* Map */
@@ -579,6 +620,11 @@ Best Cake Shop in Kathmandu | Order Birthday, Wedding & Custom Cakes 🎂
       <img src="https://i.postimg.cc/s2bN2BX3/unnamed.webp">
       <img src="https://i.postimg.cc/9fsnf4MF/PXL_20221023_133551308_PORTRAIT.webp">
       <img src="https://i.postimg.cc/MGwg9VBQ/Gemini-Generated-Image-a28fa2a28fa2a28f-2.jpg">
+      <img src="https://i.postimg.cc/7PmQxsH3/1776662821347-3.jpg">
+       <img src="https://i.postimg.cc/GpGBK3HV/PXL-20251219-065311679-PORTRAIT-2-(1).jpg">
+        <img src="https://i.postimg.cc/W3gZ4zxM/1774960855220-2.jpg">
+         <img src="https://i.postimg.cc/gjnmJQTs/1777454965754-3.jpg">
+     
     </div>
   </div>
 
