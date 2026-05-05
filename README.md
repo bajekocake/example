@@ -130,7 +130,7 @@ color:#ffd700;
 
 .slides {
   display: flex;
-  animation: slide 9s infinite;
+  animation: slide 8s infinite;
 }
 
 .slides img {
@@ -641,7 +641,7 @@ Best Cake Shop in Kathmandu | Order Birthday, Wedding & Custom Cakes 🎂
 <section class="hero">
   <h2>Luxury Cakes Crafted for Your Moments</h2>
   <p>Handmade in Kathmandu with premium ingredients</p>
-  <a href="#products"><button>Explore Cakes</button></a>
+  
 </section>
 
 <!-- Home Section -->
