@@ -118,15 +118,19 @@ color:#ffd700;
 }
 
     /* Slider */
-    .slider {
-  overflow: hidden;
+     .slider::after {
+  content: "";
+  position: absolute;
   width: 100%;
   height: 400px;
-}
+  background: linear-gradient(to bottom, rgba(0,0,0,0.2), #0f0f0f);
+  top: 0;
+} 
+ 
 
 .slides {
   display: flex;
-  animation: slide 18s infinite;
+  animation: slide 9s infinite;
 }
 
 .slides img {
@@ -142,7 +146,6 @@ color:#ffd700;
   75%,95% { transform: translateX(-300%); }
   100% { transform: translateX(0); }
 }
-   
    
    
    
@@ -174,16 +177,25 @@ color:#ffd700;
 
 
 .featured-card, .cake-card {
-  transition: 0.3s ease;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 15px;
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+  transition: 0.4s ease;
 }
 
 .featured-card:hover, .cake-card:hover {
-  transform: translateY(-6px) scale(1.02);
-  box-shadow: 0 10px 25px rgba(233,142,58,0.3);
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 30px 80px rgba(255,215,0,0.2);
 }
 /* PRODUCT CARD */
 .product-card {
-  background:rgba(255,255,255,0.05);
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
 backdrop-filter:blur(20px);
 border-radius:20px;
 padding:20px;
@@ -205,9 +217,8 @@ transition:0.5s;
 }
 
 
-.product-card:hover::before{
-opacity:1;
-animation:shine 1.2s;
+.product-card:hover {
+  transform: rotateX(6deg) rotateY(-6deg) scale(1.05);
 }
 @keyframes shine{
 0%{left:-100%;}
@@ -219,10 +230,15 @@ transform:translateY(-10px) scale(1.03);
 box-shadow:0 20px 60px rgba(0,0,0,0.5);
 }
 /* PRODUCT IMAGE */
-.product-card img {
-  width:100%;
-border-radius:15px;
-margin-bottom:15px;
+.product-card img,
+.featured-card img {
+  transition: 0.4s;
+}
+
+.product-card:hover img,
+.featured-card:hover img {
+  filter: brightness(1.1) contrast(1.1);
+  box-shadow: 0 10px 40px rgba(255,215,0,0.3);
 }
 
 /* HOVER EFFECT */
@@ -244,19 +260,15 @@ margin-bottom:10px;
 }
 
 /* BUTTON */
-.book-btn {
-  width:100%;
-padding:10px;
-border:none;
-border-radius:30px;
-background:#ffd700;
-color:black;
-cursor:pointer;
-transition:0.3s;
+button {
+  background: linear-gradient(135deg,#ffd700,#ffb347);
+  color: black;
+  font-weight: 600;
 }
 
-.book-btn:hover{
-background:white;
+button:hover {
+  background: white;
+  color: black;
 }
 
 
@@ -584,6 +596,23 @@ header h1{font-size:40px;}
 .grid{padding:20px;}
 }
 
+/*hero  */ 
+.hero{
+text-align:center;
+padding:60px 20px;
+}
+
+.hero h2{
+font-family:'Playfair Display',serif;
+font-size:42px;
+margin-bottom:10px;
+}
+
+.hero p{
+opacity:0.7;
+margin-bottom:20px;
+}
+
     /* Map */
     .map-container { max-width:300px; margin:auto; border-radius:5px; overflow:hidden; box-shadow:0 5px 5px rgba(0,0,0,0.2); text-align:center; }
   </style>
@@ -608,6 +637,12 @@ Best Cake Shop in Kathmandu | Order Birthday, Wedding & Custom Cakes 🎂
   <a onclick="showGallery()">Gallery</a>
   <a href="#contact">Contact</a>
 </nav>
+
+<section class="hero">
+  <h2>Luxury Cakes Crafted for Your Moments</h2>
+  <p>Handmade in Kathmandu with premium ingredients</p>
+  <a href="#products"><button>Explore Cakes</button></a>
+</section>
 
 <!-- Home Section -->
 <section id="home-section">
@@ -1061,6 +1096,25 @@ card.style.display = "none";
     }
   });
 }
+
+
+
+const cards = document.querySelectorAll('.product-card, .cake-card, .featured-card');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.style.opacity = 1;
+      entry.target.style.transform = "translateY(0)";
+    }
+  });
+});
+
+cards.forEach(card => {
+  card.style.opacity = 0;
+  card.style.transform = "translateY(40px)";
+  observer.observe(card);
+});
 
   // Lightbox
   let currentIndex = 0;
