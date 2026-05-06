@@ -176,6 +176,7 @@ color:#ffd700;
 }
 
 
+
 .featured-card, .cake-card {
   background: rgba(255,255,255,0.05);
   backdrop-filter: blur(20px);
@@ -192,53 +193,16 @@ color:#ffd700;
 }
 /* PRODUCT CARD */
 .product-card {
-  transform-style: preserve-3d;
-  perspective: 1000px;
+  text-align: center;
 }
 
-backdrop-filter:blur(20px);
-border-radius:20px;
-padding:20px;
-transition:0.4s;
-position:relative;
-overflow:hidden;
-}
-.product-card::before{
-content:"";
-position:absolute;
-width:150%;
-height:150%;
-background:linear-gradient(120deg,transparent,rgba(255,255,255,0.2),transparent);
-top:-50%;
-left:-50%;
-transform:rotate(25deg);
-opacity:0;
-transition:0.5s;
-}
-
-
-.product-card:hover {
-  transform: rotateX(6deg) rotateY(-6deg) scale(1.05);
-}
-@keyframes shine{
-0%{left:-100%;}
-100%{left:100%;}
-}
-
-.product-card:hover{
-transform:translateY(-10px) scale(1.03);
-box-shadow:0 20px 60px rgba(0,0,0,0.5);
-}
 /* PRODUCT IMAGE */
-.product-card img,
-.featured-card img {
-  transition: 0.4s;
-}
-
-.product-card:hover img,
-.featured-card:hover img {
-  filter: brightness(1.1) contrast(1.1);
-  box-shadow: 0 10px 40px rgba(255,215,0,0.3);
+.product-card img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 0.3s;
 }
 
 /* HOVER EFFECT */
@@ -248,8 +212,8 @@ box-shadow:0 20px 60px rgba(0,0,0,0.5);
 
 /* TITLE */
 .product-card h3 {
-  font-size:20px;
-margin-bottom:10px;
+  margin-top: 10px;
+  font-size: 16px;
 }
 
 /* DESCRIPTION */
@@ -259,6 +223,23 @@ margin-bottom:10px;
   margin: 5px 0;
 }
 
+
+/* Button */
+.product-card button {
+  background: #e98e3a;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.product-card button:hover {
+  background: #d9772b;
+}
 /* BUTTON */
 button {
   background: linear-gradient(135deg,#ffd700,#ffb347);
@@ -589,6 +570,10 @@ box-shadow: 0 6px 18px rgba(0,0,0,0.4);
   opacity: 0.8;
 }
 
+nav a {
+  cursor: pointer;
+}
+
 /* Mobile Responsive */
 @media(max-width:768px){
 header h1{font-size:40px;}
@@ -632,9 +617,9 @@ Best Cake Shop in Kathmandu | Order Birthday, Wedding & Custom Cakes 🎂
 
 <!-- Navigation -->
 <nav>
-  <a onclick="showHome()">Home</a>
-  <a onclick="showProducts()">Products</a>
-  <a onclick="showGallery()">Gallery</a>
+  <a href="#" onclick="showHome(); return false;">Home</a>
+<a href="#" onclick="showProducts(); return false;">Products</a>
+<a href="#" onclick="showGallery(); return false;">Gallery</a>
   <a href="#contact">Contact</a>
 </nav>
 
