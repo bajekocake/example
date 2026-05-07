@@ -169,10 +169,12 @@ color:#ffd700;
     .category-buttons button { padding:10px 16px; border:none; background:#e98e3a; color:white; border-radius:35px; cursor:pointer; font-size:13px; }
     /* PRODUCTS GRID */
 .products {
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 15px;
-  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 220px));
+  justify-content: center;
+  gap: 20px;
 }
+
 
 
 
