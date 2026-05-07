@@ -1249,7 +1249,7 @@ Best Cake Shop in Kathmandu | Order Birthday, Wedding & Custom Cakes 🎂
 </div>
 
 <!-- Upcoming Event -->
-<section class="upcoming-event">
+<section class="upcoming-event" id="upcoming-event">
   <h2 class="flash-title">🎉 Upcoming Celebrations 🎉</h2>
 
   <div class="event-grid">
@@ -1769,6 +1769,23 @@ cards.forEach(card => {
   card.style.transform = "translateY(40px)";
   observer.observe(card);
 });
+
+
+function showHome(){
+  hideAllSections();
+  document.getElementById('home-section').style.display='block';
+  document.getElementById('upcoming-event').style.display='block';
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+function hideAllSections(){
+  document.getElementById('home-section').style.display='none';
+  document.getElementById('products').style.display='none';
+  document.getElementById('gallery-section').style.display='none';
+  document.getElementById('about-section').style.display='none';
+  document.getElementById('contact').style.display='none';
+  document.getElementById('upcoming-event').style.display='none';
+}
 
   // Lightbox
   let currentIndex = 0;
