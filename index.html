@@ -714,7 +714,23 @@ animation:float 6s ease-in-out infinite;
     transition: 0.3s;
 }
 
+@media (max-width: 768px) {
+  nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 12px;
+  }
 
+  nav a {
+    text-align: center;
+    font-size: 13px;
+    padding: 10px 5px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.08);
+  }
+}
 
 
 /* =========================
