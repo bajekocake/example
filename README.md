@@ -263,6 +263,261 @@ button:hover {
     .gallery{ display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:20px; }
     .gallery img{ width:100%; height:100%; object-fit:cover; border-radius:10px; cursor:pointer; transition:transform 0.3s; }
     .gallery img:hover{ transform:scale(1.1); }
+    
+    
+    
+    /* =========================
+   ABOUT US PREMIUM SECTION
+========================= */
+
+.about-us{
+position:relative;
+padding:120px 8%;
+overflow:hidden;
+}
+
+.about-overlay{
+position:absolute;
+inset:0;
+
+background:
+radial-gradient(circle at top left,
+rgba(255,215,0,0.08),
+transparent 35%),
+
+radial-gradient(circle at bottom right,
+rgba(255,180,120,0.08),
+transparent 35%);
+}
+
+.about-container{
+position:relative;
+z-index:2;
+
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:80px;
+align-items:center;
+}
+
+.about-tag{
+display:inline-block;
+
+padding:10px 18px;
+
+border-radius:40px;
+
+background:rgba(255,255,255,0.08);
+
+border:1px solid rgba(255,255,255,0.1);
+
+font-size:13px;
+letter-spacing:2px;
+margin-bottom:25px;
+
+color:#ffd700;
+}
+
+.about-left h2{
+font-family:'Playfair Display',serif;
+font-size:64px;
+line-height:1.1;
+margin-bottom:30px;
+
+background:linear-gradient(
+90deg,
+#fff,
+#ffd700,
+#fff
+);
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.about-description{
+font-size:17px;
+line-height:1.9;
+opacity:0.8;
+margin-bottom:20px;
+max-width:650px;
+}
+
+.about-stats{
+display:flex;
+gap:25px;
+margin-top:40px;
+flex-wrap:wrap;
+}
+
+.stat-box{
+background:rgba(255,255,255,0.05);
+
+backdrop-filter:blur(18px);
+
+padding:25px;
+
+border-radius:24px;
+
+min-width:150px;
+
+border:1px solid rgba(255,255,255,0.08);
+
+box-shadow:
+0 15px 40px rgba(0,0,0,0.35);
+
+transition:0.4s ease;
+}
+
+.stat-box:hover{
+transform:translateY(-8px);
+}
+
+.stat-box h3{
+font-size:38px;
+color:#ffd700;
+margin-bottom:8px;
+}
+
+.stat-box p{
+opacity:0.7;
+font-size:14px;
+}
+
+.about-btn{
+display:inline-block;
+
+margin-top:40px;
+
+padding:16px 30px;
+
+border-radius:50px;
+
+background:linear-gradient(
+135deg,
+#ffd700,
+#ffb347
+);
+
+color:black;
+font-weight:700;
+text-decoration:none;
+
+transition:0.4s ease;
+
+box-shadow:
+0 15px 40px rgba(255,215,0,0.2);
+}
+
+.about-btn:hover{
+transform:translateY(-5px) scale(1.03);
+
+box-shadow:
+0 25px 60px rgba(255,215,0,0.35);
+}
+
+/* RIGHT SIDE */
+
+.about-right{
+position:relative;
+height:700px;
+}
+
+.about-image{
+position:absolute;
+overflow:hidden;
+
+border-radius:32px;
+
+box-shadow:
+0 30px 80px rgba(0,0,0,0.45);
+
+transition:0.5s ease;
+}
+
+.about-image img{
+width:100%;
+height:100%;
+object-fit:cover;
+
+transition:0.6s ease;
+}
+
+.about-image:hover img{
+transform:scale(1.08);
+}
+
+.about-image:hover{
+transform:translateY(-10px);
+}
+
+.image-1{
+width:300px;
+height:420px;
+top:0;
+left:0;
+}
+
+.image-2{
+width:260px;
+height:340px;
+top:80px;
+right:0;
+}
+
+.image-3{
+width:340px;
+height:240px;
+bottom:0;
+left:120px;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.about-container{
+grid-template-columns:1fr;
+}
+
+.about-left h2{
+font-size:42px;
+}
+
+.about-right{
+height:550px;
+margin-top:40px;
+}
+
+.image-1{
+width:220px;
+height:300px;
+}
+
+.image-2{
+width:190px;
+height:250px;
+}
+
+.image-3{
+width:250px;
+height:180px;
+left:60px;
+}
+
+.about-stats{
+justify-content:center;
+}
+
+}
+    
+    
+    
+    
+    
+    
+    
+    
 
     /* Lightbox */
     .lightbox {
@@ -460,6 +715,138 @@ animation:float 6s ease-in-out infinite;
 }
 
 
+
+
+/* =========================
+CUSTOMER HIGHLIGHTS
+========================= */
+
+.customer-highlights{
+margin-top:70px;
+}
+
+.highlight-title{
+margin-bottom:35px;
+}
+
+.highlight-title span{
+display:inline-block;
+padding:10px 18px;
+border-radius:30px;
+background:rgba(255,255,255,0.06);
+border:1px solid rgba(255,255,255,0.08);
+color:#ffd700;
+font-size:13px;
+letter-spacing:1px;
+margin-bottom:18px;
+}
+
+.highlight-title h3{
+font-size:42px;
+font-family:'Playfair Display',serif;
+background:linear-gradient(90deg,#fff,#ffd700,#fff);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.review-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.review-card{
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(18px);
+border:1px solid rgba(255,255,255,0.08);
+border-radius:28px;
+padding:30px;
+transition:0.4s ease;
+box-shadow:0 20px 50px rgba(0,0,0,0.35);
+position:relative;
+overflow:hidden;
+}
+
+.review-card:hover{
+transform:translateY(-10px);
+box-shadow:0 30px 70px rgba(255,215,0,0.15);
+}
+
+.review-card::before{
+content:"";
+position:absolute;
+top:-80px;
+right:-80px;
+width:180px;
+height:180px;
+background:radial-gradient(circle,
+rgba(255,215,0,0.15),
+transparent 70%);
+}
+
+.review-stars{
+font-size:22px;
+color:#ffd700;
+margin-bottom:18px;
+}
+
+.review-text{
+font-size:15px;
+line-height:1.9;
+opacity:0.85;
+margin-bottom:25px;
+}
+
+.review-user{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.review-user img{
+width:55px;
+height:55px;
+border-radius:50%;
+object-fit:cover;
+border:2px solid rgba(255,255,255,0.1);
+}
+
+.review-user h4{
+font-size:16px;
+margin-bottom:3px;
+}
+
+.review-user span{
+font-size:13px;
+opacity:0.65;
+}
+
+.featured-review{
+border:1px solid rgba(255,215,0,0.3);
+transform:scale(1.03);
+}
+
+.featured-review:hover{
+transform:translateY(-10px) scale(1.04);
+}
+
+@media(max-width:768px){
+
+.highlight-title h3{
+font-size:32px;
+}
+
+.review-card{
+padding:24px;
+}
+
+}
+
+
+
+
+
+
     /* WhatsApp Floating */
     .whatsapp-icon { position:fixed; bottom:20px; right:20px; background:#25D366; color:white; font-size:28px; padding:15px; border-radius:50%; text-decoration:none; box-shadow:0 4px 10px rgba(0,0,0,0.3); }
     .whatsapp-icon:hover { background:#1ebe5d; }
@@ -621,13 +1008,14 @@ Best Cake Shop in Kathmandu | Order Birthday, Wedding & Custom Cakes 🎂
 <a href="#" onclick="showProducts(); return false;">Products</a>
 <a href="#" onclick="showGallery(); return false;">Gallery</a>
   <a href="#contact">Contact</a>
+  <a href="#" onclick="showAbout(); return false;">About Us</a>
 </nav>
 
 <section class="hero">
   <h2>Luxury Cakes Crafted for Your Moments</h2>
   <p>Handmade in Kathmandu with premium ingredients</p>
   
-</section>
+  </section>
 
 <!-- Home Section -->
 <section id="home-section">
@@ -823,6 +1211,16 @@ Best Cake Shop in Kathmandu | Order Birthday, Wedding & Custom Cakes 🎂
   <div class="gallery" id="gallery-container"></div>
 </section>
 
+
+
+
+
+
+
+
+
+
+
 <!-- Lightbox -->
 <div class="lightbox" id="lightbox">
   <span class="close" onclick="closeLightbox()">&times;</span>
@@ -895,6 +1293,209 @@ Best Cake Shop in Kathmandu | Order Birthday, Wedding & Custom Cakes 🎂
     <a href="https://www.google.com/maps/dir/?api=1&destination=27.66936597896528,85.33285541838701" target="_blank"><button class="book-btn">Get Directions</button></a>
   </div>
 </section>
+
+
+<!-- About Us--</--->
+
+<section class="about-us" id="about-section" style="display:none;">
+
+  <div class="about-overlay"></div>
+
+  <div class="about-container">
+
+    <!-- LEFT CONTENT -->
+    <div class="about-left">
+
+      <span class="about-tag">
+        BAJEKO CAKE
+      </span>
+
+      <h2>
+        We Create Cakes
+        <br>
+        That Make Moments
+        <br>
+        Unforgettable.
+      </h2>
+
+      <p class="about-description">
+        Bajeko Cake is a premium artisan cake studio located in Gwarko,
+        Lalitpur, Nepal. We specialize in luxury custom cakes designed
+        for birthdays, weddings, engagements, anniversaries, baby showers,
+        corporate events, and every meaningful celebration.
+      </p>
+
+      <p class="about-description">
+        Every cake at Bajeko Cake is handcrafted with passion using
+        premium ingredients, elegant finishing, modern artistry,
+        and creative detailing. Our mission is simple —
+        to turn your sweetest memories into edible art.
+      </p>
+
+      <p class="about-description">
+        From minimalist luxury cakes to trending themed creations,
+        floral wedding masterpieces, kids celebration cakes,
+        bento cakes, and customized premium designs,
+        we deliver experiences that taste as beautiful as they look.
+      </p>
+
+      <div class="about-features">
+
+        <div class="feature-item">
+          <i class="fas fa-cake-candles"></i>
+          <span>Custom Luxury Cakes</span>
+        </div>
+
+        <div class="feature-item">
+          <i class="fas fa-star"></i>
+          <span>Premium Ingredients</span>
+        </div>
+
+        <div class="feature-item">
+          <i class="fas fa-heart"></i>
+          <span>Made With Passion</span>
+        </div>
+
+        <div class="feature-item">
+          <i class="fas fa-truck"></i>
+          <span>Fast Kathmandu Delivery</span>
+        </div>
+
+      </div>
+
+      <div class="about-stats">
+
+        <div class="stat-box">
+          <h3>500+</h3>
+          <p>Happy Customers</p>
+        </div>
+
+        <div class="stat-box">
+          <h3>5★</h3>
+          <p>Customer Ratings</p>
+        </div>
+
+        <div class="stat-box">
+          <h3>2021</h3>
+          <p>Founded</p>
+        </div>
+        <!-- CUSTOMER HIGHLIGHTS -->
+<div class="customer-highlights">
+
+  <div class="highlight-title">
+    <span>💬 Customer Highlights</span>
+    <h3>What Our Customers Say</h3>
+  </div>
+
+  <div class="review-grid">
+
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+
+      <p class="review-text">
+        “Absolutely loved the custom cake design and taste.
+        The detailing was beautiful and delivery was perfectly on time.
+        One of the best cake experiences in Kathmandu.”
+      </p>
+
+      <div class="review-user">
+        <img src="https://lh3.googleusercontent.com/a-/ALV-UjW-nf0ScijqGvH4f1XsFErUkQhHmLDy2NLF0l2n0NM53WP51kg=s120-c-rp-mo-ba3-br100">
+        <div>
+          <h4>Parash Awale</h4>
+          <span>Google Review</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card featured-review">
+      <div class="review-stars">★★★★★</div>
+
+      <p class="review-text">
+        “The cake looked even better than the reference photo
+        and tasted amazing. Premium quality, elegant finishing,
+        and very friendly service. Highly recommended!”
+      </p>
+
+      <div class="review-user">
+        <img src="https://lh3.googleusercontent.com/a/ACg8ocKYIwr9JpSNWhtmcYTJDSOjKJhxryKLfp2HRrZ6QxoEMeMcWA=s120-c-rp-mo-ba3-br100">
+        <div>
+          <h4>Kuldeep Pokhrel</h4>
+          <span>Top Review</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+
+      <p class="review-text">
+        “Beautiful presentation, soft sponge, rich flavor,
+        and amazing customization. Bajeko Cake made our
+        celebration unforgettable.”
+      </p>
+
+      <div class="review-user">
+        <img src="https://lh3.googleusercontent.com/a-/ALV-UjV2JKs4lSnbH02bFdxi1HoBMW51wpLQsLUZCG5ACbpdrcACcaYN=s120-c-rp-mo-ba3-br100">
+        <div>
+          <h4>Utsav Stha</h4>
+          <span>Google Maps Review</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+        
+        
+        
+        
+        
+        
+
+      </div>
+      
+      
+      
+      
+      
+      
+
+      <a href="https://wa.me/9779867221301"
+         target="_blank"
+         class="about-btn">
+         Order Your Dream Cake
+      </a>
+
+    </div>
+
+    <!-- RIGHT IMAGES -->
+    <div class="about-right">
+
+      <div class="about-image image-1">
+        <img src="https://i.postimg.cc/x8hYBHZd/1757957251368_3.jpg"
+             alt="Luxury Cake">
+      </div>
+
+      <div class="about-image image-2">
+        <img src="https://i.postimg.cc/J0vmSJFK/1773807815441_3.jpg"
+             alt="Elegant Cake">
+      </div>
+
+      <div class="about-image image-3">
+        <img src="https://i.postimg.cc/pdS5k7S6/1775455145183-2.jpg"
+             alt="Premium Cake">
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
 
 <footer class="footer">
   <div class="footer-grid">
@@ -975,10 +1576,39 @@ Best Cake Shop in Kathmandu | Order Birthday, Wedding & Custom Cakes 🎂
 <!-- Scripts -->
 <script>
   // Navigation
-  function showHome(){document.getElementById('home-section').style.display='block'; document.getElementById('products').style.display='none'; document.getElementById('gallery-section').style.display='none'; window.scrollTo({top:0,behavior:'smooth'});}
-  function showProducts(){document.getElementById('home-section').style.display='none'; document.getElementById('products').style.display='block'; document.getElementById('gallery-section').style.display='none'; document.getElementById('products').scrollIntoView({behavior:'smooth'});}
-  function showGallery(){document.getElementById('home-section').style.display='none'; document.getElementById('products').style.display='none'; document.getElementById('gallery-section').style.display='block'; filterGallery('all'); document.getElementById('gallery-section').scrollIntoView({behavior:'smooth'});}
-  showHome();
+ function hideAllSections(){
+document.getElementById('home-section').style.display='none';
+document.getElementById('products').style.display='none';
+document.getElementById('gallery-section').style.display='none';
+document.getElementById('about-section').style.display='none';
+}
+
+function showHome(){
+hideAllSections();
+document.getElementById('home-section').style.display='block';
+window.scrollTo({top:0,behavior:'smooth'});
+}
+
+function showProducts(){
+hideAllSections();
+document.getElementById('products').style.display='block';
+document.getElementById('products').scrollIntoView({behavior:'smooth'});
+}
+
+function showGallery(){
+hideAllSections();
+document.getElementById('gallery-section').style.display='block';
+filterGallery('all');
+document.getElementById('gallery-section').scrollIntoView({behavior:'smooth'});
+}
+
+function showAbout(){
+hideAllSections();
+document.getElementById('about-section').style.display='block';
+document.getElementById('about-section').scrollIntoView({behavior:'smooth'});
+}
+
+showHome();
 
   // WhatsApp Order
   function orderWhatsApp(product){
@@ -1009,7 +1639,7 @@ card.style.display = "none";
   // Gallery Filter
   const galleryImages = [
     /* Kid Cakes */
-    {src:'https://i.postimg.cc/DyLW2Pmc/PXL_20251224_113332476_PORTRAIT.jpg', category:'kid'},
+    {src:' ', category:'kid'},
     {src:'https://i.postimg.cc/7PmQxsH3/1776662821347-3.jpg', category:'kid'},
     {src:'https://i.postimg.cc/W3gZ4zxM/1774960855220-2.jpg', category:'kid'},
     {src:'https://i.postimg.cc/4dYdjzDG/PXL_20250802_125718951.jpg', category:'kid'},
