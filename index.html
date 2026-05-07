@@ -963,8 +963,8 @@ nav a {
 
 /* Mobile Responsive */
 @media(max-width:768px){
-header h1{font-size:40px;}
-.hero h2{font-size:28px;}
+header h1{font-size:50px;}
+.hero h2{font-size:18px;}
 .grid{padding:20px;}
 }
 
@@ -1007,7 +1007,7 @@ Best Cake Shop in Kathmandu | Order Birthday, Wedding & Custom Cakes 🎂
   <a href="#" onclick="showHome(); return false;">Home</a>
 <a href="#" onclick="showProducts(); return false;">Products</a>
 <a href="#" onclick="showGallery(); return false;">Gallery</a>
-  <a href="#contact">Contact</a>
+<a href="#" onclick="showContact(); return false;">Contact</a>
   <a href="#" onclick="showAbout(); return false;">About Us</a>
 </nav>
 
@@ -1608,7 +1608,30 @@ document.getElementById('about-section').style.display='block';
 document.getElementById('about-section').scrollIntoView({behavior:'smooth'});
 }
 
+function showContact(){
+  hideAllSections();
+  document.getElementById('contact').style.display = 'block';
+  document.getElementById('contact').scrollIntoView({behavior:'smooth'});
+}
+
+
+
 showHome();
+
+
+
+function hideAllSections(){
+  document.getElementById('home-section').style.display='none';
+  document.getElementById('products').style.display='none';
+  document.getElementById('gallery-section').style.display='none';
+  document.getElementById('about-section').style.display='none';
+  document.getElementById('contact').style.display='none'; // ✅ add this
+}
+
+
+
+
+
 
   // WhatsApp Order
   function orderWhatsApp(product){
@@ -1639,7 +1662,7 @@ card.style.display = "none";
   // Gallery Filter
   const galleryImages = [
     /* Kid Cakes */
-    {src:' ', category:'kid'},
+    {src:'https://i.postimg.cc/DyLW2Pmc/PXL_20251224_113332476_PORTRAIT.jpg', category:'kid'},
     {src:'https://i.postimg.cc/7PmQxsH3/1776662821347-3.jpg', category:'kid'},
     {src:'https://i.postimg.cc/W3gZ4zxM/1774960855220-2.jpg', category:'kid'},
     {src:'https://i.postimg.cc/4dYdjzDG/PXL_20250802_125718951.jpg', category:'kid'},
