@@ -169,10 +169,9 @@ color:#ffd700;
     .category-buttons button { padding:10px 16px; border:none; background:#e98e3a; color:white; border-radius:35px; cursor:pointer; font-size:13px; }
     /* PRODUCTS GRID */
 .products {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 220px));
-  justify-content: center;
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  padding: 10px;
 }
 
 
@@ -419,20 +418,19 @@ box-shadow:
 /* RIGHT SIDE */
 
 .about-right{
-position:relative;
-height:700px;
+  position:relative;
+  height:auto;
+  display:flex;
+  flex-wrap:wrap;
+  gap:15px;
+  justify-content:center;
 }
 
 .about-image{
-position:absolute;
-overflow:hidden;
-
-border-radius:32px;
-
-box-shadow:
-0 30px 80px rgba(0,0,0,0.45);
-
-transition:0.5s ease;
+  position:relative;
+  width:100%;
+  max-width:260px;
+  height:260px;
 }
 
 .about-image img{
@@ -472,16 +470,23 @@ bottom:0;
 left:120px;
 }
 
+
+
+
+#upcoming-event {
+  display: none;
+}
+
 /* MOBILE */
 
-@media(max-width:900px){
+@media(max-width:768px){
 
 .about-container{
 grid-template-columns:1fr;
 }
 
 .about-left h2{
-font-size:42px;
+font-size:32px;
 }
 
 .about-right{
@@ -667,6 +672,16 @@ animation:float 6s ease-in-out infinite;
     25%, 75% { opacity: 0.2; }
 }
 
+
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button, a {
+  touch-action: manipulation;
+}
+
 /* Flip Countdown */
 .flip-countdown {
     display: flex;
@@ -716,16 +731,18 @@ animation:float 6s ease-in-out infinite;
 
 @media (max-width: 768px) {
   nav {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
     padding: 12px;
   }
 
   nav a {
+    flex: 1 1 40%;
     text-align: center;
     font-size: 13px;
-    padding: 10px 5px;
+    padding: 10px;
     border-radius: 12px;
     background: rgba(255,255,255,0.06);
     border: 1px solid rgba(255,255,255,0.08);
@@ -999,6 +1016,17 @@ margin-bottom:10px;
 .hero p{
 opacity:0.7;
 margin-bottom:20px;
+}
+
+
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+img {
+  max-width: 100%;
+  height: auto;
 }
 
     /* Map */
@@ -1593,16 +1621,19 @@ Best Cake Shop in Kathmandu | Order Birthday, Wedding & Custom Cakes 🎂
 <script>
   // Navigation
  function hideAllSections(){
-document.getElementById('home-section').style.display='none';
-document.getElementById('products').style.display='none';
-document.getElementById('gallery-section').style.display='none';
-document.getElementById('about-section').style.display='none';
+  document.getElementById('home-section').style.display='none';
+  document.getElementById('products').style.display='none';
+  document.getElementById('gallery-section').style.display='none';
+  document.getElementById('about-section').style.display='none';
+  document.getElementById('contact').style.display='none';
+  document.getElementById('upcoming-event').style.display='none';
 }
 
 function showHome(){
-hideAllSections();
-document.getElementById('home-section').style.display='block';
-window.scrollTo({top:0,behavior:'smooth'});
+  hideAllSections();
+  document.getElementById('home-section').style.display='block';
+  document.getElementById('upcoming-event').style.display='block';
+  window.scrollTo({top:0,behavior:'smooth'});
 }
 
 function showProducts(){
@@ -1633,19 +1664,6 @@ function showContact(){
 
 
 showHome();
-
-
-
-function hideAllSections(){
-  document.getElementById('home-section').style.display='none';
-  document.getElementById('products').style.display='none';
-  document.getElementById('gallery-section').style.display='none';
-  document.getElementById('about-section').style.display='none';
-  document.getElementById('contact').style.display='none'; // ✅ add this
-}
-
-
-
 
 
 
@@ -1771,21 +1789,7 @@ cards.forEach(card => {
 });
 
 
-function showHome(){
-  hideAllSections();
-  document.getElementById('home-section').style.display='block';
-  document.getElementById('upcoming-event').style.display='block';
-  window.scrollTo({top:0,behavior:'smooth'});
-}
 
-function hideAllSections(){
-  document.getElementById('home-section').style.display='none';
-  document.getElementById('products').style.display='none';
-  document.getElementById('gallery-section').style.display='none';
-  document.getElementById('about-section').style.display='none';
-  document.getElementById('contact').style.display='none';
-  document.getElementById('upcoming-event').style.display='none';
-}
 
   // Lightbox
   let currentIndex = 0;
