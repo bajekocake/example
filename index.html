@@ -89,7 +89,7 @@ background: linear-gradient(90deg,#ffd700,#fff,#ffd700);
 
 header p{
 margin-top:10px;
-opacity:0.7;
+opacity:10px;
 }
     
 
@@ -174,8 +174,6 @@ color:#ffd700;
   justify-content: center;
   gap: 20px;
 }
-
-
 
 
 .featured-card, .cake-card {
@@ -1040,7 +1038,7 @@ img {
 <!-- Header -->
 <header>
   <h1>Bajeko Cake</h1>
-  <h2 style="text-align:center; font-size:20px; color:#5a3e1b;">
+  <h2 style="text-align:center; font-size:20px; color:#FFD700;">
 Best Cake Shop in Kathmandu | Order Birthday, Wedding & Custom Cakes 🎂
 </h2>
     
