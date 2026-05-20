@@ -8,11 +8,11 @@
   
   <link rel="preload" as="image" href="hero.webp">
   <link rel="icon" href="logo.png" type="image/png">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <!-- Primary Meta Tags -->
   <meta name="description" content="Bajeko Cake in Kathmandu offers premium birthday, wedding, and eggless cakes. Order online for fast delivery and celebrate every occasion with delicious cakes.">
-  <meta name="keywords" content="cake shop Kathmandu, birthday cake Nepal, wedding cake Kathmandu, eggless cake Nepal, Bajeko Cake">
+  <meta name="keywords" content="cake shop Kathmandu, birthday cake Nepal, baby girl cake,baby boy cake, kid cake, anniversary cake, cake in lalitpur, cake in bhaktapur, wedding cake Kathmandu, chocolate cake kathmandu, cake in bhaktapur, free delivery in kathmandu,eggless cake Nepal, Bajeko Cake">
   <meta name="author" content="Bajeko Cake">
   <meta name="robots" content="index, follow">
 
@@ -89,7 +89,7 @@ background: linear-gradient(90deg,#ffd700,#fff,#ffd700);
 
 header p{
 margin-top:10px;
-opacity:10px;
+opacity:0.7;
 }
     
 
@@ -160,9 +160,36 @@ color:#ffd700;
     .featured-card, .cake-card { background:white; border-radius:12px; padding:15px; box-shadow:0 4px 10px rgba(0,0,0,0.1); display:flex; flex-direction:column; align-items:center; transition:0.3s; }
     .featured-card:hover, .cake-card:hover { transform:translateY(-5px); }
     .featured-card img, .cake-card img { width:100%; height:100%; object-fit:cover; border-radius:10px; margin-bottom:10px; }
-    .featured-card button, .cake-card button, .book-btn { background:#e98e3a; color:white; border:none; padding:10px 16px; border-radius:20px; cursor:pointer; font-weight:bold; width:100%; margin-top:10px; transition:0.3s; }
-    .featured-card button:hover, .cake-card button:hover, .book-btn:hover { background:#f7b16a; transform:scale(1.05); }
-    .featured h1 { font-family: 'Dancing Script', cursive; font-size:48px; color:#e98e3a; letter-spacing:2px; text-shadow:2px 2px 8px rgba(0,0,0,0.15); }
+    
+    .featured-card button,
+    .cake-card button,
+    .book-btn,
+    .product-card button {
+      background: linear-gradient(135deg, #e98e3a, #f7b16a);
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      width: 100%;
+      margin-top: 10px;
+      transition: 0.3s;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .featured-card button:hover,
+    .cake-card button:hover,
+    .book-btn:hover,
+    .product-card button:hover {
+      background: linear-gradient(135deg, #f7b16a, #ffd700);
+      transform: scale(1.05);
+      color: #000;
+    }
+    
+    
+    
+    .featured h2 { font-family: 'Dancing Script', cursive; font-size:48px; color:#e98e3a; letter-spacing:2px; text-shadow:2px 2px 8px rgba(0,0,0,0.15); }
 
     /* Product Filter Buttons */
     .category-buttons { display:flex; justify-content:center; gap:15px; flex-wrap:wrap; margin-bottom:50px; }
@@ -192,8 +219,16 @@ color:#ffd700;
 }
 /* PRODUCT CARD */
 .product-card {
-  text-align: center;
-}
+      text-align: center;
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(20px);
+      border-radius: 20px;
+      padding: 15px;
+      border: 1px solid rgba(255,255,255,0.08);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+      transition: 0.4s ease;
+      /* FIX #10: Removed float animation from all product cards — only applied to featured hero cards now */
+    }
 
 /* PRODUCT IMAGE */
 .product-card img {
@@ -224,21 +259,19 @@ color:#ffd700;
 
 
 /* Button */
-.product-card button {
-  background: #e98e3a;
-  color: white;
-  border: none;
-  padding: 10px;
-  border-radius: 20px;
-  cursor: pointer;
-  font-weight: 600;
-  width: 100%;
-  transition: 0.3s;
-}
-
-.product-card button:hover {
-  background: #d9772b;
-}
+product-card button {
+      background: linear-gradient(135deg, #e98e3a, #f7b16a);
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      width: 100%;
+      margin-top: 10px;
+      transition: 0.3s;
+      font-family: 'Poppins', sans-serif;
+    }
 /* BUTTON */
 button {
   background: linear-gradient(135deg,#ffd700,#ffb347);
@@ -547,15 +580,15 @@ justify-content:center;
 }
 
 /* FLOAT ANIMATION */
-@keyframes float{
-0%{transform:translateY(0);}
-50%{transform:translateY(-10px);}
-100%{transform:translateY(0);}
-}
+@keyframes float {
+      0%   { transform: translateY(0); }
+      50%  { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
 
-.product-card{
-animation:float 6s ease-in-out infinite;
-}
+    .featured-card:first-child {
+      animation: float 6s ease-in-out infinite;
+    }
 
 /* Close button */
 .close {
@@ -729,25 +762,7 @@ button, a {
     transition: 0.3s;
 }
 
-@media (max-width: 768px) {
-  nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    padding: 12px;
-  }
 
-  nav a {
-    flex: 1 1 40%;
-    text-align: center;
-    font-size: 13px;
-    padding: 10px;
-    border-radius: 12px;
-    background: rgba(255,255,255,0.06);
-    border: 1px solid rgba(255,255,255,0.08);
-  }
-}
 
 
 /* =========================
@@ -994,12 +1009,7 @@ nav a {
   cursor: pointer;
 }
 
-/* Mobile Responsive */
-@media(max-width:768px){
-header h1{font-size:50px;}
-.hero h2{font-size:18px;}
-.grid{padding:20px;}
-}
+
 
 /*hero  */ 
 .hero{
@@ -1031,6 +1041,39 @@ img {
 
     /* Map */
     .map-container { max-width:300px; margin:auto; border-radius:5px; overflow:hidden; box-shadow:0 5px 5px rgba(0,0,0,0.2); text-align:center; }
+    
+    
+    /* FIX #12: Mobile nav — cleaner 3-column grid instead of awkward 2+2+1 */
+    @media (max-width: 768px) {
+      header h1 { font-size: 50px; }
+      .hero h2 { font-size: 28px; }
+
+      nav {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+        padding: 12px;
+      }
+
+      nav a {
+        text-align: center;
+        font-size: 13px;
+        padding: 10px 6px;
+        border-radius: 12px;
+        background: rgba(255,255,255,0.06);
+        border: 1px solid rgba(255,255,255,0.08);
+      }
+
+      .about-container { grid-template-columns: 1fr; }
+      .about-left h2 { font-size: 32px; }
+      .about-right { margin-top: 40px; }
+      .highlight-title h3 { font-size: 32px; }
+      .review-card { padding: 24px; }
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+    
+    
+    
   </style>
 </head>
 <body>
