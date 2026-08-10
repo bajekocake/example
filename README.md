@@ -304,19 +304,23 @@
     <h2>Featured Cakes</h2>
     <div class="featured-grid">
       <div class="featured-card">
-        <img src="https://i.postimg.cc/pdB31trP/5065b81874cef6dea46d7ba330d6a520.jpg" loading="lazy" onclick="openLightbox(this)" alt="Featured Cake 1">
+        <img src="https://i.postimg.cc/vT3LSL0V/1786351832796-2.jpg" loading="lazy" onclick="openLightbox(this)" alt="Featured Cake 1">
+        <h3> RAKHI CAKE </h3>
         <button onclick="orderWhatsApp('Cake')">Order Now</button>
       </div>
       <div class="featured-card">
-        <img src="https://i.postimg.cc/RhNvFJP2/35cc0cfadc752e6c264a276b57c3b489.jpg" loading="lazy" onclick="openLightbox(this)" alt="Featured Cake 2">
+        <img src="https://i.postimg.cc/jdzrCMMg/1786352058152-3.jpg" loading="lazy" onclick="openLightbox(this)" alt="Featured Cake 2">
+        <h3> RAKHI CAKE </h3>
         <button onclick="orderWhatsApp('Cake')">Order Now</button>
       </div>
       <div class="featured-card">
-        <img src="https://i.postimg.cc/N0ksPc9x/eee9731959bc2bbf48e056efbe19a465.jpg" loading="lazy" onclick="openLightbox(this)" alt="Featured Cake 3">
+        <img src="https://i.postimg.cc/T37gbJw6/1786353199065-2.jpg" loading="lazy" onclick="openLightbox(this)" alt="Featured Cake 3">
+        <h3> RAKHI CAKE </h3>
         <button onclick="orderWhatsApp('Cake')">Order Now</button>
       </div>
       <div class="featured-card">
-        <img src="https://i.postimg.cc/1519PXGG/280cfa49bda6d5367dbc5395527e8209.jpg" loading="lazy" onclick="openLightbox(this)" alt="Featured Cake 4">
+        <img src="https://i.postimg.cc/W4TCDjd3/1786352094043.png" loading="lazy" onclick="openLightbox(this)" alt="Featured Cake 4">
+       <h3> RAKHI CAKE </h3>
         <button onclick="orderWhatsApp('Cake')">Order Now</button>
       </div>
     </div>
