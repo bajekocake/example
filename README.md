@@ -304,25 +304,37 @@
     <h2>Featured Cakes</h2>
     <div class="featured-grid">
       <div class="featured-card">
-        <img src="https://i.postimg.cc/vT3LSL0V/1786351832796-2.jpg" loading="lazy" onclick="openLightbox(this)" alt="Featured Cake 1">
-        <h3> RAKHI CAKE </h3>
+        <img src="https://i.postimg.cc/wvBP6Qq5/1788591974194-2.jpg" loading="lazy" onclick="openLightbox(this)" alt="Featured Cake 1">
+        <h3> FATHER DAY CAKE </h3>
         <button onclick="orderWhatsApp('Cake')">Order Now</button>
       </div>
       <div class="featured-card">
-        <img src="https://i.postimg.cc/jdzrCMMg/1786352058152-3.jpg" loading="lazy" onclick="openLightbox(this)" alt="Featured Cake 2">
-        <h3> RAKHI CAKE </h3>
+        <img src="https://i.postimg.cc/NM0Vgksx/1788592031770-2.jpg" loading="lazy" onclick="openLightbox(this)" alt="Featured Cake 2">
+        <h3> FATHER DAY CAKE </h3>
         <button onclick="orderWhatsApp('Cake')">Order Now</button>
       </div>
       <div class="featured-card">
-        <img src="https://i.postimg.cc/T37gbJw6/1786353199065-2.jpg" loading="lazy" onclick="openLightbox(this)" alt="Featured Cake 3">
-        <h3> RAKHI CAKE </h3>
+        <img src="https://i.postimg.cc/V6NTYWfX/1788592075790-2.jpg" loading="lazy" onclick="openLightbox(this)" alt="Featured Cake 3">
+        <h3> FATHER DAY CAKE </h3>
         <button onclick="orderWhatsApp('Cake')">Order Now</button>
       </div>
       <div class="featured-card">
-        <img src="https://i.postimg.cc/W4TCDjd3/1786352094043.png" loading="lazy" onclick="openLightbox(this)" alt="Featured Cake 4">
-       <h3> RAKHI CAKE </h3>
+        <img src="https://i.postimg.cc/C1KtFshD/1788592363862-2.jpg" loading="lazy" onclick="openLightbox(this)" alt="Featured Cake 4">
+       <h3> FATHER DAY CAKE </h3>
         <button onclick="orderWhatsApp('Cake')">Order Now</button>
       </div>
+<div class="featured-card">
+        <img src="https://i.postimg.cc/1tzT9rmw/1788592400469-2.jpg" loading="lazy" onclick="openLightbox(this)" alt="Featured Cake 4">
+       <h3> FATHER DAY CAKE </h3>
+        <button onclick="orderWhatsApp('Cake')">Order Now</button>
+      </div>
+
+      <div class="featured-card">
+        <img src="https://i.postimg.cc/hjGwS1D9/1788592497796-2.jpg" loading="lazy" onclick="openLightbox(this)" alt="Featured Cake 4">
+       <h3> FATHER DAY CAKE </h3>
+        <button onclick="orderWhatsApp('Cake')">Order Now</button>
+      </div>
+
     </div>
   </section>
 
@@ -460,6 +472,7 @@
     <button onclick="filterGallery('elegant')">Elegant Cake</button>
     <button onclick="filterGallery('wedding')">Wedding Cake</button>
     <button onclick="filterGallery('football')">Football Cake</button>
+    <button onclick="filterGallery('rakhi')">Rakhi Cake</button>
   </div>
   <div class="gallery" id="gallery-container"></div>
 </section>
@@ -731,6 +744,10 @@ Please share price and size.`)}`;
     {src:'https://i.postimg.cc/ZY6nB1ny/1774961100650-2.jpg', category:'elegant'},
     {src:'https://i.postimg.cc/h4V8DZBc/1774960243175-2.jpg', category:'elegant'},
     {src:'https://i.postimg.cc/hv6gNxYt/1758221201169_2.jpg', category:'elegant'},
+    {src:'https://i.postimg.cc/vT3LSL0V/1786351832796-2.jpg', category:'rakhi'},
+    {src:'https://i.postimg.cc/jdzrCMMg/1786352058152-3.jpg', category:'rakhi'},
+    {src:'https://i.postimg.cc/T37gbJw6/1786353199065-2.jpg', category:'rakhi'},
+    {src:'https://i.postimg.cc/W4TCDjd3/1786352094043.png', category:'rakhi'},
   ];
 
   function filterGallery(category){
